@@ -121,6 +121,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "shabbos-around-the-world",
+    title: "Shabbos Around the World",
+    theme: "Judaic",
+    year: "2022",
+    medium: "Oil on canvas",
+    size: "24 × 36 in",
+    image: "images/shabbos-around-the-world.jpg",
+    featured: true,
+    subtitle: "Women and girls the world over, bringing in the light.",
+    story: [
+      "Each week on Friday, as the sky begins to show its first rays of beautiful color, women and girls light their candles — bringing in the peace and tranquility of Shabbos.",
+      "This painting is based on photographs of real women and girls. I chose to portray different ages, from different communities around the world, with different styles of candles — yet all of us united together, bringing light into the world.",
+      "May we merit to see the ultimate light of the Geulah, the Redemption, when we will live united forever, in peace and harmony."
+    ]
+  },
+  {
     id: "yerushalayim",
     title: "Yerushalayim, Our Home",
     theme: "Judaic",
