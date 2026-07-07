@@ -36,6 +36,59 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-kosel",
+    title: "The Kosel — The Western Wall",
+    theme: "Judaic",
+    year: "",
+    medium: "Oil on canvas",
+    size: "24 × 36 in",
+    image: "images/the-kosel.jpg",
+    featured: true,
+    subtitle: "The Western Wall, in radiant color.",
+    story: [
+      "For close to 2,000 years this wall has remained standing, after the destruction of our holy Temple.",
+      "The wall draws and welcomes people of all kinds to come pray for their needs and their wellbeing.",
+      "My heart has been yearning to come visit — it has been too long. Meanwhile I have painted from my soul, and I invite you to feel drawn toward the wall and the texture of this painting.",
+      "Let us unite together to pray for a world of everlasting peace, with the rebuilding of the third Beis Hamikdosh."
+    ]
+  },
+  {
+    id: "little-bird-of-silver",
+    title: "The Little Bird of Silver",
+    theme: "Judaic",
+    year: "2023",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/little-bird-of-silver.jpg",
+    featured: true,
+    subtitle: "A silver bird, still singing amongst the vultures.",
+    story: [
+      "For weeks after October 7th, I couldn't express my feelings and emotions in my art. Then, suddenly, an idea came and I began to paint — and it sat on my easel, unfinished, for a few weeks. Last night I returned to it, and today I finished it.",
+      "\"The little bird of silver — so delicate and rare, still chirps amongst the vultures, outshining all that's there. How long, how long it suffers; how long will it be — when will the eagle come, and set the little bird free!\"",
+      "The Jewish nation is that silver bird, shining amongst our enemies. Even now, in the midst of war, we sing our song. These past months, the unity of our nation and the songs we sing together — bringing joy and hope to one another — inspired me to paint this.",
+      "The music notes flowing from the beak are one of the songs being sung, \"Acheinu,\" composed by Abie Rotenberg: \"Acheinu kol beis Yisrael, hanesunim b'tzarah uvashivyah… HaMakom yeracheim aleihem, v'yotzi'eim mitzarah lirvachah, umei'afeilah l'orah, umishibud lig'ulah — hashta ba'agala uvizman kariv.\" (Our brothers, the whole house of Israel, who are in distress or captivity — may the Almighty have mercy on them and lead them from darkness to light, from bondage to redemption, swiftly and soon.)"
+    ]
+  },
+  {
+    id: "shamil",
+    title: "Shamil",
+    theme: "Judaic",
+    year: "",
+    medium: "Oil on canvas",
+    size: "30 × 40 in",
+    image: "images/shamil.jpg",
+    featured: true,
+    subtitle: "The niggun of a soul yearning to return home.",
+    story: [
+      "My new painting, submitted to the \"Chassidus in Color\" competition. On Simchas Torah of 1958, in the early morning hours, the Rebbe stood on a crate in the Shalash — the space between the two buildings of 770 and 788 — and taught a new niggun.",
+      "The Rebbe began to speak, and to cry, as he told the story of Shamil: leader of the Caucasian army and a bitter enemy of the Russian czar. As Russia expanded, it sought to conquer the Caucasus Mountains. They deceived Shamil with the promise of a peace treaty — and in the end captured him and sent him into exile. Sitting in exile, he dreamed and yearned to be free, to ride his horse once more high in the mountains, and he composed this tune.",
+      "The Rebbe then explained what we can learn from this: the neshama, the Jewish soul, is Above — free, united with G-dliness — and is sent down into this world, clothed in a physical body, forever yearning to return to where it came from.",
+      "The Alter Rebbe writes in Tanya that the neshama descends into a body to learn Torah and do mitzvos; its mission is to find the sparks of G-dliness and prepare the world for redemption. The purpose of the creation of the world is the era of Moshiach.",
+      "May the yearning we carry be fulfilled very soon, when we will experience the full glory of G-dliness with the final Redemption.",
+      "A small detail: I mixed a little kos shel bracha — wine for a l'chaim — into the paint on the Smirnoff bottle."
+    ]
+  },
+  {
     id: "yerushalayim",
     title: "Yerushalayim, Our Home",
     theme: "Judaic",
