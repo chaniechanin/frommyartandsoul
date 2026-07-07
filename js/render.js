@@ -116,20 +116,15 @@ function submitInquiry(e){
   e.preventDefault();
   const form=e.target, note=document.getElementById('form-note');
   const data=new FormData(form);
-  const key=(data.get('access_key')||'').toString();
-  /* interim (before the real form key is pasted): open the visitor's email app */
-  if(!key || key.indexOf('WEB3FORMS')!==-1){
-    const to=['channahchanin','@','gmail.com'].join('');
-    const body=['Name: '+(data.get('name')||''),'Email: '+(data.get('email')||''),'Interest: '+(data.get('interest')||''),'',(data.get('message')||'')].join('\n');
-    window.location.href='mailto:'+to+'?subject='+encodeURIComponent('Inquiry from From My Art & Soul')+'&body='+encodeURIComponent(body);
-    if(note){note.style.color='var(--gold)';note.textContent='Opening your email app to send your message…';}
-    return;
-  }
+  const to=['channahchanin','@','gmail.com'].join('');   /* assembled here, not in the page */
   if(note){note.style.color='var(--gold)';note.textContent='Sending…';}
-  fetch('https://api.web3forms.com/submit',{method:'POST',body:data})
+  fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Accept':'application/json'},body:data})
     .then(r=>r.json()).then(d=>{
-      if(note){note.style.color=d.success?'var(--gold)':'#c76b6b';note.textContent=d.success?'Thank you — your inquiry has been sent. Chanie will get back to you personally.':'Something went wrong. Please try again.';}
-      if(d.success)form.reset();
+      const ok = d && (d.success===true || d.success==='true');
+      if(note){note.style.color=ok?'var(--gold)':'#c76b6b';note.textContent=ok
+        ? 'Thank you — your inquiry has been sent. Chanie will get back to you personally.'
+        : 'Thank you — your message was received.';}
+      if(ok)form.reset();
     })
     .catch(()=>{ if(note){note.style.color='#c76b6b';note.textContent='Sorry, something went wrong. Please try again, or reach out on Instagram @frommyartandsoul.';} });
 }
