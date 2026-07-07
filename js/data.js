@@ -89,6 +89,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "simcha",
+    title: "Simcha",
+    theme: "Judaic",
+    year: "2024",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/simcha.jpg",
+    featured: true,
+    subtitle: "When Adar enters, we increase in joy.",
+    story: [
+      "When the month of Adar enters, we increase in joy. This year, a leap year, we add even more simcha — a double month of Adar.",
+      "\"Joy breaks all boundaries.\" Even in a time of distress or discomfort, when we are happy, things turn out for the better.",
+      "Music brings joy deep inside; it touches our soul and lifts our spirits. As I listened to music, I created this with the flow — radiant oil paint laid on with a palette knife.",
+      "May we all be blessed with inner happiness, and bring joy to all those around us — and very soon may we dance together to the Redemption, the greatest joy of all."
+    ]
+  },
+  {
     id: "yerushalayim",
     title: "Yerushalayim, Our Home",
     theme: "Judaic",
