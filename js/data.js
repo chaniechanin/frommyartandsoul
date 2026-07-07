@@ -106,6 +106,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "sound-of-the-shofar",
+    title: "The Sound of the Shofar",
+    theme: "Holidays",
+    year: "2023",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/sound-of-the-shofar.jpg",
+    featured: true,
+    subtitle: "The shofar that will announce Moshiach.",
+    story: [
+      "And finally, it's here! The sound of the shofar awakens us to repent. As the new year arrives, we crown G-d as King.",
+      "The shofar will sound to announce the arrival of Moshiach and the final Redemption — and we will sing the new song."
+    ]
+  },
+  {
     id: "yerushalayim",
     title: "Yerushalayim, Our Home",
     theme: "Judaic",
