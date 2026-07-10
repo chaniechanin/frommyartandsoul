@@ -17,6 +17,22 @@
 
 const PAINTINGS = [
   {
+    id: "kotel-in-color",
+    title: "The Kosel in Color",
+    theme: "Judaic",
+    year: "",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/kotel-in-color.jpg",
+    featured: true,
+    subtitle: "Every stone its own color, every color its own prayer.",
+    story: [
+      "The last remaining wall of the Beis Hamikdash — painted not in plain stone, but in every color I feel when I stand before it.",
+      "Each stone is a different shade, because every soul who comes to pour out their heart brings a different prayer, a different tear, a different hope. Together they form one wall that has stood through every exile.",
+      "At its base, Jews of every kind stand side by side, close enough to touch the ancient stones — the place where, our Sages teach, the Shechinah has never departed."
+    ]
+  },
+  {
     id: "shema",
     title: "Shema — Echad",
     theme: "Judaic",

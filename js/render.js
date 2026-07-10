@@ -30,10 +30,11 @@ function cardHTML(p){
     <h3>${p.title}</h3><div class="meta">${meta}</div></a>`;
 }
 
-/* home: framed hero painting */
+/* home: framed hero painting — the first thing seen on the site */
+const HERO_ID='kotel-in-color';
 function renderHeroArt(){
   const el=document.getElementById('hero-art'); if(!el)return;
-  const p=featuredList()[0];
+  const p=PAINTINGS.find(x=>x.id===HERO_ID)||featuredList()[0];
   el.innerHTML=`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
 }
 
