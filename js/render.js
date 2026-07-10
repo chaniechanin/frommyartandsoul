@@ -37,10 +37,15 @@ function renderHeroArt(){
   el.innerHTML=`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
 }
 
-/* home: selected works preview */
+/* home: selected works preview — curated order chosen for the front page */
+const HOME_ORDER=['agam','avraham','sound-of-the-shofar','the-leaf','water-and-tree','mizmor-ledovid','enough-tears','the-little-bird','simcha','torah-is-life'];
+function homeList(){
+  const picks=HOME_ORDER.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean);
+  return picks.length?picks:featuredList().slice(0,12);
+}
 function renderHomeGrid(){
   const el=document.getElementById('home-grid'); if(!el)return;
-  el.innerHTML=featuredList().slice(0,12).map(cardHTML).join('');
+  el.innerHTML=homeList().map(cardHTML).join('');
 }
 
 /* home: featured-work spotlights */
