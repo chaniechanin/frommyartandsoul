@@ -137,6 +137,72 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "seven-species",
+    title: "The Seven Species",
+    theme: "Holidays",
+    year: "2026",
+    medium: "Acrylic on canvas",
+    size: "18 × 24 in",
+    image: "images/seven-blessings.jpg",
+    featured: true,
+    subtitle: "The land of Israel, blessed with the seven species.",
+    story: [
+      "In honor of Tu BiShvat, I painted the land of Israel filled with the seven special species with which it is blessed.",
+      "\"A land of wheat and barley, of vines and figs and pomegranates; a land of oil-producing olives, and honey from dates.\""
+    ]
+  },
+  {
+    id: "the-little-bird",
+    title: "The Little Bird is Calling",
+    theme: "Judaic",
+    year: "2013",
+    medium: "Oil on canvas",
+    size: "30 × 40 in",
+    image: "images/the-little-bird.jpg",
+    featured: true,
+    subtitle: "The bird is Yisrael; the eagle is Moshiach.",
+    story: [
+      "Who doesn't know the song \"The Little Bird is Calling\"? It was one of my favorites growing up — we sang it around camp bonfires and at farbrengens. This painting is based on it.",
+      "\"The little bird is calling, it wishes to return; the little bird is wounded, it cannot fly but yearn. It's captured by the vultures, crying bitterly — oh, to see my nest again; oh, to be redeemed!\"",
+      "\"The little bird of silver, so delicate and rare, still chirps amongst the vultures, outshining all that's there. How long, how long it suffers; how long will it be — when will come the eagle, and set the little bird free.\"",
+      "\"The little bird is Yisrael; the vultures are our foes. The painful wound is Golus, which we all feel and know. The nest is Yerushalayim, where we yearn to be once more — and the eagle is Moshiach, whom we are waiting for.\""
+    ]
+  },
+  {
+    id: "enough-tears",
+    title: "Enough Tears",
+    theme: "Judaic",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/enough-tears.jpg",
+    featured: true,
+    subtitle: "Hashem's cup of tears — how deep, and when will it fill?",
+    story: [
+      "As an artist, I felt the need to pour my feelings onto canvas after so much recent tragedy. Seeing the footage from the terrible disaster in Surfside, Florida, my mind couldn't rest — thinking of all those trapped, of the families who suffered such loss, and of all the pain the Jewish nation as a whole has known.",
+      "Through the tears, I found myself thinking of the song \"Daddy Dear\" by Mordechai Ben David — the child who asks whether it's true that in Heaven there is a cup that fills a little more each day; that Hashem keeps it close by, and fills it with His tears each time that we cry.",
+      "\"Just how deep is this cup — tell me, when will it fill? Don't you think it is time that the sun forever shine?\" And so we ask Him together: Father dear, do You hear our worries, our fears? Will Your eyes ever dry — is Your cup filled with tears?",
+      "I believe the cup is full and spilling over. Hashem, please comfort us, and send us the Geulah."
+    ]
+  },
+  {
+    id: "mizmor-ledovid",
+    title: "Mizmor LeDovid",
+    theme: "Judaic",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "24 × 36 in",
+    image: "images/mizmor-ledovid.jpg",
+    featured: true,
+    subtitle: "King David's harp, and the song of the Psalms.",
+    story: [
+      "An idea that lived in my mind for many months. I finally began to paint it in the week leading up to Shavuos — the day connected to King David, who passed away on that very day, when the Jewish nation stood together at Mount Sinai and became one with G-d.",
+      "I've always loved the stories of King David, and felt for his many years of suffering. As a young man he spent long hours in the fields, tending his father Yishai's flocks. In his heart burned an ardent love for G-d and His people, which he poured into the Psalms he composed and the harp he played.",
+      "For generations, the power of Tehillim has brought comfort in times of need, and song and thanks in times of joy. The music I painted is a melody from Tehillim — if you can read music, try to play along. A hint: \"I lift my eyes to the mountains — from where will my help come?\" (Psalm 121).",
+      "David, King of Israel, lives on forever."
+    ]
+  },
+  {
     id: "yerushalayim",
     title: "Yerushalayim, Our Home",
     theme: "Judaic",
