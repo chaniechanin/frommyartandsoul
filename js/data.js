@@ -20,7 +20,7 @@ const PAINTINGS = [
     id: "kotel-in-color",
     title: "The Kosel in Color",
     theme: "Judaic",
-    year: "",
+    year: "2018",
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/kotel-in-color.jpg",
