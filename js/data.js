@@ -399,6 +399,20 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rebbe-blue-eyes",
+    title: "The Rebbe",
+    theme: "Rebbe & Rebbetzin",
+    year: "2015",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/rebbe-blue-eyes.jpg",
+    featured: false,
+    subtitle: "The Lubavitcher Rebbe — his eyes, piercing and alive.",
+    story: [
+      "A portrait of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson."
+    ]
+  },
+  {
     id: "rebbe-picture-wall",
     title: "The Rebbe's Picture on My Wall",
     theme: "Rebbe & Rebbetzin",
