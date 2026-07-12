@@ -344,7 +344,6 @@ const PAINTINGS = [
     size: "11 × 14 in",
     image: "images/moshe-kotlarsky.jpg?v=bw2",
     sold: true,
-    sold: true,
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
@@ -408,7 +407,6 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/rebbe-blue-eyes.jpg",
-    sold: true,
     sold: true,
     featured: false,
     subtitle: "The Lubavitcher Rebbe — his eyes, piercing and alive.",
@@ -680,6 +678,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/kotel-in-color.jpg",
+    sold: true,
     featured: true,
     subtitle: "Every stone its own color, every color its own prayer.",
     story: [
@@ -1003,6 +1002,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/rambam.jpg",
+    sold: true,
     featured: false,
     subtitle: "Physician, philosopher, and codifier of Torah law.",
     story: [

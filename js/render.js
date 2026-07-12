@@ -24,7 +24,7 @@ function featuredList(){ const f=PAINTINGS.filter(p=>p.featured); return f.lengt
 
 /* one masonry card → links to its story page */
 function statusTag(p){
-  if(p.sold) return '<span class="art-tag tag-sold">Original Sold</span>';
+  if(p.sold) return '<span class="art-tag tag-sold">Not Available</span>';
   if(p.forSale) return '<span class="art-tag tag-sale">Available</span>';
   return '';
 }
@@ -120,7 +120,7 @@ function renderDetail(){
         <div><span>Medium</span><b>${p.medium}</b></div>
         <div><span>Size</span><b>${p.size}</b></div>
         ${p.year?`<div><span>Year</span><b>${p.year}</b></div>`:''}
-        ${p.sold?`<div><span>Availability</span><b>Original sold · prints on request</b></div>`:(p.forSale?`<div><span>Availability</span><b>Original available for purchase</b></div>`:'')}
+        ${p.sold?`<div><span>Availability</span><b>Original not available · prints on request</b></div>`:(p.forSale?`<div><span>Availability</span><b>Original available for purchase</b></div>`:'')}
       </div>
       <div class="detail-story"><h4>The Story Behind It</h4>
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
