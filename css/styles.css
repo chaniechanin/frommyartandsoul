@@ -191,9 +191,11 @@ footer a{color:var(--gold-lt)}
   .hdr nav{position:fixed;top:0;right:0;height:100vh;width:min(80vw,320px);flex-direction:column;gap:0;background:rgba(11,11,14,.98);backdrop-filter:blur(12px);padding:94px 30px 30px;transform:translateX(105%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:-24px 0 60px rgba(0,0,0,.55);z-index:65}
   .hdr nav.open{transform:none}
   .hdr nav a,.hdr.scrolled nav a,.hdr.solid nav a{color:#efe9dd;font-size:.92rem;letter-spacing:.2em;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-  .hero{padding:110px 0 60px}
-  .hero .hero-grid{grid-template-columns:1fr;grid-template-areas:"h1" "art" "btn";row-gap:32px;text-align:center}
+  .hero{padding:92px 0 44px}
+  .hero .hero-grid{grid-template-columns:1fr;grid-template-areas:"h1" "art" "btn";row-gap:20px;text-align:center}
   .hero .hero-h1{align-self:auto}.hero .hero-btn{justify-self:center}
+  /* keep the whole hero (headline + painting + button) within one phone screen */
+  .hero .hero-art .mat img{max-height:40vh}
   .hero .inner,.spot .inner,.spot.reverse .inner,.artist-inner,.detail,.contact{grid-template-columns:1fr;gap:40px}
   .hero .art-glow{order:-1}
   .art-glow .artframe .mat img,.spot .art-glow .artframe .mat img{max-height:52vh}
