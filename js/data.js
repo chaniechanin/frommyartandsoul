@@ -621,6 +621,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-dreidel",
+    title: "The Dreidel",
+    theme: "Holidays",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/the-dreidel.jpg",
+    featured: false,
+    subtitle: "A Chanukah lesson from the spin of the dreidel.",
+    story: [
+      "The dreidel is a game we play on Chanukah — and there's a lesson in it too. When we spin it, we can land on Nun (nothing), Gimmel (take all), Hey (half), or Shin (give in).",
+      "Not every day is a Gimmel or a Hey — great or good. But we can learn from the Maccabees: though their situation looked bad, they focused on the good and made themselves a vessel for G-d to send a miracle that was Gimmel — great — and they defeated their enemy. So when we find ourselves in a hard place, we focus on the good, and Hashem sends His miracles.",
+      "The letters even hint at it: Nun (50), Gimmel (3), Hey (5), and Shin (300) add up to 358 — the same as the word Moshiach (Mem 40, Shin 300, Yud 10, Ches 8 = 358).",
+      "Wishing you a happy eighth day of Chanukah. May we carry the brightness and lessons of this holiday into our lives, and may we merit to celebrate next Chanukah in the holy Temple."
+    ]
+  },
+  {
     id: "mother-rochel",
     title: "Mother Rochel",
     theme: "Judaic",
