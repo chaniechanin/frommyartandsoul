@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "rebbe-lag-baomer",
+    title: "The Rebbe — Lag BaOmer",
+    theme: "Rebbe & Rebbetzin",
+    year: "2021",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/rebbe-lag-baomer.jpg",
+    featured: false,
+    subtitle: "A day of Jewish pride and unity.",
+    story: [
+      "Lag BaOmer has always been a joyful holiday for me. From my early childhood in London, we would rally outside Lubavitch House and parade through the streets of my neighborhood — always a day of Jewish pride and unity.",
+      "Some years we would gather in the afternoon to watch the live rally and parade from Crown Heights over a satellite hookup — watching the Rebbe come out to the song of \"Ani Ma'amin,\" and then joining children around the world in reciting the twelve Torah pesukim. I never experienced Lag BaOmer in Crown Heights with the Rebbe, but I've taken part in many years of rallies and parades here since I moved.",
+      "This year we celebrated joy amid mourning — so many lives lost after singing that heartfelt song: \"Ani Ma'amin — I believe with complete faith in the coming of Moshiach; and though he may tarry, still I wait for him each day.\"",
+      "May we merit, very soon, the coming of Moshiach and the Redemption."
+    ]
+  },
+  {
     id: "yudi-dukes",
     title: "Rabbi Yudi Dukes, OBM",
     theme: "Sketches",
