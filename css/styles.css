@@ -80,6 +80,9 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 /* row-based variant (Sketches): reads left→right across each row, then down */
 .grid.rows{column-count:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
 .grid.rows .card{margin:0}
+/* right-to-left placement (Rebbe & Rebbetzin): first item top-right, reading leftward */
+.grid.rtl{direction:rtl}
+.grid.rtl .card{direction:ltr}
 .card{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin:0 0 20px;text-align:center;cursor:pointer;display:block}
 .card .pic{background:#fff;padding:14px;box-shadow:0 24px 50px -34px rgba(0,0,0,.5);transition:transform .5s,box-shadow .5s}
 .card:hover .pic{transform:translateY(-5px);box-shadow:0 40px 70px -34px rgba(0,0,0,.55)}

@@ -78,11 +78,16 @@ function renderGallery(){
   const filters=document.getElementById('gallery-filters');
   /* these themes are hidden from "All" — each lives only under its own filter */
   const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin'];
+  /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
+  const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-i-miss-you','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   const draw=(theme)=>{
     let list=theme==='All'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */
     if(theme==='Portraits') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
-    grid.classList.toggle('rows',theme==='Portraits');
+    /* Rebbe & Rebbetzin follows the fixed REBBE_ORDER */
+    if(theme==='Rebbe & Rebbetzin') list=list.slice().sort((a,b)=>{const ia=REBBE_ORDER.indexOf(a.id),ib=REBBE_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
+    grid.classList.toggle('rows',theme==='Portraits'||theme==='Rebbe & Rebbetzin');
+    grid.classList.toggle('rtl',theme==='Rebbe & Rebbetzin');
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
   };
