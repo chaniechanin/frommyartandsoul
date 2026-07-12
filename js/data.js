@@ -77,10 +77,10 @@ const PAINTINGS = [
     subtitle: "A “stiller mensch” — a quiet, gentle soul, learning at his sefer.",
     story: [
       "This is a sketch of my grandfather, R' Shimon Stillerman, whose yahrtzeit was this month. Below is a poem I wrote a few years ago, at a family gathering.",
-      "What can I say about a zayde I did not really know,<br>A young child I was when he passed on so;<br>All my memories of him when he came to visit my home<br>Were of him learning in a sefer at the table, in a quiet, low tone.",
-      "My mother used to tell us of her father's life in Russia,<br>How, running from the KGB, he hid in the home of Mariasha.<br>Though in those hard times, our zayde's Yiddishkeit kept strong —<br>He studied Chassidus and kept his beard long.",
-      "Arriving in Sydney, Australia, a city far from Yiddishkeit,<br>A beautiful place in gashmius, but hardly a frum Yid in sight;<br>Our zayde a shochet, with yiras Shomayim, a \"stiller mensch\" he was known,<br>With Bobba he raised his children in a chassidishe, warm home.",
-      "I'm sure zayde is watching, joining us tonight,<br>Shepping nachas from us — each mitzvah we do creating a new light.<br>He is asking and davening that the Geulah should be speedy,<br>And, reunited together with Moshiach, our zayde we will see."
+      "What can I say about a Zaida I did not really know,<br>A young child I was when he passed on so;<br>All my memories of him when he came to visit my home<br>Were of him learning in a sefer at the table, in a quiet, low tone.",
+      "My mother used to tell us of her father's life in Russia,<br>How, running from the KGB, he hid in the home of Mariasha.<br>Though in those hard times, our Zaida's Yiddishkeit kept strong —<br>He studied Chassidus and kept his beard long.",
+      "Arriving in Sydney, Australia, a city far from Yiddishkeit,<br>A beautiful place in gashmius, but hardly a frum Yid in sight;<br>Our Zaida a shochet, with yiras Shomayim, a \"stiller mensch\" he was known,<br>With Bobba he raised his children in a chassidishe, warm home.",
+      "I'm sure Zaida is watching, joining us tonight,<br>Shepping nachas from us — each mitzvah we do creating a new light.<br>He is asking and davening that the Geulah should be speedy,<br>And, reunited together with Moshiach, our Zaida we will see."
     ]
   },
   {
