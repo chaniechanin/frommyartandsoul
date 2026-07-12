@@ -785,7 +785,7 @@ const PAINTINGS = [
   {
     id: "kos-shel-bracha",
     title: "Kos Shel Bracha",
-    theme: "Judaic",
+    theme: "Sketches",
     year: "",
     medium: "Charcoal on paper",
     size: "16 × 20 in",
