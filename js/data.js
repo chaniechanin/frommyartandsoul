@@ -220,7 +220,7 @@ const PAINTINGS = [
   },
   {
     id: "bobba-bluma",
-    title: "Bobba Bluma",
+    title: "Bobba Bluma Raskin",
     theme: "Sketches",
     year: "2022",
     medium: "Charcoal on paper",
