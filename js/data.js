@@ -85,7 +85,7 @@ const PAINTINGS = [
   },
   {
     id: "yehoshua-raskin",
-    title: "My Zaida — Reb Yehoshua Raskin, OBM",
+    title: "Zaida Yehoshua Raskin",
     theme: "Sketches",
     year: "2020",
     medium: "Charcoal on paper",
