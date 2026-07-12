@@ -399,6 +399,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rebbe-picture-wall",
+    title: "The Rebbe's Picture on My Wall",
+    theme: "Rebbe & Rebbetzin",
+    year: "2023",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/rebbe-picture-wall.jpg?v=bw2",
+    featured: false,
+    subtitle: "31 years since His picture fell from my wall — a wake-up call.",
+    story: [
+      "Rebbe, it's 31 years since your picture fell from my wall,<br>for me it was a wake-up call.<br>From above my head onto my pillow it fell —<br>a message it was trying to tell.<br>Oh, how when I heard the shocking news,<br>I quickly got dressed and put on my shoes;<br>I danced away with the music volume so high,<br>waiting for the Beis Hamikdosh to come from the sky.<br>I waited all day, Moshiach did not come,<br>the sun was shining, my feelings were numb.<br>Days, weeks, now years have flown by —<br>so much is happening, still for Moshiach I cry.<br>To you, Rebbe, I turn when I have something to ask;<br>answers I get, and blessings to fill my task.<br>You said Moshiach is here — we must open up our eyes;<br>there's still so much sorrow and pain, please hear our cries.<br>My children look up to you at the picture on my wall,<br>they sing along with you in videos — \"Rebbe,\" they call.<br>Please come and gather us, your Chassidim we await;<br>we want to greet Moshiach at our Beis Hamikdosh gate!",
+      "This painting is available for purchase — please inquire."
+    ]
+  },
+  {
     id: "rebbe-i-miss-you",
     title: "Rebbe, I Miss You",
     theme: "Rebbe & Rebbetzin",
