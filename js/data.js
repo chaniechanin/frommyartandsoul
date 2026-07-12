@@ -621,9 +621,24 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "kineret",
+    title: "The Kineret",
+    theme: "Nature",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "16 × 20 in",
+    image: "images/kineret.jpg",
+    featured: false,
+    subtitle: "The Kineret at Tiberias — the fourth of Israel's holy cities.",
+    story: [
+      "My daughter shared some photos she took on her walk by the Kineret, in the city of Tiberias.",
+      "Tiberias is one of the four holy cities of Israel — and the one I had not yet painted. I have painted the other three: Yerushalayim, Tzfas, and Chevron. I loved this photo, and with my heart and soul in the Land of Israel, I felt I had to paint it."
+    ]
+  },
+  {
     id: "the-beach",
     title: "The Beach",
-    theme: "Landscapes",
+    theme: "Nature",
     year: "2015",
     medium: "Oil on canvas",
     size: "18 × 24 in",
@@ -1237,7 +1252,7 @@ const PAINTINGS = [
   {
     id: "prospect-park",
     title: "Prospect Park in Autumn",
-    theme: "Landscapes",
+    theme: "Nature",
     year: "2017",
     medium: "Oil on canvas",
     size: "Dimensions on request",
@@ -1252,7 +1267,7 @@ const PAINTINGS = [
   {
     id: "water-and-tree",
     title: "By the Water's Edge",
-    theme: "Landscapes",
+    theme: "Nature",
     year: "2015",
     medium: "Oil on canvas",
     size: "Dimensions on request",
@@ -1267,7 +1282,7 @@ const PAINTINGS = [
   {
     id: "the-leaf",
     title: "Autumn Leaves",
-    theme: "Landscapes",
+    theme: "Nature",
     year: "2016",
     medium: "Oil on canvas",
     size: "Dimensions on request",
