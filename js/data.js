@@ -351,7 +351,7 @@ const PAINTINGS = [
   },
   {
     id: "gita-gansburg",
-    title: "Mrs. Gita Gansburg",
+    title: "Savta Gita Gansburg",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on Bristol paper",
