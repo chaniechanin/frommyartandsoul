@@ -366,6 +366,71 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "reb-levik",
+    title: "Rabbi Levi Yitzchak Schneerson — Reb Levik",
+    theme: "Rebbe & Rebbetzin",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/reb-levik.jpg",
+    featured: false,
+    subtitle: "Father of the Rebbe — imprisoned and exiled for his defiance.",
+    story: [
+      "Many of my paintings are created on a special day in the chassidishe calendar. When I want to paint the portrait of a tzaddik, a holy figure, I feel I have to connect spiritually first. This past week, the 20th of Av, was the yahrtzeit of Reb Levik — Rabbi Levi Yitzchak Schneerson, father of the Rebbe.",
+      "In 1939, Reb Levik was arrested by the communist regime for his fearless stand against the Party's efforts to eradicate Jewish learning and practice in the Soviet Union — and in particular for distributing matzah to the Jews of Yekaterinoslav. After more than a year of torture and interrogation in Stalin's prisons, he was sentenced to exile in the remote village of Chiali, in Kazakhstan.",
+      "Shortly before his passing, he was able to move to Almaty, where he was warmly welcomed by the small Lubavitcher community. There he passed away on the 20th of Av, 5704.",
+      "I painted this from a photograph taken of Reb Levik by the communist government during his arrest."
+    ]
+  },
+  {
+    id: "rebbe-i-miss-you",
+    title: "Rebbe, I Miss You",
+    theme: "Rebbe & Rebbetzin",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/rebbe-i-miss-you.jpg",
+    featured: false,
+    subtitle: "Gimmel Tammuz — bringing the Rebbe alive on canvas.",
+    story: [
+      "This past Sunday marked 27 years since Gimmel Tammuz. Over the years, the Chabad community has grown all around the world, and the Rebbe's presence is felt in so many ways.",
+      "I had the merit as a child to see the Rebbe on my visits to New York — memories I will cherish forever. There have been challenging times over the years when I wrote to the Rebbe and did not always receive a clear answer, yet I know the Rebbe is guiding me, even if not always in a revealed way.",
+      "Last week I was at the Ohel, and as I entered the room where the video plays, the niggun ended and the Rebbe began to speak about the importance of saying Chitas (the daily portion of Chumash, Tehillim, and Tanya) — a message to me to keep up the hachlata I make each day.",
+      "This year, on Gimmel Tammuz, I connected to the Rebbe by bringing him alive onto my canvas. I hope to continue to give the Rebbe chassidishe nachas in all I do. And I believe that very soon the Rebbe's prophecy of the Geulah and Moshiach will be fulfilled, when we will see the Rebbe once again — in Yerushalayim, in the third Beis Hamikdash."
+    ]
+  },
+  {
+    id: "tzemach-tzedek",
+    title: "The Tzemach Tzedek",
+    theme: "Rebbe & Rebbetzin",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/tzemach-tzedek.jpg",
+    featured: false,
+    subtitle: "The third Chabad Rebbe — and the mother who gave her life for him.",
+    story: [
+      "Today, the 29th of Elul, is the birthday of the Tzemach Tzedek. I finished this painting last year on this same special day — the last day of the year.",
+      "His mother, Rebbetzin Devorah Leah, passed away just a few days after his third birthday. The Alter Rebbe — aware that in the spiritual worlds there was strong opposition to him and to the revelation of the deep secrets of the Torah — called his daughter and told her of the dangers to his life.",
+      "After consulting with a beis din, she resolved to give up her own life, with self-sacrifice, for her father — so that he could live many more years to teach Chassidus. That Rosh Hashanah, when the Alter Rebbe wished to bless her for a good year, she interrupted him. She fell ill after the holiday and passed away on the 3rd of Tishrei. One thing she asked of her father was to take care of her son, Menachem Mendel — who later became the Tzemach Tzedek, the third Chabad Rebbe.",
+      "My little daughter was born six years ago today, and we named her Devorah! May Rebbetzin Devorah Leah's memory and self-sacrifice always be remembered, and may we merit to see the Rebbetzin — together with all our Rebbeim and Rebbetzins — this year, with the coming of Moshiach."
+    ]
+  },
+  {
+    id: "rebbe-rashab",
+    title: "The Rebbe Rashab",
+    theme: "Rebbe & Rebbetzin",
+    year: "2016",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/rebbe-rashab.jpg",
+    featured: false,
+    subtitle: "Rabbi Sholom Dov Ber, the fifth Chabad Rebbe.",
+    story: [
+      "Yesterday, the 11th day of the Jewish month of Elul, was the wedding anniversary of Rabbi Sholom Dov Ber — known as the Rebbe Rashab, the fifth Chabad Rebbe."
+    ]
+  },
+  {
     id: "rebbetzin-channah",
     title: "Rebbetzin Chana",
     theme: "Rebbe & Rebbetzin",
