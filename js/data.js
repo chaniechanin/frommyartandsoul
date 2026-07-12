@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "chaim-bentzion-raskin",
+    title: "Reb Chaim Bentzion Raskin",
+    theme: "Sketches",
+    year: "2021",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/chaim-bentzion-raskin.jpg",
+    featured: false,
+    subtitle: "The chossid near Moscow who poured out tears for his children's future.",
+    story: [
+      "The Frierdiker Rebbe once mentioned in a sicha: \"There is a Jew (Reb Chaim Bentzion Raskin) who lives near Moscow. Every morning he wakes early, at 4am, to learn Torah; and before that he says Tehillim and pours out tears like water. And the reason for his crying? He is begging mercy of G-d Almighty that his children and grandchildren should walk in the ways of the Torah.\"",
+      "This special chossid was my great-great-grandfather. He lived at a time when it was hard to keep Torah and mitzvos, in the era of the Haskalah movement — and yet we see the results of his prayers. Today he has hundreds, perhaps thousands, of descendants around the world, many of them shluchim of the Rebbe, spreading Yiddishkeit.",
+      "Today, the 7th of Cheshvan, was his 82nd yahrtzeit. This morning I began to draw this sketch as I watched over my newborn granddaughter — his great-great-great-granddaughter.",
+      "May we continue to bring him true chassidishe nachas, and may we very soon — together with all my cousins around the world — merit to meet our illustrious Zaida, with the coming of Moshiach."
+    ]
+  },
+  {
     id: "rabbi-schwei",
     title: "Rabbi Schwei",
     theme: "Sketches",
