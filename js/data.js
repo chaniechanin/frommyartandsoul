@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "miriam-at-the-sea",
+    title: "Miriam at the Sea",
+    theme: "Judaic",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/miriam-at-the-sea.jpg",
+    featured: true,
+    subtitle: "The women's song and dance at the splitting of the sea.",
+    story: [
+      "In this week's parsha, B'shalach, we read of one of the greatest miracles in history — the splitting of the sea.",
+      "Moshe sang together with the men, and then Miriam the prophetess took the cymbals in her hand and led the women in dance and song.",
+      "In the merit of her prophecy, and in the merit of the Jewish women, we were redeemed from Egypt.",
+      "It will be in the merit of us women that we will be redeemed from this long exile. Hashem will once again show us wonders and miracles — the sea will split again, and we will all sing together the new song of Redemption. May it be today!"
+    ]
+  },
+  {
     id: "kotel-in-color",
     title: "The Kosel in Color",
     theme: "Judaic",
