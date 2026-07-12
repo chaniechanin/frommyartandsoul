@@ -344,6 +344,7 @@ const PAINTINGS = [
     size: "11 × 14 in",
     image: "images/moshe-kotlarsky.jpg?v=bw2",
     sold: true,
+    sold: true,
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
@@ -407,6 +408,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/rebbe-blue-eyes.jpg",
+    sold: true,
     sold: true,
     featured: false,
     subtitle: "The Lubavitcher Rebbe — his eyes, piercing and alive.",
@@ -660,6 +662,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/miriam-at-the-sea.jpg",
+    sold: true,
     featured: true,
     subtitle: "The women's song and dance at the splitting of the sea.",
     story: [
@@ -1078,6 +1081,7 @@ const PAINTINGS = [
     medium: "Acrylic on canvas",
     size: "24 × 36 in",
     image: "images/shabbos-eagle.jpg",
+    sold: true,
     featured: true,
     subtitle: "Just one Shabbos, and we will all be free.",
     story: [
