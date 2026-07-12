@@ -420,11 +420,11 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "18 × 24 in",
     image: "images/rebbe-picture-wall.jpg?v=bw2",
+    forSale: true,
     featured: false,
     subtitle: "31 years since His picture fell from my wall — a wake-up call.",
     story: [
-      "Rebbe, it's 31 years since your picture fell from my wall,<br>for me it was a wake-up call.<br>From above my head onto my pillow it fell —<br>a message it was trying to tell.<br>Oh, how when I heard the shocking news,<br>I quickly got dressed and put on my shoes;<br>I danced away with the music volume so high,<br>waiting for the Beis Hamikdosh to come from the sky.<br>I waited all day, Moshiach did not come,<br>the sun was shining, my feelings were numb.<br>Days, weeks, now years have flown by —<br>so much is happening, still for Moshiach I cry.<br>To you, Rebbe, I turn when I have something to ask;<br>answers I get, and blessings to fill my task.<br>You said Moshiach is here — we must open up our eyes;<br>there's still so much sorrow and pain, please hear our cries.<br>My children look up to you at the picture on my wall,<br>they sing along with you in videos — \"Rebbe,\" they call.<br>Please come and gather us, your Chassidim we await;<br>we want to greet Moshiach at our Beis Hamikdosh gate!",
-      "This painting is available for purchase — please inquire."
+      "Rebbe, it's 31 years since your picture fell from my wall,<br>for me it was a wake-up call.<br>From above my head onto my pillow it fell —<br>a message it was trying to tell.<br>Oh, how when I heard the shocking news,<br>I quickly got dressed and put on my shoes;<br>I danced away with the music volume so high,<br>waiting for the Beis Hamikdosh to come from the sky.<br>I waited all day, Moshiach did not come,<br>the sun was shining, my feelings were numb.<br>Days, weeks, now years have flown by —<br>so much is happening, still for Moshiach I cry.<br>To you, Rebbe, I turn when I have something to ask;<br>answers I get, and blessings to fill my task.<br>You said Moshiach is here — we must open up our eyes;<br>there's still so much sorrow and pain, please hear our cries.<br>My children look up to you at the picture on my wall,<br>they sing along with you in videos — \"Rebbe,\" they call.<br>Please come and gather us, your Chassidim we await;<br>we want to greet Moshiach at our Beis Hamikdosh gate!"
     ]
   },
   {
@@ -559,14 +559,31 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "18 × 24 in",
     image: "images/rebbetzin-chana-dinner.jpg?v=bw2",
+    forSale: true,
     featured: false,
     subtitle: "Rebbetzin Chana listens as Golda Schwei speaks at a Nshei Chabad convention.",
     story: [
       "Tonight is the second yahrtzeit of Rebbetzin Golda Schwei. In this painting, Rebbetzin Chana smiles with pleasure as she listens to a speech delivered by Golda Schwei at a Nshei Chabad convention.",
       "Thirty days after Rebbetzin Golda's passing — my husband's aunt, and older sister to my father-in-law — I began this painting. I first met her while studying at BCM seminary in Montreal; she was the wife of the late R' Yitzchak Schwei, Rav and Av Beis Din of Lubavitch Montreal. She would host chassidishe farbrengens in her home, where we students came to hear heartwarming stories and sing niggunim. Even then she made a strong impression on me — a warm chassidic woman of charm and dignity.",
       "A couple of years later I married into the Chanin family, and she became my aunt. That is when I grew closer to her and saw her inner beauty as a true aishes chayil — a role model, an example of \"kol kevudah bas melech penimah.\" Rebbetzin Golda had the merit to spend much quality time with Rebbetzin Chana, mother of the Rebbe. They first met after the war, in the refugee camp in Pocking. As told by her sister, Mrs. Sara Katzman, Rebbetzin Chana would join them for the Shabbos meals at their parents' home — and when she walked in, she brought holiness and refinement with her royalty.",
-      "I'm sure that being in Rebbetzin Chana's presence gave Rebbetzin Schwei some of her own royal bearing. Even walking down the street, you would notice how regally she carried herself — each step like a true queen — dressed with true modesty yet refined style, her actions measured, her speech softly spoken. She was a woman to look up to, not only for her outward grace but for her kindness within.",
-      "This painting is available for purchase — please inquire."
+      "I'm sure that being in Rebbetzin Chana's presence gave Rebbetzin Schwei some of her own royal bearing. Even walking down the street, you would notice how regally she carried herself — each step like a true queen — dressed with true modesty yet refined style, her actions measured, her speech softly spoken. She was a woman to look up to, not only for her outward grace but for her kindness within."
+    ]
+  },
+  {
+    id: "rebbetzin-chana-2023",
+    title: "Rebbetzin Chana",
+    theme: "Rebbe & Rebbetzin",
+    year: "2023",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/rebbetzin-chana-2023.jpg?v=bw2",
+    featured: false,
+    subtitle: "Vov Tishrei — honoring the Rebbetzin, and all who bear her name.",
+    story: [
+      "Today, Vov Tishrei, was the 58th yahrtzeit of Rebbetzin Chana, mother of the Rebbe.",
+      "At the Nshei Chabad farbrengen, I was honored to speak alongside two other women also named Chana — representing the thousands of women and girls named after the Rebbetzin. I shared how I use my art to tell the stories of Jewish women through the ages, and of course our Rebbetzins, along with personal stories of my own family's connection to Rebbetzin Chana.",
+      "Mrs. Chana Lifshitz spoke about her shlichus in spreading the three mitzvos connected to the name Chana, and shared stories of the mega challah bakes she runs. Mrs. Chana Zelda Minkowitz shared how she feels connected to her namesake — and how each of us can be a \"Chana\" by doing our very best at what we are good at. And Mrs. Swerdlov, as always a wonderful speaker, shared beautiful memories; she had the zechus to have known the Rebbetzin herself.",
+      "It was so special and inspiring. May we all continue to bring the Rebbetzin much chassidishe nachas!"
     ]
   },
   {
@@ -717,25 +734,6 @@ const PAINTINGS = [
       "\"The little bird of silver — so delicate and rare, still chirps amongst the vultures, outshining all that's there. How long, how long it suffers; how long will it be — when will the eagle come, and set the little bird free!\"",
       "The Jewish nation is that silver bird, shining amongst our enemies. Even now, in the midst of war, we sing our song. These past months, the unity of our nation and the songs we sing together — bringing joy and hope to one another — inspired me to paint this.",
       "The music notes flowing from the beak are one of the songs being sung, \"Acheinu,\" composed by Abie Rotenberg: \"Acheinu kol beis Yisrael, hanesunim b'tzarah uvashivyah… HaMakom yeracheim aleihem, v'yotzi'eim mitzarah lirvachah, umei'afeilah l'orah, umishibud lig'ulah — hashta ba'agala uvizman kariv.\" (Our brothers, the whole house of Israel, who are in distress or captivity — may the Almighty have mercy on them and lead them from darkness to light, from bondage to redemption, swiftly and soon.)"
-    ]
-  },
-  {
-    id: "shamil",
-    title: "Shamil",
-    theme: "Judaic",
-    year: "",
-    medium: "Oil on canvas",
-    size: "30 × 40 in",
-    image: "images/shamil.jpg",
-    featured: true,
-    subtitle: "The niggun of a soul yearning to return home.",
-    story: [
-      "My new painting, submitted to the \"Chassidus in Color\" competition. On Simchas Torah of 1958, in the early morning hours, the Rebbe stood on a crate in the Shalash — the space between the two buildings of 770 and 788 — and taught a new niggun.",
-      "The Rebbe began to speak, and to cry, as he told the story of Shamil: leader of the Caucasian army and a bitter enemy of the Russian czar. As Russia expanded, it sought to conquer the Caucasus Mountains. They deceived Shamil with the promise of a peace treaty — and in the end captured him and sent him into exile. Sitting in exile, he dreamed and yearned to be free, to ride his horse once more high in the mountains, and he composed this tune.",
-      "The Rebbe then explained what we can learn from this: the neshama, the Jewish soul, is Above — free, united with G-dliness — and is sent down into this world, clothed in a physical body, forever yearning to return to where it came from.",
-      "The Alter Rebbe writes in Tanya that the neshama descends into a body to learn Torah and do mitzvos; its mission is to find the sparks of G-dliness and prepare the world for redemption. The purpose of the creation of the world is the era of Moshiach.",
-      "May the yearning we carry be fulfilled very soon, when we will experience the full glory of G-dliness with the final Redemption.",
-      "A small detail: I mixed a little kos shel bracha — wine for a l'chaim — into the paint on the Smirnoff bottle."
     ]
   },
   {
@@ -902,23 +900,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "the-kinus",
-    title: "Kinnus Hashluchos",
-    theme: "Judaic",
-    year: "2025",
-    medium: "Oil on canvas",
-    size: "16 × 20 in",
-    image: "images/the-kinus.jpg",
-    featured: true,
-    subtitle: "The shluchos gather outside 770 for their yearly picture.",
-    story: [
-      "This past weekend was the Kinnus Hashluchos. On Shabbos afternoon I was invited by Leah Namdar and Chana Lipsker to join them and a few other women — \"song birds,\" as Leah called us — to lead the Seder Niggunim.",
-      "What a beautiful, uplifting experience it was: a packed hall of hundreds of shluchos and guests singing along through the last hour of Shabbos, carrying us into havdalah. The energy I received kept me on a high, and I felt it all week.",
-      "Painted here, in the abstract, is part of the group of shluchos who gather outside 770 for their yearly picture.",
-      "I'm sure the inspiration and energy these shluchos received over the weekend will carry them through the whole year."
-    ]
-  },
-  {
     id: "avraham",
     title: "Avraham and the Stars",
     theme: "Judaic",
@@ -963,21 +944,6 @@ const PAINTINGS = [
     story: [
       "The honey-colored ramparts of the Old City, a line of date palms along the path, and two small figures walking in their shade.",
       "The kind of quiet corner of Jerusalem you could walk past a hundred times and never tire of."
-    ]
-  },
-  {
-    id: "water-carrier",
-    title: "The Water Carrier",
-    theme: "Judaic",
-    year: "2016",
-    medium: "Oil on canvas",
-    size: "Dimensions on request",
-    image: "images/water-carrier.jpg",
-    featured: true,
-    subtitle: "An old Jew carrying his pails down a cobbled hill.",
-    story: [
-      "Down a steep cobbled street of an old European village, a bearded Jew balances two pails of water on a wooden yoke — a humble figure, painted with great affection.",
-      "The setting echoes the old-world lanes of England, where the artist grew up."
     ]
   },
   {
@@ -1252,20 +1218,6 @@ const PAINTINGS = [
     story: [
       "A single tree stands in an open green field, its trunk suggesting a human figure and its branches heavy with every kind of fruit — apples, grapes, figs and more.",
       "\"For man is a tree of the field\" — the New Year of the Trees."
-    ]
-  },
-  {
-    id: "the-voyage",
-    title: "The Voyage",
-    theme: "Judaic",
-    year: "2015",
-    medium: "Oil on canvas",
-    size: "Dimensions on request",
-    image: "images/the-voyage.jpg",
-    featured: false,
-    subtitle: "A sage and his students under full sail.",
-    story: [
-      "A wooden sailing boat glides across calm blue water, its white sails full, carrying an elder and three young students toward a green far shore."
     ]
   },
   {

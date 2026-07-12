@@ -84,7 +84,11 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 .grid.rtl{direction:rtl}
 .grid.rtl .card{direction:ltr}
 .card{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin:0 0 20px;text-align:center;cursor:pointer;display:block}
-.card .pic{background:#fff;padding:14px;box-shadow:0 24px 50px -34px rgba(0,0,0,.5);transition:transform .5s,box-shadow .5s}
+.card .pic{position:relative;background:#fff;padding:14px;box-shadow:0 24px 50px -34px rgba(0,0,0,.5);transition:transform .5s,box-shadow .5s}
+/* classy availability tag on a painting */
+.art-tag{position:absolute;top:20px;right:20px;z-index:3;font-family:var(--sans);font-size:.52rem;letter-spacing:.24em;text-transform:uppercase;padding:6px 11px;background:rgba(20,18,14,.82);border:1px solid rgba(198,164,95,.5);backdrop-filter:blur(2px)}
+.tag-sold{color:#d9cba9}
+.tag-sale{color:#e3b866}
 .card:hover .pic{transform:translateY(-5px);box-shadow:0 40px 70px -34px rgba(0,0,0,.55)}
 .card .pic .fr{position:relative;overflow:hidden;line-height:0}
 .card .pic .fr img{width:100%;height:auto;display:block;transition:transform .6s cubic-bezier(.2,.8,.2,1)}

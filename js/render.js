@@ -23,10 +23,15 @@ function initReveal(){
 function featuredList(){ const f=PAINTINGS.filter(p=>p.featured); return f.length?f:PAINTINGS; }
 
 /* one masonry card → links to its story page */
+function statusTag(p){
+  if(p.sold) return '<span class="art-tag tag-sold">Original Sold</span>';
+  if(p.forSale) return '<span class="art-tag tag-sale">Available</span>';
+  return '';
+}
 function cardHTML(p){
   const meta=p.year?`${p.theme} · ${p.year}`:p.theme;
   return `<a class="card reveal" href="painting.html?id=${encodeURIComponent(p.id)}">
-    <div class="pic"><span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
+    <div class="pic">${statusTag(p)}<span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
     <h3>${p.title}</h3><div class="meta">${meta}</div></a>`;
 }
 
@@ -79,7 +84,7 @@ function renderGallery(){
   /* these themes are hidden from "All" — each lives only under its own filter */
   const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin'];
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
-  const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
+  const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   const draw=(theme)=>{
     let list=theme==='All'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */
@@ -115,10 +120,11 @@ function renderDetail(){
         <div><span>Medium</span><b>${p.medium}</b></div>
         <div><span>Size</span><b>${p.size}</b></div>
         ${p.year?`<div><span>Year</span><b>${p.year}</b></div>`:''}
+        ${p.sold?`<div><span>Availability</span><b>Original sold · prints on request</b></div>`:(p.forSale?`<div><span>Availability</span><b>Original available for purchase</b></div>`:'')}
       </div>
       <div class="detail-story"><h4>The Story Behind It</h4>
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
-        <a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">Inquire About This Piece</a>
+        <a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>
       </div>
     </div>`;
 }
