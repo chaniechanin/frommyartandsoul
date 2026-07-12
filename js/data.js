@@ -170,7 +170,7 @@ const PAINTINGS = [
   },
   {
     id: "dayen-refson",
-    title: "Dayan Refson — Feter Yehuda",
+    title: "Feter Yehuda Refson",
     theme: "Sketches",
     year: "2021",
     medium: "Charcoal on paper",
@@ -286,7 +286,7 @@ const PAINTINGS = [
   },
   {
     id: "moshe-katzenelbogen",
-    title: "Fete Moshe Katzenelenbogen",
+    title: "Feter Moshe Katzenelenbogen",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on paper",
