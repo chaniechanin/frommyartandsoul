@@ -621,6 +621,53 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "lulav",
+    title: "Lulav — Praying in Unity",
+    theme: "Holidays",
+    year: "2019",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/lulav.jpg",
+    featured: false,
+    subtitle: "The four kinds, held together — our nation's unity.",
+    story: [
+      "Sukkos is a holiday of joy — and also a holiday of unity. The lulav, esrog, hadassim, and aravos that we hold together symbolize four kinds of Jews, in Torah knowledge and good deeds: one has a fragrance but no taste, another taste but no fragrance, one has both, and one has neither.",
+      "This painting symbolizes our nation's unity as we hold together onto the four kinds — praying and shaking in unity."
+    ]
+  },
+  {
+    id: "esther",
+    title: "Esther",
+    theme: "Judaic",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/esther.jpg",
+    featured: false,
+    sold: true,
+    subtitle: "A singer and songwriter, playing from her heart and soul.",
+    story: [
+      "Since I was a child, I've always loved music. In the past I've painted a man playing violin, King David, and Serach — granddaughter of Yaakov — playing the harp, but I had never painted a guitar.",
+      "This time I chose to paint a woman: a friend I've come to know over the past few years, a singer and songwriter who inspires me and so many others around the world, singing from her heart and soul. Her songs are written with deep emotion, carrying lessons of Torah and Chabad Chassidus, and the love for one another.",
+      "Esther, may you continue to bring so much color and joy into the world with your voice and your music — with much health and happiness, always."
+    ]
+  },
+  {
+    id: "leah",
+    title: "Leah",
+    theme: "Judaic",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/leah.jpg",
+    featured: false,
+    subtitle: "The fourth matriarch, whose tears changed her fate.",
+    story: [
+      "Leah was the fourth of our matriarchs. The Torah tells us that Leah's eyes were tender, while Rachel was beautiful and of lovely appearance (Bereishis 29:17).",
+      "Leah had heard people saying that Yitzchak's sons would marry the two daughters of Lavan — the older son to the older daughter, and the younger son to the younger. She discovered that the younger son, Yaakov, was a tzaddik, while the older, Esav, was a notorious wrongdoer. She wept so much at the thought of that fate that her eyes became tender and weak. She fasted and prayed — and so she was spared."
+    ]
+  },
+  {
     id: "the-dreidel",
     title: "The Dreidel",
     theme: "Holidays",
