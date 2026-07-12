@@ -17,6 +17,24 @@
 
 const PAINTINGS = [
   {
+    id: "yehoshua-raskin",
+    title: "My Zaida — Reb Yehoshua Raskin, OBM",
+    theme: "Sketches",
+    year: "",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/yehoshua-raskin.jpg?v=warm",
+    featured: false,
+    subtitle: "Head shochet, and a chossid forged in Soviet Russia.",
+    story: [
+      "\"My Zaida\" — R' Yehoshua Raskin, a'h. It's been over two months since the passing of my dear grandfather, and only this week did I finally sit down to sketch him. As I write these words, the tears build again. He was so dear to me; I cried so many tears the week he passed — the week before my son's bar mitzvah and my daughter's wedding. I truly thought my Zaida would live forever. A few years ago he had told my sister he hoped to live to see Moshiach, and I believed he would.",
+      "Zaida was born in Soviet communist Russia, into generations of Chabad chassidim. His childhood was hard — keeping Torah and mitzvos meant a life of true self-sacrifice. He studied in underground yeshivas until, at seventeen, he was caught by the KGB and jailed, then sentenced to five years of forced labor in Siberia. He was sent home after three and a half years, considered so close to death that they decided he should die at home.",
+      "His mother was the famous heroine known as Mumma Sara, who ran the operation of obtaining false Polish passports to help many Jews escape Russia — giving her own passport to Rebbetzin Chana, mother of the Lubavitcher Rebbe, so that she could escape. Sara was later caught, and died in prison of a heart attack.",
+      "When my Zaida reached London, he married my Bobba Bluma, and together they built a beautiful family. I was blessed to grow up so close to their home, with countless treasured memories of the grandparents they were to us. After my grandmother passed nearly fifteen years ago, my Zaida — strong and fiercely independent — cared for himself and his home: going to shul, to the stores, cooking his own meals. He was still working as head shochet of Kedassia just months before his passing — so down to earth, with a wonderful sense of humor.",
+      "It's still hard to believe he is gone. But when I gaze at this sketch, I imagine him looking at me with the same warmth and chassidishkeit he always gave me, and I hold on to the many blessings he showered on me. I'm certain he continues to look down on his children and grandchildren around the world, taking nachas as we follow in his footsteps — learning and spreading Torah and Chassidus, keeping the flame of Yiddishkeit alive. Zaida, I miss you dearly. I know you are still asking Hashem why Moshiach hasn't come yet — and may we be reunited with you very soon."
+    ]
+  },
+  {
     id: "yehoshua-gordon",
     title: "Rabbi Yehoshua B. Gordon, OBM",
     theme: "Sketches",
