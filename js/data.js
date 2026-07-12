@@ -23,7 +23,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/leibel-groner.jpg",
+    image: "images/leibel-groner.jpg?v=warm",
     featured: false,
     subtitle: "The man who stood beside the Rebbe.",
     story: [
@@ -40,7 +40,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/chaim-bentzion-raskin.jpg",
+    image: "images/chaim-bentzion-raskin.jpg?v=warm",
     featured: false,
     subtitle: "The chossid near Moscow who poured out tears for his children's future.",
     story: [
@@ -57,7 +57,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/rabbi-schwei.jpg",
+    image: "images/rabbi-schwei.jpg?v=warm",
     featured: false,
     subtitle: "A Rav on the Beis Din — and, to me, my personal Rav.",
     story: [
@@ -74,7 +74,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/dayen-refson.jpg",
+    image: "images/dayen-refson.jpg?v=warm",
     featured: false,
     subtitle: "My uncle — always a happy, smiling hello.",
     story: [
@@ -90,7 +90,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/rebbe-lag-baomer.jpg",
+    image: "images/rebbe-lag-baomer.jpg?v=warm",
     featured: false,
     subtitle: "A day of Jewish pride and unity.",
     story: [
@@ -107,7 +107,7 @@ const PAINTINGS = [
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/yudi-dukes.jpg",
+    image: "images/yudi-dukes.jpg?v=warm",
     featured: false,
     subtitle: "Yudi, smiling.",
     story: [
@@ -124,7 +124,7 @@ const PAINTINGS = [
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/bobba-bluma.jpg",
+    image: "images/bobba-bluma.jpg?v=warm",
     featured: false,
     subtitle: "A flower that blossomed again after the war.",
     story: [
@@ -140,7 +140,7 @@ const PAINTINGS = [
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/michoel-katzenelenbogen.jpg",
+    image: "images/michoel-katzenelenbogen.jpg?v=warm",
     featured: false,
     subtitle: "My great-grandfather, who gave his life for his faith.",
     story: [
@@ -157,7 +157,7 @@ const PAINTINGS = [
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/shlomo-mansour.jpg",
+    image: "images/shlomo-mansour.jpg?v=warm",
     featured: false,
     subtitle: "His name, Shlomo, means peace.",
     story: [
@@ -173,7 +173,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/baila-stillerman.jpg",
+    image: "images/baila-stillerman.jpg?v=warm",
     featured: false,
     subtitle: "My dear grandmother — one of the roots of who I am.",
     story: [
@@ -190,7 +190,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/moshe-katzenelbogen.jpg",
+    image: "images/moshe-katzenelbogen.jpg?v=warm",
     featured: false,
     subtitle: "My great-uncle — always happy and smiling, through everything.",
     story: [
@@ -208,7 +208,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/agam-berger.jpg",
+    image: "images/agam-berger.jpg?v=warm",
     featured: false,
     subtitle: "A charcoal portrait of Agam Berger — home now, after so many prayers.",
     story: [
@@ -225,7 +225,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
-    image: "images/moshe-kotlarsky.jpg",
+    image: "images/moshe-kotlarsky.jpg?v=warm",
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
@@ -239,7 +239,7 @@ const PAINTINGS = [
     year: "",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/nimrod-cohen.jpg",
+    image: "images/nimrod-cohen.jpg?v=warm",
     featured: false,
     subtitle: "A charcoal portrait of Nimrod, held hostage in Gaza — now home.",
     story: [
@@ -255,7 +255,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
-    image: "images/gita-gansburg.jpg",
+    image: "images/gita-gansburg.jpg?v=warm",
     featured: false,
     subtitle: "Savta — dorm mother of Machon Chana for 38 years.",
     story: [
@@ -789,7 +789,7 @@ const PAINTINGS = [
     year: "",
     medium: "Charcoal on paper",
     size: "16 × 20 in",
-    image: "images/kos-shel-bracha.jpg",
+    image: "images/kos-shel-bracha.jpg?v=warm",
     featured: false,
     subtitle: "A special moment with the Rebbe.",
     story: [
