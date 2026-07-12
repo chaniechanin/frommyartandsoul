@@ -372,7 +372,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/reb-levik.jpg",
+    image: "images/reb-levik.jpg?v=warm",
     featured: false,
     subtitle: "Father of the Rebbe — imprisoned and exiled for his defiance.",
     story: [
@@ -389,7 +389,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/rebbe-i-miss-you.jpg",
+    image: "images/rebbe-i-miss-you.jpg?v=warm",
     featured: false,
     subtitle: "Gimmel Tammuz — bringing the Rebbe alive on canvas.",
     story: [
@@ -406,7 +406,7 @@ const PAINTINGS = [
     year: "2017",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/tzemach-tzedek.jpg",
+    image: "images/tzemach-tzedek.jpg?v=warm",
     featured: false,
     subtitle: "The third Chabad Rebbe — and the mother who gave her life for him.",
     story: [
@@ -423,7 +423,7 @@ const PAINTINGS = [
     year: "2016",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/rebbe-rashab.jpg",
+    image: "images/rebbe-rashab.jpg?v=warm",
     featured: false,
     subtitle: "Rabbi Sholom Dov Ber, the fifth Chabad Rebbe.",
     story: [
@@ -437,7 +437,7 @@ const PAINTINGS = [
     year: "",
     medium: "Oil on canvas",
     size: "18 × 24 in",
-    image: "images/rebbetzin-chana-v2.jpg",
+    image: "images/rebbetzin-chana-v2.jpg?v=warm",
     featured: false,
     subtitle: "Rebbetzin Chana, mother of the Lubavitcher Rebbe.",
     story: [
