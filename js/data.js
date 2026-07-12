@@ -506,6 +506,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rebbe-rayatz-gani",
+    title: "The Rebbe Rayatz — Basi LeGani",
+    theme: "Rebbe & Rebbetzin",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/rebbe-rayatz-gani.jpg?v=bw2",
+    featured: false,
+    subtitle: "Yud Shevat — the seventh generation.",
+    story: [
+      "As we prepare for Yud Shevat — which is tonight — the yahrtzeit of the Previous Rebbe and the day the Lubavitcher Rebbe accepted the leadership, I share with you these special paintings.",
+      "The chassidic discourse \"Basi LeGani\" was written by the sixth Chabad Rebbe and elaborated upon by the Rebbe. We are the seventh generation — as Moshe was the seventh too: he led the Jewish nation out of the Egyptian exile, and through him we received the Torah at Mount Sinai, the wedding with G-d.",
+      "So it will be in our generation, when G-d will reunite with His bride — His chosen nation, His beloved — and bring us into His garden, where His light will forever shine."
+    ]
+  },
+  {
     id: "rebbe-rayatz",
     title: "The Rebbe Rayatz — The Previous Rebbe",
     theme: "Rebbe & Rebbetzin",
