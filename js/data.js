@@ -602,6 +602,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "mother-rochel",
+    title: "Mother Rochel",
+    theme: "Judaic",
+    year: "2024",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/mother-rochel.jpg",
+    featured: false,
+    subtitle: "Kever Rochel — the resting place of our mother Rachel.",
+    story: [
+      "Fresh on the easel — just signed tonight. My mind, heart, and soul have been with Rochel Imeinu these past couple of days.",
+      "Shabbos was the yahrtzeit of our mother Rochel. Motzei Shabbos I sketched her kever to teach my middle-school art students. Sunday night, watching Ten Yad, part of the evening was dedicated to Rochel, including a medley of \"Kol B'Ramah.\" Today I was featured on the zoom for \"Women United for Geulah,\" in tribute to Rochel. And at the end of the week, G-d willing, I'll be performing \"Jewish Women Through the Ages\" for the \"A TIME\" organization, and painting Kever Rochel.",
+      "It's time for Mama Rochel's tears of joy!"
+    ]
+  },
+  {
     id: "the-sun-did-not-set",
     title: "The Sun Did Not Set",
     theme: "Judaic",
