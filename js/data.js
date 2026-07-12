@@ -621,6 +621,26 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-holy-temple",
+    title: "Our Holy Temple",
+    theme: "Judaic",
+    year: "2022",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/the-holy-temple.jpg",
+    featured: false,
+    subtitle: "The third Beis Hamikdash, in all its glory.",
+    story: [
+      "The sun sets, the fast of Tisha B'Av begins —<br>marks the day our holy Temples were destroyed for our sins.",
+      "Tears flow from my eyes as I think of the pain of the past,<br>and the tragedies befalling our nation — how long will it last?",
+      "We stand a nation strong, united together,<br>yearning for peace and harmony that will last forever.",
+      "Each post, each story I see from our holy land,<br>I dream to touch the stones, to walk in its sand.",
+      "In Yerushalayim, the holiest city, I crave to be —<br>the third Beis Hamikdash, with all its glory, I want to see.",
+      "Our ancestors of biblical times we look forward to meet,<br>and loved ones we cannot wait to greet.",
+      "Hashem, it's been almost 2,000 years —<br>please redeem us, and wipe away our tears."
+    ]
+  },
+  {
     id: "summer-day",
     title: "Summer Day",
     theme: "Nature",
