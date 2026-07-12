@@ -236,7 +236,7 @@ const PAINTINGS = [
   },
   {
     id: "michoel-katzenelenbogen",
-    title: "Reb Michoel Katzenelenbogen, Hy”d",
+    title: "Reb Michoel Katzenelenbogen, HY”D",
     theme: "Sketches",
     year: "2023",
     medium: "Charcoal on paper",
@@ -253,7 +253,7 @@ const PAINTINGS = [
   },
   {
     id: "shlomo-mansour",
-    title: "Shlomo Mansour, Hy”d",
+    title: "Shlomo Mansour, HY”D",
     theme: "Sketches",
     year: "2023",
     medium: "Charcoal on paper",
