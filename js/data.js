@@ -621,6 +621,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-beach",
+    title: "The Beach",
+    theme: "Landscapes",
+    year: "2015",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/the-beach.jpg",
+    featured: false,
+    subtitle: "The ocean's waves — G-dliness, and the wonders of creation.",
+    story: [
+      "This week my children finished school, and many others will soon begin their summer vacation.",
+      "The beach is one of my favorite places to be in the summer — a place to just relax. I feel G-dliness simply watching the ocean's waves, as I think of all the wonders He created.",
+      "When Moshiach comes, Divine wisdom will shine through every aspect of the world. In the words of the prophet, \"The entire world will be filled with the knowledge of G-d, as the waters cover the ocean.\" May we merit to see the Redemption.",
+      "Wishing you a relaxed, peaceful Shabbos, and a healthy summer."
+    ]
+  },
+  {
     id: "saras-music",
     title: "Sara's Music",
     theme: "Judaic",
@@ -1019,7 +1036,7 @@ const PAINTINGS = [
   {
     id: "walls-of-jerusalem",
     title: "The Walls of Jerusalem",
-    theme: "Landscapes",
+    theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
     size: "Dimensions on request",
@@ -1205,7 +1222,7 @@ const PAINTINGS = [
   {
     id: "tzfat-walkway",
     title: "An Alley in Tzfat",
-    theme: "Landscapes",
+    theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
     size: "Dimensions on request",
