@@ -17,9 +17,25 @@
 
 const PAINTINGS = [
   {
+    id: "reb-levik-portrait",
+    title: "Rabbi Levi Yitzchak Schneerson",
+    theme: "Portraits",
+    year: "",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/reb-levik-portrait.jpg?v=warm",
+    featured: false,
+    subtitle: "Reb Levik, father of the Rebbe.",
+    story: [
+      "Many of my paintings are created on a special day in the chassidishe calendar. When I want to paint the portrait of a tzaddik, a holy figure, I feel I have to connect spiritually first. This past week, the 20th of Av, was the yahrtzeit of Reb Levik — Rabbi Levi Yitzchak Schneerson, father of the Rebbe.",
+      "In 1939, Reb Levik was arrested by the communist regime for his fearless stand against the Party's efforts to eradicate Jewish learning and practice in the Soviet Union — and in particular for distributing matzah to the Jews of Yekaterinoslav. After more than a year of torture and interrogation in Stalin's prisons, he was sentenced to exile in the remote village of Chiali, in Kazakhstan.",
+      "Shortly before his passing, he was able to move to Almaty, where he was warmly welcomed by the small Lubavitcher community. There he passed away on the 20th of Av, 5704."
+    ]
+  },
+  {
     id: "rebbe-age-two",
     title: "The Rebbe at Age Two",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2010",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -35,7 +51,7 @@ const PAINTINGS = [
   {
     id: "sara-katzenelbogen",
     title: "Bobba Sara Katzenelenbogen",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2018",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -51,7 +67,7 @@ const PAINTINGS = [
   {
     id: "zelda-katzenelbogen",
     title: "Aunty Zelda Katzenelenbogen",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2017",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -68,7 +84,7 @@ const PAINTINGS = [
   {
     id: "shimon-stillerman",
     title: "Zaida Shimon Stillerman",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -86,7 +102,7 @@ const PAINTINGS = [
   {
     id: "yehoshua-raskin",
     title: "Zaida Yehoshua Raskin",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -104,7 +120,7 @@ const PAINTINGS = [
   {
     id: "yehoshua-gordon",
     title: "Rabbi Yehoshua B. Gordon",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -120,7 +136,7 @@ const PAINTINGS = [
   {
     id: "leibel-groner",
     title: "Rabbi Leibel Groner",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -137,7 +153,7 @@ const PAINTINGS = [
   {
     id: "chaim-bentzion-raskin",
     title: "Zaida Bentzion Raskin",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -154,7 +170,7 @@ const PAINTINGS = [
   {
     id: "rabbi-schwei",
     title: "Rabbi Schwei",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -171,7 +187,7 @@ const PAINTINGS = [
   {
     id: "dayen-refson",
     title: "Feter Yehuda Refson",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -187,7 +203,7 @@ const PAINTINGS = [
   {
     id: "rebbe-lag-baomer",
     title: "The Rebbe — Lag BaOmer",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -204,7 +220,7 @@ const PAINTINGS = [
   {
     id: "yudi-dukes",
     title: "Rabbi Yudi Dukes",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -221,7 +237,7 @@ const PAINTINGS = [
   {
     id: "bobba-bluma",
     title: "Bobba Bluma Raskin",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -237,7 +253,7 @@ const PAINTINGS = [
   {
     id: "michoel-katzenelenbogen",
     title: "Zaida Michoel Katzenelenbogen, HY”D",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -254,7 +270,7 @@ const PAINTINGS = [
   {
     id: "shlomo-mansour",
     title: "Shlomo Mansour, HY”D",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -270,7 +286,7 @@ const PAINTINGS = [
   {
     id: "baila-stillerman",
     title: "Bobba Baila Stillerman",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -287,7 +303,7 @@ const PAINTINGS = [
   {
     id: "moshe-katzenelbogen",
     title: "Feter Moshe Katzenelenbogen",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -305,7 +321,7 @@ const PAINTINGS = [
   {
     id: "agam-berger",
     title: "Agam Berger",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -322,7 +338,7 @@ const PAINTINGS = [
   {
     id: "moshe-kotlarsky",
     title: "Rabbi Moshe Kotlarsky",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
@@ -336,7 +352,7 @@ const PAINTINGS = [
   {
     id: "nimrod-cohen",
     title: "Nimrod Cohen",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2025",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
@@ -352,7 +368,7 @@ const PAINTINGS = [
   {
     id: "gita-gansburg",
     title: "Savta Gita Gansburg",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
@@ -431,6 +447,70 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rebbetzin-chaya-mushka",
+    title: "Rebbetzin Chaya Mushka",
+    theme: "Rebbe & Rebbetzin",
+    year: "2015",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/rebbetzin-chaya-mushka.jpg?v=warm",
+    featured: false,
+    subtitle: "Our beloved queen — a true beauty of royalty.",
+    story: [
+      "Tonight is the 28th anniversary of the passing of Rebbetzin Chaya Mushka Schneerson.",
+      "Rebbetzin Chaya Mushka, our beloved queen,<br>whoever met her, her royalness was seen.<br>She possessed a true beauty of royalty,<br>she dressed and behaved with modesty.<br>A dedicated wife to the Rebbe, our king,<br>with support in His work in everything.<br>She was always focused in the present time;<br>in her company she would make you shine.<br>As her children, from her example we learn —<br>with the coming of Moshiach, our Rebbetzin will return!"
+    ]
+  },
+  {
+    id: "royal-tea",
+    title: "The Royal Tea",
+    theme: "Rebbe & Rebbetzin",
+    year: "2019",
+    medium: "Oil on canvas",
+    size: "36 × 48 in",
+    image: "images/royal-tea.jpg?v=warm",
+    featured: false,
+    subtitle: "Four Chabad Rebbetzins — true examples of royalty — sit together for tea.",
+    story: [
+      "Four Chabad Rebbetzins, each a true example of royalty, sit together for tea.",
+      "From left to right: Rebbetzin Shterna Sara (wife of the Rebbe Rashab, the fifth Chabad Rebbe); her daughter-in-law, Rebbetzin Nechama Dina (wife of the Previous Lubavitcher Rebbe); her daughter, Rebbetzin Chaya Mushka (wife of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson); and her mother-in-law, Rebbetzin Chana (mother of the Lubavitcher Rebbe)."
+    ]
+  },
+  {
+    id: "rebbe-rayatz",
+    title: "The Rebbe Rayatz — The Previous Rebbe",
+    theme: "Rebbe & Rebbetzin",
+    year: "2019",
+    medium: "Oil on canvas",
+    size: "24 × 36 in",
+    image: "images/rebbe-rayatz.jpg?v=warm",
+    featured: false,
+    subtitle: "The Previous Chabad Rebbe, deep in thought.",
+    story: [
+      "Over the years my paintings have been of so many different kinds. When people ask how many hours I spend on a painting, I say I don't really count — some take four hours, while others take thirty or forty, worked slowly over weeks, months, and sometimes across a whole year.",
+      "It's the paintings of a Rebbe or Rebbetzin that take the most hours of intense, focused, connected work; for those, I have to be spiritually connected as I paint. So I work on them on a chassidishe Yom Tov — a special day on the Jewish calendar connected to the Rebbe or Rebbetzin — sitting in my small studio, listening to a chassidic niggun as I paint.",
+      "Yesterday, on the yahrtzeit of the Previous Chabad Rebbe, I had the chance to continue this painting, which I began last year on the very same date. Today I share the finished, signed painting — \"The Previous Chabad Rebbe.\""
+    ]
+  },
+  {
+    id: "rebbetzin-chana-dinner",
+    title: "Rebbetzin Chana at Dinner",
+    theme: "Rebbe & Rebbetzin",
+    year: "2016",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/rebbetzin-chana-dinner.jpg?v=warm",
+    featured: false,
+    subtitle: "Rebbetzin Chana listens as Golda Schwei speaks at a Nshei Chabad convention.",
+    story: [
+      "Tonight is the second yahrtzeit of Rebbetzin Golda Schwei. In this painting, Rebbetzin Chana smiles with pleasure as she listens to a speech delivered by Golda Schwei at a Nshei Chabad convention.",
+      "Thirty days after Rebbetzin Golda's passing — my husband's aunt, and older sister to my father-in-law — I began this painting. I first met her while studying at BCM seminary in Montreal; she was the wife of the late R' Yitzchak Schwei, Rav and Av Beis Din of Lubavitch Montreal. She would host chassidishe farbrengens in her home, where we students came to hear heartwarming stories and sing niggunim. Even then she made a strong impression on me — a warm chassidic woman of charm and dignity.",
+      "A couple of years later I married into the Chanin family, and she became my aunt. That is when I grew closer to her and saw her inner beauty as a true aishes chayil — a role model, an example of \"kol kevudah bas melech penimah.\" Rebbetzin Golda had the merit to spend much quality time with Rebbetzin Chana, mother of the Rebbe. They first met after the war, in the refugee camp in Pocking. As told by her sister, Mrs. Sara Katzman, Rebbetzin Chana would join them for the Shabbos meals at their parents' home — and when she walked in, she brought holiness and refinement with her royalty.",
+      "I'm sure that being in Rebbetzin Chana's presence gave Rebbetzin Schwei some of her own royal bearing. Even walking down the street, you would notice how regally she carried herself — each step like a true queen — dressed with true modesty yet refined style, her actions measured, her speech softly spoken. She was a woman to look up to, not only for her outward grace but for her kindness within.",
+      "This painting is available for purchase — please inquire."
+    ]
+  },
+  {
     id: "rebbetzin-channah",
     title: "Rebbetzin Chana",
     theme: "Rebbe & Rebbetzin",
@@ -481,7 +561,7 @@ const PAINTINGS = [
   },
   {
     id: "kotel-in-color",
-    title: "The Kosel in Color",
+    title: "The Kotel in Color",
     theme: "Judaic",
     year: "2018",
     medium: "Oil on canvas",
@@ -515,13 +595,13 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "the-kosel",
-    title: "The Kosel — The Western Wall",
+    id: "the-kotel",
+    title: "The Kotel — The Western Wall",
     theme: "Judaic",
     year: "",
     medium: "Oil on canvas",
     size: "24 × 36 in",
-    image: "images/the-kosel.jpg",
+    image: "images/the-kotel.jpg",
     featured: true,
     subtitle: "The Western Wall, in radiant color.",
     story: [
@@ -951,7 +1031,7 @@ const PAINTINGS = [
   {
     id: "kos-shel-bracha",
     title: "Kos Shel Bracha",
-    theme: "Sketches",
+    theme: "Portraits",
     year: "2024",
     medium: "Charcoal on paper",
     size: "16 × 20 in",
