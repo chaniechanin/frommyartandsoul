@@ -90,7 +90,7 @@ function renderGallery(){
     if(theme==='Rebbe & Rebbetzin') list=list.slice().sort((a,b)=>{const ia=REBBE_ORDER.indexOf(a.id),ib=REBBE_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
     /* Holidays follow the Jewish calendar cycle */
     if(theme==='Holidays') list=list.slice().sort((a,b)=>{const ia=HOLIDAY_ORDER.indexOf(a.id),ib=HOLIDAY_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
-    grid.classList.toggle('rows',theme==='Portraits'||theme==='Rebbe & Rebbetzin');
+    grid.classList.toggle('rows',theme==='Portraits'||theme==='Rebbe & Rebbetzin'||theme==='Holidays');
     grid.classList.toggle('rtl',theme==='Rebbe & Rebbetzin');
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
