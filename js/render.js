@@ -23,15 +23,11 @@ function initReveal(){
 function featuredList(){ const f=PAINTINGS.filter(p=>p.featured); return f.length?f:PAINTINGS; }
 
 /* one masonry card → links to its story page */
-function statusTag(p){
-  if(p.sold) return '<span class="art-tag tag-sold">Original Not Available</span>';
-  return '';
-}
 function cardHTML(p){
   const meta=p.year?`${p.theme} · ${p.year}`:p.theme;
   return `<a class="card reveal" href="painting.html?id=${encodeURIComponent(p.id)}">
-    <div class="pic">${statusTag(p)}<span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
-    <h3>${p.title}</h3><div class="meta">${meta}</div></a>`;
+    <div class="pic"><span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
+    <h3>${p.title}</h3><div class="meta">${meta}</div>${p.sold?'<div class="unavail">Original Not Available</div>':''}</a>`;
 }
 
 /* home: framed hero painting — the first thing seen on the site */
