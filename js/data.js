@@ -34,7 +34,7 @@ const PAINTINGS = [
   },
   {
     id: "sara-katzenelbogen",
-    title: "Mumma Sara Katzenelbogen",
+    title: "Mumma Sara Katzenelenbogen",
     theme: "Sketches",
     year: "2018",
     medium: "Charcoal on paper",
@@ -43,14 +43,14 @@ const PAINTINGS = [
     featured: false,
     subtitle: "The heroine who helped many escape the Soviet Union.",
     story: [
-      "A sketch of my great-grandmother. This past Sunday, the 9th of Nissan, was the 66th yahrtzeit of my great-grandmother, Bobba Sara Katzenelbogen — known to many, especially among Chabad chassidim, as Mumma (Aunt) Sara.",
+      "A sketch of my great-grandmother. This past Sunday, the 9th of Nissan, was the 66th yahrtzeit of my great-grandmother, Bobba Sara Katzenelenbogen — known to many, especially among Chabad chassidim, as Mumma (Aunt) Sara.",
       "She lived a life of self-sacrifice in communist Russia, staying strong in her Jewish traditions while helping many escape the Soviet Union. It was in her merit that Rebbetzin Chana, mother of the Lubavitcher Rebbe, was able to escape Russia — with the last Polish documents Sara had, which she gave over to her.",
       "My great-grandmother later died of a heart attack while in prison, after being arrested for her \"illegal\" activities. She left behind many descendants around the world, who continue in her footsteps — helping others and staying strong in their Jewish faith."
     ]
   },
   {
     id: "zelda-katzenelbogen",
-    title: "Aunty Zelda Katzenelbogen",
+    title: "Aunty Zelda Katzenelenbogen",
     theme: "Sketches",
     year: "2017",
     medium: "Charcoal on paper",
@@ -286,7 +286,7 @@ const PAINTINGS = [
   },
   {
     id: "moshe-katzenelbogen",
-    title: "Fete Moshe Katzenelbogen, a”h",
+    title: "Fete Moshe Katzenelenbogen, a”h",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on paper",
@@ -295,7 +295,7 @@ const PAINTINGS = [
     featured: false,
     subtitle: "My great-uncle — always happy and smiling, through everything.",
     story: [
-      "Today, the 8th of Elul, was the tenth yahrtzeit of my great-uncle Moshe Katzenelbogen, younger brother to my grandfather.",
+      "Today, the 8th of Elul, was the tenth yahrtzeit of my great-uncle Moshe Katzenelenbogen, younger brother to my grandfather.",
       "Fete (uncle in Yiddish) Moshe was very dear to me — he lived near my childhood home in London, and I spent many happy hours at his house with his wife, Aunty Zelda, and their beautiful children. He would so often offer, in his strong Russian accent, \"You want a cup of tea?\"",
       "Born and raised in communist Russia, he was a true Chabad Chossid, with real self-sacrifice in keeping Torah and mitzvos. He spent many years in the Soviet prisons and labor camps for his work helping fellow Jews, until he finally received a visa to leave Russia in 1971.",
       "Though he lived through so much suffering, I remember him always happy and smiling. He built a warm, beautiful home full of Torah and Yiddishkeit. I'm sure he is smiling now, seeing the chassidishe nachas his children bring him. May we meet again very soon, with the coming of Moshiach.",
