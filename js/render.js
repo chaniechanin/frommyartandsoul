@@ -78,7 +78,9 @@ function renderGallery(){
   const filters=document.getElementById('gallery-filters');
   const draw=(theme)=>{
     /* "All" hides Sketches — they live only under their own filter */
-    const list=theme==='All'?PAINTINGS.filter(p=>p.theme!=='Sketches'):PAINTINGS.filter(p=>p.theme===theme);
+    let list=theme==='All'?PAINTINGS.filter(p=>p.theme!=='Sketches'):PAINTINGS.filter(p=>p.theme===theme);
+    /* Sketches are shown newest → oldest by the year they were drawn */
+    if(theme==='Sketches') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
   };
