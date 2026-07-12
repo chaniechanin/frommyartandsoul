@@ -67,7 +67,7 @@ const PAINTINGS = [
   },
   {
     id: "shimon-stillerman",
-    title: "R’ Shimon Stillerman",
+    title: "Zaida Shimon Stillerman",
     theme: "Sketches",
     year: "2020",
     medium: "Charcoal on paper",
