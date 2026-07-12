@@ -588,6 +588,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-sun-did-not-set",
+    title: "The Sun Did Not Set",
+    theme: "Judaic",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/the-sun-did-not-set.jpg",
+    featured: false,
+    subtitle: "Yehoshua Bin Nun halts the sun — and the Rebbe's light that never sets.",
+    story: [
+      "On the third of Tammuz in the year 2488 from creation (1273 BCE), Yehoshua Bin Nun was leading the Jewish people in one of the battles to conquer the Land of Israel. They fought the entire day; victory was near, but darkness was about to fall — and with many enemies still at large, nightfall would give them a chance to escape.",
+      "So Yehoshua uttered the famous words: \"Sun, stand still over Giveon; and moon, over the Valley of Ayalon — until the nation avenges itself of its enemies.\" Sure enough, the sun stayed put, and the Jewish nation won the war. This day of Gimmel Tammuz is forever remembered as the historic day that the sun did not set.",
+      "It has now been 30 years since the Yehoshua Bin Nun of our generation — the Rebbe — has been hidden from our eyes. On this day we must remember that the sun did not set: the miracle of the Rebbe is shining bright, and darkness will not fall. May we very speedily merit to see our dear Rebbe again, when the sun will forever shine. Let it be today, let it be now!"
+    ]
+  },
+  {
     id: "miriam-at-the-sea",
     title: "Miriam at the Sea",
     theme: "Judaic",
