@@ -766,6 +766,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "happy-purim",
+    title: "Happy Purim",
+    theme: "Holidays",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/happy-purim.jpg",
+    featured: false,
+    subtitle: "Two little masqueraders — a day of joy and celebration.",
+    story: [
+      "Two little masqueraders in their Purim costumes — a day of joy, laughter, and celebration.",
+      "Happy Purim!"
+    ]
+  },
+  {
     id: "the-dreidel",
     title: "The Dreidel",
     theme: "Holidays",

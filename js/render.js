@@ -84,12 +84,16 @@ function renderGallery(){
   const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin'];
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
+  /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
+  const HOLIDAY_ORDER=['shofar','sound-of-the-shofar','lulav','torah-is-life','menorah-public','the-dreidel','tu-bshvat','seven-species','happy-purim','four-cups','lag-baomer'];
   const draw=(theme)=>{
     let list=theme==='All'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */
     if(theme==='Portraits') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
     /* Rebbe & Rebbetzin follows the fixed REBBE_ORDER */
     if(theme==='Rebbe & Rebbetzin') list=list.slice().sort((a,b)=>{const ia=REBBE_ORDER.indexOf(a.id),ib=REBBE_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
+    /* Holidays follow the Jewish calendar cycle */
+    if(theme==='Holidays') list=list.slice().sort((a,b)=>{const ia=HOLIDAY_ORDER.indexOf(a.id),ib=HOLIDAY_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
     grid.classList.toggle('rows',theme==='Portraits'||theme==='Rebbe & Rebbetzin');
     grid.classList.toggle('rtl',theme==='Rebbe & Rebbetzin');
     grid.innerHTML=list.map(cardHTML).join('');
