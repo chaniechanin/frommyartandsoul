@@ -343,6 +343,7 @@ const PAINTINGS = [
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
     image: "images/moshe-kotlarsky.jpg?v=bw2",
+    sold: true,
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
@@ -406,6 +407,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/rebbe-blue-eyes.jpg",
+    sold: true,
     featured: false,
     subtitle: "The Lubavitcher Rebbe — his eyes, piercing and alive.",
     story: [
