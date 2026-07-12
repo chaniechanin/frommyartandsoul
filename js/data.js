@@ -94,7 +94,7 @@ const PAINTINGS = [
     featured: false,
     subtitle: "Head shochet, and a chossid forged in Soviet Russia.",
     story: [
-      "\"My Zaida\" — R' Yehoshua Raskin, a'h. It's been over two months since the passing of my dear grandfather, and only this week did I finally sit down to sketch him. As I write these words, the tears build again. He was so dear to me; I cried so many tears the week he passed — the week before my son's bar mitzvah and my daughter's wedding. I truly thought my Zaida would live forever. A few years ago he had told my sister he hoped to live to see Moshiach, and I believed he would.",
+      "\"My Zaida\" — R' Yehoshua Raskin. It's been over two months since the passing of my dear grandfather, and only this week did I finally sit down to sketch him. As I write these words, the tears build again. He was so dear to me; I cried so many tears the week he passed — the week before my son's bar mitzvah and my daughter's wedding. I truly thought my Zaida would live forever. A few years ago he had told my sister he hoped to live to see Moshiach, and I believed he would.",
       "Zaida was born in Soviet communist Russia, into generations of Chabad chassidim. His childhood was hard — keeping Torah and mitzvos meant a life of true self-sacrifice. He studied in underground yeshivas until, at seventeen, he was caught by the KGB and jailed, then sentenced to five years of forced labor in Siberia. He was sent home after three and a half years, considered so close to death that they decided he should die at home.",
       "His mother was the famous heroine known as Mumma Sara, who ran the operation of obtaining false Polish passports to help many Jews escape Russia — giving her own passport to Rebbetzin Chana, mother of the Lubavitcher Rebbe, so that she could escape. Sara was later caught, and died in prison of a heart attack.",
       "When my Zaida reached London, he married my Bobba Bluma, and together they built a beautiful family. I was blessed to grow up so close to their home, with countless treasured memories of the grandparents they were to us. After my grandmother passed nearly fifteen years ago, my Zaida — strong and fiercely independent — cared for himself and his home: going to shul, to the stores, cooking his own meals. He was still working as head shochet of Kedassia just months before his passing — so down to earth, with a wonderful sense of humor.",
@@ -103,7 +103,7 @@ const PAINTINGS = [
   },
   {
     id: "yehoshua-gordon",
-    title: "Rabbi Yehoshua B. Gordon, OBM",
+    title: "Rabbi Yehoshua B. Gordon",
     theme: "Sketches",
     year: "2020",
     medium: "Charcoal on paper",
@@ -112,7 +112,7 @@ const PAINTINGS = [
     featured: false,
     subtitle: "The teacher whose shiurim brought Chitas to life.",
     story: [
-      "I sketched this portrait of Rabbi Yehoshua B. Gordon, a’h, of blessed memory, while listening to his classes.",
+      "I sketched this portrait of Rabbi Yehoshua B. Gordon, of blessed memory, while listening to his classes.",
       "Over the past year I've been learning the daily portion of Chumash and Tanya through his shiurim — making my commitment to Chitas (the daily portion of Chumash, Tehillim, and Tanya) so much more meaningful and enjoyable.",
       "I'm sure many of you can relate and have heard his classes; and if you haven't, check them out on @chabadorg — you will be inspired."
     ]
@@ -203,7 +203,7 @@ const PAINTINGS = [
   },
   {
     id: "yudi-dukes",
-    title: "Rabbi Yudi Dukes, OBM",
+    title: "Rabbi Yudi Dukes",
     theme: "Sketches",
     year: "2022",
     medium: "Charcoal on paper",
@@ -269,7 +269,7 @@ const PAINTINGS = [
   },
   {
     id: "baila-stillerman",
-    title: "Bobba Baila Stillerman, a”h",
+    title: "Bobba Baila Stillerman",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on paper",
@@ -286,7 +286,7 @@ const PAINTINGS = [
   },
   {
     id: "moshe-katzenelbogen",
-    title: "Fete Moshe Katzenelenbogen, a”h",
+    title: "Fete Moshe Katzenelenbogen",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on paper",
@@ -321,7 +321,7 @@ const PAINTINGS = [
   },
   {
     id: "moshe-kotlarsky",
-    title: "Rabbi Moshe Kotlarsky, OBM",
+    title: "Rabbi Moshe Kotlarsky",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on Bristol paper",
@@ -330,7 +330,7 @@ const PAINTINGS = [
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
-      "This week I chose to draw Rabbi Moshe Kotlarsky, OBM, as Shluchim from around the world come to Crown Heights for their yearly Conference."
+      "This week I chose to draw Rabbi Moshe Kotlarsky, as Shluchim from around the world come to Crown Heights for their yearly Conference."
     ]
   },
   {
@@ -351,7 +351,7 @@ const PAINTINGS = [
   },
   {
     id: "gita-gansburg",
-    title: "Mrs. Gita Gansburg, a”h",
+    title: "Mrs. Gita Gansburg",
     theme: "Sketches",
     year: "2024",
     medium: "Charcoal on Bristol paper",
