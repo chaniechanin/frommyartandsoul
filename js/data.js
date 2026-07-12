@@ -17,6 +17,22 @@
 
 const PAINTINGS = [
   {
+    id: "bobba-bluma",
+    title: "Bobba Bluma",
+    theme: "Sketches",
+    year: "2022",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/bobba-bluma.jpg",
+    featured: false,
+    subtitle: "A flower that blossomed again after the war.",
+    story: [
+      "My grandmother was an Auschwitz survivor, who lived through the horrors of the Holocaust.",
+      "Her name, Bluma — Yiddish for flower — blossomed once again after the war, when she came to England and started a family together with my grandfather, raising their children in a chassidishe environment of Torah and mitzvos.",
+      "It was a packed house the evening I entertained the women with my art, through story and song."
+    ]
+  },
+  {
     id: "michoel-katzenelenbogen",
     title: "Reb Michoel Katzenelenbogen, Hy”d",
     theme: "Sketches",
