@@ -69,7 +69,7 @@ const PAINTINGS = [
   {
     id: "rebbe-lag-baomer",
     title: "The Rebbe — Lag BaOmer",
-    theme: "Rebbe & Rebbetzin",
+    theme: "Sketches",
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
