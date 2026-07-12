@@ -17,6 +17,55 @@
 
 const PAINTINGS = [
   {
+    id: "rebbe-age-two",
+    title: "The Rebbe at Age Two",
+    theme: "Sketches",
+    year: "2010",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/rebbe-age-two.jpg?v=warm",
+    featured: false,
+    subtitle: "The Lubavitcher Rebbe as a child of two.",
+    story: [
+      "Today was the Lubavitcher Rebbe's 116th birthday. He was born on the 11th day of the Hebrew month of Nissan, in Nikolaev, Russia.",
+      "In 1951, in Brooklyn, New York, he accepted the leadership as the seventh Chabad Rebbe, and continued to spread the light of Chassidus — sending hundreds and thousands of emissaries around the world to open schools and Chabad houses, educating Jews wherever they may be.",
+      "This is a sketch I did in the year 2010, of the Rebbe as a child of two."
+    ]
+  },
+  {
+    id: "sara-katzenelbogen",
+    title: "Mumma Sara Katzenelbogen",
+    theme: "Sketches",
+    year: "2018",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/sara-katzenelbogen.jpg?v=warm",
+    featured: false,
+    subtitle: "The heroine who helped many escape the Soviet Union.",
+    story: [
+      "A sketch of my great-grandmother. This past Sunday, the 9th of Nissan, was the 66th yahrtzeit of my great-grandmother, Bobba Sara Katzenelbogen — known to many, especially among Chabad chassidim, as Mumma (Aunt) Sara.",
+      "She lived a life of self-sacrifice in communist Russia, staying strong in her Jewish traditions while helping many escape the Soviet Union. It was in her merit that Rebbetzin Chana, mother of the Lubavitcher Rebbe, was able to escape Russia — with the last Polish documents Sara had, which she gave over to her.",
+      "My great-grandmother later died of a heart attack while in prison, after being arrested for her \"illegal\" activities. She left behind many descendants around the world, who continue in her footsteps — helping others and staying strong in their Jewish faith."
+    ]
+  },
+  {
+    id: "zelda-katzenelbogen",
+    title: "Aunty Zelda Katzenelbogen",
+    theme: "Sketches",
+    year: "2017",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/zelda-katzenelbogen.jpg?v=warm",
+    featured: false,
+    subtitle: "My great-aunt — always happy, cheerful, and full of love.",
+    story: [
+      "Last week a woman very close to my heart, my great-aunt, passed away. As I sketched this portrait, I could see her smiling at me, and memories flashed through my mind of my childhood years growing up in London and the happy times spent at her home.",
+      "I remember how she would take me along to the local park with her children — my dear cousins — and teach me how to do tumblesaults on the grass. In the summer she would fill big containers with water in her backyard for us to use as paddling pools.",
+      "Walking into her home, I would be met by the aroma of freshly cooked food; and though I had already eaten, she would always offer me to try some — and I could see the pleasure in her eyes when I did. In later years, after I married and moved to the States, I would visit her whenever I came back to London. I always felt welcomed and at home. She would ask about my children and loved to see the pictures I shared.",
+      "A few months ago, on my last trip to London, I visited her for the final time. Though she was very weak from illness and had no strength to talk, she still asked about my children. My great-aunt Zelda had a special soul — so much love and care, always happy and cheerful. She will truly be missed by all who knew her."
+    ]
+  },
+  {
     id: "shimon-stillerman",
     title: "R’ Shimon Stillerman",
     theme: "Sketches",
