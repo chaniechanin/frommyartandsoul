@@ -477,6 +477,20 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rebbe-rayatz-snow",
+    title: "The Rebbe Rayatz — Yud-Beis Tammuz",
+    theme: "Rebbe & Rebbetzin",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/rebbe-rayatz-snow.jpg?v=warm",
+    featured: false,
+    subtitle: "The Previous Rebbe — his birthday and his day of liberation.",
+    story: [
+      "The 12th of Tammuz is the birthday of Rabbi Yosef Yitzchak Schneersohn (1880), the Previous Lubavitcher Rebbe — and the anniversary of his release from a capital sentence and imprisonment in Soviet Russia (1927)."
+    ]
+  },
+  {
     id: "rebbe-rayatz",
     title: "The Rebbe Rayatz — The Previous Rebbe",
     theme: "Rebbe & Rebbetzin",
