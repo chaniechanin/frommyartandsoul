@@ -17,6 +17,22 @@
 
 const PAINTINGS = [
   {
+    id: "yehoshua-gordon",
+    title: "Rabbi Yehoshua B. Gordon, OBM",
+    theme: "Sketches",
+    year: "2020",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/yehoshua-gordon.jpg?v=warm",
+    featured: false,
+    subtitle: "The teacher whose shiurim brought Chitas to life.",
+    story: [
+      "I sketched this portrait of Rabbi Yehoshua B. Gordon, a’h, of blessed memory, while listening to his classes.",
+      "Over the past year I've been learning the daily portion of Chumash and Tanya through his shiurim — making my commitment to Chitas (the daily portion of Chumash, Tehillim, and Tanya) so much more meaningful and enjoyable.",
+      "I'm sure many of you can relate and have heard his classes; and if you haven't, check them out on @chabadorg — you will be inspired."
+    ]
+  },
+  {
     id: "leibel-groner",
     title: "Rabbi Leibel Groner",
     theme: "Sketches",
