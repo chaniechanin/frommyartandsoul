@@ -35,7 +35,7 @@ function cardHTML(p){
 }
 
 /* home: framed hero painting — the first thing seen on the site */
-const HERO_ID='kotel-in-color';
+const HERO_ID='torah-is-life';
 function renderHeroArt(){
   const el=document.getElementById('hero-art'); if(!el)return;
   const p=PAINTINGS.find(x=>x.id===HERO_ID)||featuredList()[0];
@@ -69,7 +69,7 @@ function spotlightHTML(p,reverse){
 }
 function renderSpotlights(){
   const el=document.getElementById('spotlights'); if(!el)return;
-  const prefer=['avraham','torah-is-life'];
+  const prefer=['avraham','kotel-in-color'];
   let picks=prefer.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean);
   if(picks.length<2){ featuredList().forEach(p=>{ if(picks.length<2 && !picks.includes(p)) picks.push(p); }); }
   el.innerHTML=picks.map((p,i)=>spotlightHTML(p,i%2===1)).join('');
