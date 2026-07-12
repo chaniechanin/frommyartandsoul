@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "agam-berger",
+    title: "Agam Berger",
+    theme: "Sketches",
+    year: "2024",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/agam-berger.jpg",
+    featured: false,
+    subtitle: "A charcoal portrait of Agam Berger — home now, after so many prayers.",
+    story: [
+      "Last night I joined the inspirational unity Challah bake in my community — held in the merit of bringing blessings to the land of Israel and the return of all the hostages, and to strengthen us in our mitzvos, especially those of women: challah, the laws of family purity, and lighting Shabbos candles.",
+      "We heard from the mother of Agam Berger, who left us with a beautiful message. Her family has taken on a project, \"Agam for Agam\" — Agam means a body of water — asking women to take on this special mitzvah in the merit of her daughter's return, together with all the hostages. She described Agam as a girl of strong faith in G-d.",
+      "As I drew this sketch, I saw the special soul she is. May she be reunited with her family, and may we hear great news very soon.",
+      "Thank G-d, after all the prayers, Agam has since been released."
+    ]
+  },
+  {
     id: "moshe-kotlarsky",
     title: "Rabbi Moshe Kotlarsky, OBM",
     theme: "Sketches",
