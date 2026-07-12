@@ -17,6 +17,20 @@
 
 const PAINTINGS = [
   {
+    id: "moshe-kotlarsky",
+    title: "Rabbi Moshe Kotlarsky, OBM",
+    theme: "Sketches",
+    year: "2024",
+    medium: "Charcoal on Bristol paper",
+    size: "11 × 14 in",
+    image: "images/moshe-kotlarsky.jpg",
+    featured: false,
+    subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
+    story: [
+      "This week I chose to draw Rabbi Moshe Kotlarsky, OBM, as Shluchim from around the world come to Crown Heights for their yearly Conference."
+    ]
+  },
+  {
     id: "nimrod-cohen",
     title: "Nimrod Cohen",
     theme: "Sketches",
@@ -36,7 +50,7 @@ const PAINTINGS = [
     id: "gita-gansburg",
     title: "Mrs. Gita Gansburg, a”h",
     theme: "Sketches",
-    year: "",
+    year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
     image: "images/gita-gansburg.jpg",
