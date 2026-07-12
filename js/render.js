@@ -76,9 +76,10 @@ function renderGallery(){
   const grid=document.getElementById('gallery-grid'); if(!grid)return;
   const themes=['All',...Array.from(new Set(PAINTINGS.map(p=>p.theme)))];
   const filters=document.getElementById('gallery-filters');
+  /* these themes are hidden from "All" — each lives only under its own filter */
+  const HIDE_FROM_ALL=['Sketches','Rebbe & Rebbetzin'];
   const draw=(theme)=>{
-    /* "All" hides Sketches — they live only under their own filter */
-    let list=theme==='All'?PAINTINGS.filter(p=>p.theme!=='Sketches'):PAINTINGS.filter(p=>p.theme===theme);
+    let list=theme==='All'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)):PAINTINGS.filter(p=>p.theme===theme);
     /* Sketches are shown newest → oldest by the year they were drawn */
     if(theme==='Sketches') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
     grid.innerHTML=list.map(cardHTML).join('');
