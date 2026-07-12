@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "leibel-groner",
+    title: "Rabbi Leibel Groner",
+    theme: "Sketches",
+    year: "2020",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/leibel-groner.jpg",
+    featured: false,
+    subtitle: "The man who stood beside the Rebbe.",
+    story: [
+      "Rabbi Leibel Groner was known to many as the man who stood beside the Rebbe, serving as his secretary throughout the years of leadership. That is how I knew him as a child — until I came to know him more personally when I moved to Crown Heights from London, after my wedding 22 years ago.",
+      "I had the honor of hosting Rabbi Groner in my home for my birthday farbrengens. The stories he shared and the memories he told of the Rebbe inspired us and kept our connection strong.",
+      "He appreciated and complimented my art. Whenever he saw my husband, he would ask which painting I was working on, and took real interest when my husband showed him. The last message I received from him was on Shushan Purim, thanking me for the Mishloach Manos I had left outside his door and telling me how nice my picture was — a copy of my painting of the Rebbe coming out of 770.",
+      "He passed away tragically from this terrible virus. We hope to farbreng together once again very soon, with the coming of Moshiach."
+    ]
+  },
+  {
     id: "chaim-bentzion-raskin",
     title: "Reb Chaim Bentzion Raskin",
     theme: "Sketches",
