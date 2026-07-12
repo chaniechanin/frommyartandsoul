@@ -110,13 +110,22 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 .spot .meta{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--d-mut);margin:22px 0 28px}
 
 /* ---------- room showcase ---------- */
-.room-scene{position:relative;height:76vh;min-height:560px;overflow:hidden;background:linear-gradient(180deg,#efe7d8 0%,#e6dac4 58%,#d7c6a8 100%)}
-/* soft warm downlight from above */
-.room-scene:before{content:"";position:absolute;inset:0;background:radial-gradient(130% 80% at 62% -8%,rgba(255,247,229,.62),transparent 58%);pointer-events:none;z-index:1}
-/* gentle floor grounding */
-.room-scene:after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,transparent,rgba(108,84,52,.26));pointer-events:none;z-index:1}
-.on-wall{position:absolute;left:56%;top:13%;width:min(440px,44vw);z-index:2;filter:drop-shadow(0 44px 40px rgba(45,32,16,.36))}
-.room-copy{position:absolute;left:7%;top:44%;transform:translateY(-50%);max-width:340px;z-index:3}
+.room-scene{position:relative;height:76vh;min-height:560px;overflow:hidden;background:linear-gradient(180deg,#efe9dd,#e7ddca)}
+.room-scene .floor{position:absolute;left:0;right:0;bottom:0;height:26%;background:linear-gradient(180deg,rgba(201,178,141,0),#c9b28d 44%,#bea67e)}
+.room-scene .baseboard{position:absolute;left:0;right:0;bottom:26%;height:7px;background:rgba(84,64,40,.14)}
+.room-glow{position:absolute;left:50%;top:12%;width:50%;height:56%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,241,214,.5),transparent 70%);pointer-events:none}
+.on-wall{position:absolute;left:50%;top:11%;transform:translateX(-50%);width:min(330px,38vw);z-index:2}
+.console{position:absolute;left:50%;bottom:26%;transform:translateX(-50%);width:min(500px,60vw);height:12px;background:#6f5636;border-radius:2px;box-shadow:0 16px 24px -12px rgba(0,0,0,.4);z-index:2}
+.console:before,.console:after{content:"";position:absolute;top:12px;width:9px;height:60px;background:#5f4a2e}
+.console:before{left:16px}.console:after{right:16px}
+.lamp{position:absolute;left:calc(50% - 185px);bottom:calc(26% + 12px);width:50px;text-align:center;z-index:2}
+.lamp .shade{width:50px;height:32px;background:linear-gradient(#f7e4b7,#e6c37f);clip-path:polygon(20% 0,80% 0,100% 100%,0 100%);box-shadow:0 0 42px 16px rgba(255,226,155,.5)}
+.lamp .stem{width:4px;height:42px;background:#7a6039;margin:0 auto}.lamp .base{width:24px;height:7px;background:#6a5231;margin:0 auto;border-radius:3px}
+.vase{position:absolute;left:calc(50% + 165px);bottom:calc(26% + 12px);width:24px;height:38px;background:linear-gradient(#dad3c5,#b8ae9a);border-radius:4px 4px 8px 8px;z-index:2}
+.branch{position:absolute;left:calc(50% + 170px);bottom:calc(26% + 46px);width:2px;height:64px;background:#6c7a4d;z-index:2}
+.branch:before,.branch:after{content:"";position:absolute;width:20px;height:2px;background:#6c7a4d;top:14px}
+.branch:before{left:2px;transform:rotate(-32deg);transform-origin:left}.branch:after{right:2px;transform:rotate(32deg);transform-origin:right}
+.room-copy{position:absolute;left:7%;top:40%;transform:translateY(-50%);max-width:320px;z-index:3}
 .room-copy .eyebrow{display:block;margin-bottom:14px}
 .room-copy h2{font-family:var(--serif);font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:14px}
 .room-copy p{color:#5c5140}
@@ -191,8 +200,11 @@ footer a{color:var(--gold-lt)}
   .detail{padding-top:120px}
   .grid{column-count:2;column-gap:16px}.card{margin-bottom:16px}
   .grid.rows{grid-template-columns:repeat(2,1fr);gap:16px}
-  .room-scene{height:auto;min-height:0;padding:0 0 54px}
-  .on-wall{position:static;left:auto;top:auto;width:min(82vw,440px);margin:66px auto 0}
-  .room-copy{position:static;transform:none;max-width:none;padding:34px 24px 0;text-align:center}
+  .room-scene{height:auto;min-height:0;padding-bottom:118vw}
+  .room-scene .floor{height:34%}.room-scene .baseboard{bottom:34%}
+  .on-wall{width:56vw;top:auto;bottom:52vw}
+  .console{bottom:34%;width:74vw}
+  .lamp{left:14vw;bottom:calc(34% + 12px)}.vase{left:auto;right:16vw;bottom:calc(34% + 12px)}.branch{left:auto;right:17vw;bottom:calc(34% + 46px)}
+  .room-copy{position:static;transform:none;max-width:none;padding:44px 24px 0;text-align:center}
 }
 @media(max-width:560px){.grid{column-count:1}.card{max-width:420px;margin-left:auto;margin-right:auto}.grid.rows{grid-template-columns:1fr}}
