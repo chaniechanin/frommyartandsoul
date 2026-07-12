@@ -621,6 +621,35 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "summer-day",
+    title: "Summer Day",
+    theme: "Nature",
+    year: "2015",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/summer-day.jpg",
+    featured: false,
+    subtitle: "Sea, sand, and sky.",
+    story: [
+      "Who wouldn't want to be here on a hot summer day?"
+    ]
+  },
+  {
+    id: "pebble-in-the-water",
+    title: "A Pebble in the Water",
+    theme: "Nature",
+    year: "2016",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/pebble-in-the-water.jpg",
+    featured: false,
+    subtitle: "A single good deed — like ripples, spreading farther than we can know.",
+    story: [
+      "For every good deed we do, we can never know the effect it has, or how far it travels.",
+      "Drop a pebble in the water,<br>a little splash, and it is gone;<br>suddenly half a hundred ripples<br>begin to circle on and on.<br>The ripples to a great big wave have grown,<br>spreading forward, flowing out to sea —<br>and there is no way to know exactly where<br>the end is going to be."
+    ]
+  },
+  {
     id: "kineret",
     title: "The Kineret",
     theme: "Nature",
