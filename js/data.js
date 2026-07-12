@@ -23,7 +23,7 @@ const PAINTINGS = [
     year: "",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/reb-levik-portrait.jpg?v=warm",
+    image: "images/reb-levik-portrait.jpg?v=bw",
     featured: false,
     subtitle: "Reb Levik, father of the Rebbe.",
     story: [
@@ -39,7 +39,7 @@ const PAINTINGS = [
     year: "2010",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/rebbe-age-two.jpg?v=warm",
+    image: "images/rebbe-age-two.jpg?v=bw",
     featured: false,
     subtitle: "The Lubavitcher Rebbe as a child of two.",
     story: [
@@ -55,7 +55,7 @@ const PAINTINGS = [
     year: "2018",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/sara-katzenelbogen.jpg?v=warm",
+    image: "images/sara-katzenelbogen.jpg?v=bw",
     featured: false,
     subtitle: "The heroine who helped many escape the Soviet Union.",
     story: [
@@ -71,7 +71,7 @@ const PAINTINGS = [
     year: "2017",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/zelda-katzenelbogen.jpg?v=warm",
+    image: "images/zelda-katzenelbogen.jpg?v=bw",
     featured: false,
     subtitle: "My great-aunt — always happy, cheerful, and full of love.",
     story: [
@@ -88,7 +88,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/shimon-stillerman.jpg?v=warm",
+    image: "images/shimon-stillerman.jpg?v=bw",
     featured: false,
     subtitle: "A “stiller mensch” — a quiet, gentle soul, learning at his sefer.",
     story: [
@@ -106,7 +106,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/yehoshua-raskin.jpg?v=warm",
+    image: "images/yehoshua-raskin.jpg?v=bw",
     featured: false,
     subtitle: "Head shochet, and a chossid forged in Soviet Russia.",
     story: [
@@ -124,7 +124,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/yehoshua-gordon.jpg?v=warm",
+    image: "images/yehoshua-gordon.jpg?v=bw",
     featured: false,
     subtitle: "The teacher whose shiurim brought Chitas to life.",
     story: [
@@ -140,7 +140,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/leibel-groner.jpg?v=warm",
+    image: "images/leibel-groner.jpg?v=bw",
     featured: false,
     subtitle: "The man who stood beside the Rebbe.",
     story: [
@@ -157,7 +157,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/chaim-bentzion-raskin.jpg?v=warm",
+    image: "images/chaim-bentzion-raskin.jpg?v=bw",
     featured: false,
     subtitle: "The chossid near Moscow who poured out tears for his children's future.",
     story: [
@@ -174,7 +174,7 @@ const PAINTINGS = [
     year: "2020",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/rabbi-schwei.jpg?v=warm",
+    image: "images/rabbi-schwei.jpg?v=bw",
     featured: false,
     subtitle: "A Rav on the Beis Din — and, to me, my personal Rav.",
     story: [
@@ -191,7 +191,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/dayen-refson.jpg?v=warm",
+    image: "images/dayen-refson.jpg?v=bw",
     featured: false,
     subtitle: "My uncle — always a happy, smiling hello.",
     story: [
@@ -207,7 +207,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/rebbe-lag-baomer.jpg?v=warm",
+    image: "images/rebbe-lag-baomer.jpg?v=bw",
     featured: false,
     subtitle: "A day of Jewish pride and unity.",
     story: [
@@ -224,7 +224,7 @@ const PAINTINGS = [
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/yudi-dukes.jpg?v=warm",
+    image: "images/yudi-dukes.jpg?v=bw",
     featured: false,
     subtitle: "Yudi, smiling.",
     story: [
@@ -241,7 +241,7 @@ const PAINTINGS = [
     year: "2022",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/bobba-bluma.jpg?v=warm",
+    image: "images/bobba-bluma.jpg?v=bw",
     featured: false,
     subtitle: "A flower that blossomed again after the war.",
     story: [
@@ -257,7 +257,7 @@ const PAINTINGS = [
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/michoel-katzenelenbogen.jpg?v=warm",
+    image: "images/michoel-katzenelenbogen.jpg?v=bw",
     featured: false,
     subtitle: "My great-grandfather, who gave his life for his faith.",
     story: [
@@ -274,7 +274,7 @@ const PAINTINGS = [
     year: "2023",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/shlomo-mansour.jpg?v=warm",
+    image: "images/shlomo-mansour.jpg?v=bw",
     featured: false,
     subtitle: "His name, Shlomo, means peace.",
     story: [
@@ -290,7 +290,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/baila-stillerman.jpg?v=warm",
+    image: "images/baila-stillerman.jpg?v=bw",
     featured: false,
     subtitle: "My dear grandmother — one of the roots of who I am.",
     story: [
@@ -307,7 +307,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/moshe-katzenelbogen.jpg?v=warm",
+    image: "images/moshe-katzenelbogen.jpg?v=bw",
     featured: false,
     subtitle: "My great-uncle — always happy and smiling, through everything.",
     story: [
@@ -325,7 +325,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/agam-berger.jpg?v=warm",
+    image: "images/agam-berger.jpg?v=bw",
     featured: false,
     subtitle: "A charcoal portrait of Agam Berger — home now, after so many prayers.",
     story: [
@@ -342,7 +342,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
-    image: "images/moshe-kotlarsky.jpg?v=warm",
+    image: "images/moshe-kotlarsky.jpg?v=bw",
     featured: false,
     subtitle: "Drawn as Shluchim gather in Crown Heights for their yearly Kinus.",
     story: [
@@ -356,7 +356,7 @@ const PAINTINGS = [
     year: "2025",
     medium: "Charcoal on paper",
     size: "Dimensions on request",
-    image: "images/nimrod-cohen.jpg?v=warm",
+    image: "images/nimrod-cohen.jpg?v=bw",
     featured: false,
     subtitle: "A charcoal portrait of Nimrod, held hostage in Gaza — now home.",
     story: [
@@ -372,7 +372,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on Bristol paper",
     size: "11 × 14 in",
-    image: "images/gita-gansburg.jpg?v=warm",
+    image: "images/gita-gansburg.jpg?v=bw",
     featured: false,
     subtitle: "Savta — dorm mother of Machon Chana for 38 years.",
     story: [
@@ -388,7 +388,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/reb-levik.jpg?v=warm",
+    image: "images/reb-levik.jpg?v=bw",
     featured: false,
     subtitle: "Father of the Rebbe — imprisoned and exiled for his defiance.",
     story: [
@@ -405,7 +405,7 @@ const PAINTINGS = [
     year: "2021",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/rebbe-i-miss-you.jpg?v=warm",
+    image: "images/rebbe-i-miss-you.jpg?v=bw",
     featured: false,
     subtitle: "Gimmel Tammuz — bringing the Rebbe alive on canvas.",
     story: [
@@ -422,7 +422,7 @@ const PAINTINGS = [
     year: "2017",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/tzemach-tzedek.jpg?v=warm",
+    image: "images/tzemach-tzedek.jpg?v=bw",
     featured: false,
     subtitle: "The third Chabad Rebbe — and the mother who gave her life for him.",
     story: [
@@ -439,7 +439,7 @@ const PAINTINGS = [
     year: "2016",
     medium: "Oil on canvas",
     size: "16 × 20 in",
-    image: "images/rebbe-rashab.jpg?v=warm",
+    image: "images/rebbe-rashab.jpg?v=bw",
     featured: false,
     subtitle: "Rabbi Sholom Dov Ber, the fifth Chabad Rebbe.",
     story: [
@@ -453,7 +453,7 @@ const PAINTINGS = [
     year: "2015",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/rebbetzin-chaya-mushka.jpg?v=warm",
+    image: "images/rebbetzin-chaya-mushka.jpg?v=bw",
     featured: false,
     subtitle: "Our beloved queen — a true beauty of royalty.",
     story: [
@@ -468,7 +468,7 @@ const PAINTINGS = [
     year: "2019",
     medium: "Oil on canvas",
     size: "36 × 48 in",
-    image: "images/royal-tea.jpg?v=warm",
+    image: "images/royal-tea.jpg?v=bw",
     featured: false,
     subtitle: "Four Chabad Rebbetzins — true examples of royalty — sit together for tea.",
     story: [
@@ -483,7 +483,7 @@ const PAINTINGS = [
     year: "2018",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/rebbe-rayatz-snow.jpg?v=warm",
+    image: "images/rebbe-rayatz-snow.jpg?v=bw",
     featured: false,
     subtitle: "The Previous Rebbe — his birthday and his day of liberation.",
     story: [
@@ -497,7 +497,7 @@ const PAINTINGS = [
     year: "2019",
     medium: "Oil on canvas",
     size: "24 × 36 in",
-    image: "images/rebbe-rayatz.jpg?v=warm",
+    image: "images/rebbe-rayatz.jpg?v=bw",
     featured: false,
     subtitle: "The Previous Chabad Rebbe, deep in thought.",
     story: [
@@ -513,7 +513,7 @@ const PAINTINGS = [
     year: "2016",
     medium: "Oil on canvas",
     size: "18 × 24 in",
-    image: "images/rebbetzin-chana-dinner.jpg?v=warm",
+    image: "images/rebbetzin-chana-dinner.jpg?v=bw",
     featured: false,
     subtitle: "Rebbetzin Chana listens as Golda Schwei speaks at a Nshei Chabad convention.",
     story: [
@@ -531,7 +531,7 @@ const PAINTINGS = [
     year: "",
     medium: "Oil on canvas",
     size: "18 × 24 in",
-    image: "images/rebbetzin-chana-v2.jpg?v=warm",
+    image: "images/rebbetzin-chana-v2.jpg?v=bw",
     featured: false,
     subtitle: "Rebbetzin Chana, mother of the Lubavitcher Rebbe.",
     story: [
@@ -940,7 +940,7 @@ const PAINTINGS = [
     year: "2015",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/alter-rebbe.jpg?v=warm",
+    image: "images/alter-rebbe.jpg?v=bw",
     featured: false,
     subtitle: "A portrait in silver and shadow.",
     story: [
@@ -1049,7 +1049,7 @@ const PAINTINGS = [
     year: "2024",
     medium: "Charcoal on paper",
     size: "16 × 20 in",
-    image: "images/kos-shel-bracha.jpg?v=warm",
+    image: "images/kos-shel-bracha.jpg?v=bw",
     featured: false,
     subtitle: "A special moment with the Rebbe.",
     story: [
