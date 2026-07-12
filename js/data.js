@@ -17,6 +17,22 @@
 
 const PAINTINGS = [
   {
+    id: "shlomo-mansour",
+    title: "Shlomo Mansour, Hy”d",
+    theme: "Sketches",
+    year: "2023",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/shlomo-mansour.jpg",
+    featured: false,
+    subtitle: "His name, Shlomo, means peace.",
+    story: [
+      "A couple of weeks ago I heard of an initiative by two artists, @art_by_ariela and @artspark4, calling on other artists to each sketch one of the hostages still held in Gaza.",
+      "Shlomo Mansour was an 85-year-old man, originally from Iraq, taken captive from his kibbutz on October 7th. As I sketched, I connected with him and prayed for his safe return home to his wife, children, and grandchildren. I tried to bring out his beautiful, warm smile. His name, Shlomo, means peace — may he return, together with all the hostages, in peace.",
+      "It was later confirmed that Shlomo was murdered on October 7th. Hashem yikom damo — may his memory be a blessing."
+    ]
+  },
+  {
     id: "baila-stillerman",
     title: "Bobba Baila Stillerman, a”h",
     theme: "Sketches",
