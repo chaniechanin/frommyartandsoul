@@ -22,12 +22,30 @@ const PAINTINGS = [
     theme: "Rebbe & Rebbetzin",
     year: "",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/rebbetzin-channah.jpg",
     featured: false,
-    subtitle: "A black-and-white portrait of Rebbetzin Chana.",
+    subtitle: "Rebbetzin Chana, mother of the Lubavitcher Rebbe.",
     story: [
-      "A portrait of Rebbetzin Chana, painted in black and white."
+      "The 28th of Teves is the birthday of Rebbetzin Chana, the mother of the Lubavitcher Rebbe.",
+      "I worked on this painting during the week of the Rebbetzin's yahrzeit, Vov Tishrei, while singing part of my recording of the song \"Mother of Royalty.\"",
+      "I hope it brings much chassidishe nachas to the Rebbetzin, whom I am named after — and may we meet her very soon, with the coming of Moshiach."
+    ]
+  },
+  {
+    id: "the-city-my-heart",
+    title: "The City My Heart",
+    theme: "Judaic",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "16 × 20 in",
+    image: "images/the-city-my-heart.jpg",
+    featured: false,
+    subtitle: "A quiet lane in Yerushalayim of Gold.",
+    story: [
+      "The city my heart is in is Yerushalayim of Gold. My walk through the light-colored stones — each step telling a story of our ancient history.",
+      "Green leaves and pink flowers blossom above, and the blue sky brings the hope my soul yearns for: the return of our holy Temple.",
+      "I began this painting a couple of months ago, shortly after my trip to Israel, and finally had the chance to finish it."
     ]
   },
   {
