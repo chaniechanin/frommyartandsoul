@@ -25,9 +25,10 @@ function featuredList(){ const f=PAINTINGS.filter(p=>p.featured); return f.lengt
 /* one masonry card → links to its story page */
 function cardHTML(p){
   const meta=p.year?`${p.theme} · ${p.year}`:p.theme;
+  const tag=p.sold?'<span class="art-tag">Original Not Available</span>':'';
   return `<a class="card reveal" href="painting.html?id=${encodeURIComponent(p.id)}">
-    <div class="pic"><span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
-    <h3>${p.title}</h3><div class="meta">${meta}</div>${p.sold?'<div class="unavail">Original Not Available</div>':''}</a>`;
+    <div class="pic">${tag}<span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
+    <h3>${p.title}</h3><div class="meta">${meta}</div></a>`;
 }
 
 /* home: framed hero painting — the first thing seen on the site */

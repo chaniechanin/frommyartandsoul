@@ -1151,6 +1151,7 @@ const PAINTINGS = [
     size: "Dimensions on request",
     image: "images/river-crossing.jpg",
     sold: true,
+    sold: true,
     featured: false,
     subtitle: "A small rowboat under a full moon.",
     story: [
