@@ -34,7 +34,7 @@ const PAINTINGS = [
   },
   {
     id: "sara-katzenelbogen",
-    title: "Mumma Sara Katzenelenbogen",
+    title: "Bobba Sara Katzenelenbogen",
     theme: "Sketches",
     year: "2018",
     medium: "Charcoal on paper",
@@ -136,7 +136,7 @@ const PAINTINGS = [
   },
   {
     id: "chaim-bentzion-raskin",
-    title: "Reb Chaim Bentzion Raskin",
+    title: "Zaida Bentzion Raskin",
     theme: "Sketches",
     year: "2021",
     medium: "Charcoal on paper",
@@ -236,7 +236,7 @@ const PAINTINGS = [
   },
   {
     id: "michoel-katzenelenbogen",
-    title: "Reb Michoel Katzenelenbogen, HY”D",
+    title: "Zaida Michoel Katzenelenbogen, HY”D",
     theme: "Sketches",
     year: "2023",
     medium: "Charcoal on paper",
