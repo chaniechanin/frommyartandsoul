@@ -842,11 +842,11 @@ const PAINTINGS = [
   {
     id: "alter-rebbe",
     title: "The Alter Rebbe",
-    theme: "Judaic",
+    theme: "Rebbe & Rebbetzin",
     year: "2015",
     medium: "Oil on canvas",
     size: "Dimensions on request",
-    image: "images/alter-rebbe.jpg",
+    image: "images/alter-rebbe.jpg?v=warm",
     featured: false,
     subtitle: "A portrait in silver and shadow.",
     story: [
