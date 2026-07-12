@@ -17,6 +17,39 @@
 
 const PAINTINGS = [
   {
+    id: "rabbi-schwei",
+    title: "Rabbi Schwei",
+    theme: "Sketches",
+    year: "2020",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/rabbi-schwei.jpg",
+    featured: false,
+    subtitle: "A Rav on the Beis Din — and, to me, my personal Rav.",
+    story: [
+      "Rabbi Schwei was a Rav, part of the Beis Din of Crown Heights. But to me he was my personal Rav. If it was after hours at his office, I would call him at home — and not only was he always available to answer my questions, but he had such sensitivity, compassion, and patience to listen to every detail.",
+      "At first I thought I was the only one calling him at home so late — sometimes almost at midnight. But after his passing, I heard other women say the very same. He was always there for us, and we miss him so much down here.",
+      "He also took an interest in my artwork, whenever I would send him a print with Mishloach Manos on Purim.",
+      "I'm sure Rabbi Schwei is now sitting at the Beis Din with the greatest Rabbonim in Heaven, demanding that Hashem send us the Geulah immediately — it's about time!"
+    ]
+  },
+  {
+    id: "dayen-refson",
+    title: "Dayan Refson — Feter Yehuda",
+    theme: "Sketches",
+    year: "2021",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/dayen-refson.jpg",
+    featured: false,
+    subtitle: "My uncle — always a happy, smiling hello.",
+    story: [
+      "My uncle, Dayan Refson — whom I called Feter Yehuda — passed away a year ago, suddenly, a shock to us all.",
+      "On his first yahrtzeit, this past Thursday the 23rd of Adar, I began to sketch this picture. It brought back my childhood memories of when the Refson family would travel to London from Leeds and stay at my grandparents' home — my uncle's happy, smiling hellos, and the way he would sit and learn from a sefer.",
+      "At the zoom event, a virtual gathering of family and friends, I learned so much more about how special he truly was."
+    ]
+  },
+  {
     id: "rebbe-lag-baomer",
     title: "The Rebbe — Lag BaOmer",
     theme: "Rebbe & Rebbetzin",
