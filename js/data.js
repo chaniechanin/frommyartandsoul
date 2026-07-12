@@ -621,6 +621,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "saras-music",
+    title: "Sara's Music",
+    theme: "Judaic",
+    year: "2020",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/saras-music.jpg",
+    featured: false,
+    subtitle: "Sarah at her piano — her music and Tehillim rising to the heavens.",
+    story: [
+      "My latest painting, for my friend @sarahdukesmusic, whose husband Yudi was suffering in the hospital from complications of Corona.",
+      "Dearest Sarah — over these past couple of months I've seen the strength of faith and belief you carry in such a difficult situation. Through so much emotion and so many hard moments, you've created a huge family of support, and we've been praying together with you for Yudi's healthy return home.",
+      "You've been in my thoughts, and I kept thinking about the music you are creating — the music you will play at the great seudas hoda'ah, very soon. Your music brings such calm, healing energy to so many people around the world, and so I placed you and your piano into an open field of color.",
+      "The notes of your music — and the words of Tehillim, thousands of which are being said in Yudi's merit — flow up into the sky. May Hashem delight in these beautiful sounds and send a complete healing! Please continue to pray for Chaim Schneur Zalman Yehuda ben Hinda Yocheved for a complete recovery."
+    ]
+  },
+  {
     id: "lulav",
     title: "Lulav — Praying in Unity",
     theme: "Holidays",
