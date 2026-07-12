@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "yudi-dukes",
+    title: "Rabbi Yudi Dukes, OBM",
+    theme: "Sketches",
+    year: "2022",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/yudi-dukes.jpg",
+    featured: false,
+    subtitle: "Yudi, smiling.",
+    story: [
+      "As the yahrtzeit of Rabbi Dukes was approaching, my friend @sarahdukesmusic asked people to take the time to write up an interaction or memory they had with her husband.",
+      "I didn't know Yudi, or much about him, until March 2020 — I first saw him on Purim, driving his children around Crown Heights to deliver mishloach manos to their friends.",
+      "Yudi contracted Covid and was in the hospital for months; it was an extremely challenging year for him, for his wife, who stood devotedly at his side with loving care, and for their children. Even in his most difficult moments, Yudi continued his spiritual work from his hospital bed — recording words of Torah, smiling as he encouraged his medical staff to give charity and do other good deeds. He left an everlasting impression on people all around the world.",
+      "Tonight, one year since his passing, I finished this sketch — \"Yudi smiling.\" May Sara and her children be reunited with their beloved husband and father, to celebrate together with the coming of Moshiach."
+    ]
+  },
+  {
     id: "bobba-bluma",
     title: "Bobba Bluma",
     theme: "Sketches",
