@@ -17,6 +17,41 @@
 
 const PAINTINGS = [
   {
+    id: "baila-stillerman",
+    title: "Bobba Baila Stillerman, a”h",
+    theme: "Sketches",
+    year: "2024",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/baila-stillerman.jpg",
+    featured: false,
+    subtitle: "My dear grandmother — one of the roots of who I am.",
+    story: [
+      "This Shabbos was the shloshim — thirty days from the passing of my dear grandmother, Baila Stillerman, daughter of Reb Betzalel and Chaya Wilshansky.",
+      "She passed away on Friday, which was Tu BiShevat here in New York — the birthday of the trees. My grandmother was one of the roots of who I am today. Born in communist Russia into a family of Chassidim of the previous Chabad Rebbe, they also had a close connection to the Rebbe's parents, Reb Levik and Rebbetzin Chana.",
+      "She married my grandfather, Shimon Stillerman, and together with her parents and family moved to Sydney, Australia, where they raised their children with a strong passion for Torah and Yiddishkeit, infused with chassidishkeit. I have fond memories of her visits — to London, where I grew up, and later to New York.",
+      "Last year I visited her in Melbourne, where she lived her later years, and I'm so glad I got to spend that quality time with her. I miss you, Bobba, and I hope to see you very soon again, with the coming of Moshiach."
+    ]
+  },
+  {
+    id: "moshe-katzenelbogen",
+    title: "Fete Moshe Katzenelbogen, a”h",
+    theme: "Sketches",
+    year: "2024",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/moshe-katzenelbogen.jpg",
+    featured: false,
+    subtitle: "My great-uncle — always happy and smiling, through everything.",
+    story: [
+      "Today, the 8th of Elul, was the tenth yahrtzeit of my great-uncle Moshe Katzenelbogen, younger brother to my grandfather.",
+      "Fete (uncle in Yiddish) Moshe was very dear to me — he lived near my childhood home in London, and I spent many happy hours at his house with his wife, Aunty Zelda, and their beautiful children. He would so often offer, in his strong Russian accent, \"You want a cup of tea?\"",
+      "Born and raised in communist Russia, he was a true Chabad Chossid, with real self-sacrifice in keeping Torah and mitzvos. He spent many years in the Soviet prisons and labor camps for his work helping fellow Jews, until he finally received a visa to leave Russia in 1971.",
+      "Though he lived through so much suffering, I remember him always happy and smiling. He built a warm, beautiful home full of Torah and Yiddishkeit. I'm sure he is smiling now, seeing the chassidishe nachas his children bring him. May we meet again very soon, with the coming of Moshiach.",
+      "A sketch I drew today, based on a picture from my wedding album."
+    ]
+  },
+  {
     id: "agam-berger",
     title: "Agam Berger",
     theme: "Sketches",
