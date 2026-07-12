@@ -77,7 +77,8 @@ function renderGallery(){
   const themes=['All',...Array.from(new Set(PAINTINGS.map(p=>p.theme)))];
   const filters=document.getElementById('gallery-filters');
   const draw=(theme)=>{
-    const list=theme==='All'?PAINTINGS:PAINTINGS.filter(p=>p.theme===theme);
+    /* "All" hides Sketches — they live only under their own filter */
+    const list=theme==='All'?PAINTINGS.filter(p=>p.theme!=='Sketches'):PAINTINGS.filter(p=>p.theme===theme);
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
   };
