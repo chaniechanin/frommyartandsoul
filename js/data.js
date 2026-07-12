@@ -17,6 +17,23 @@
 
 const PAINTINGS = [
   {
+    id: "michoel-katzenelenbogen",
+    title: "Reb Michoel Katzenelenbogen, Hy”d",
+    theme: "Sketches",
+    year: "2023",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/michoel-katzenelenbogen.jpg",
+    featured: false,
+    subtitle: "My great-grandfather, who gave his life for his faith.",
+    story: [
+      "My great-grandfather, Reb Michoel Katzenelenbogen, was the husband of Bobba Sara — known to many as Mumma, Aunt Sara — who helped many leave Russia, including Rebbetzin Chana.",
+      "I never met my Zaida Michoel, but I've heard he was a true chossid of the Rebbe Rashab and the previous Chabad Rebbe, keeping his connection strong. He spent all his time davening and learning Chassidus.",
+      "On October 3rd, 1937, he was arrested at his home in Staraya Russa, accused of being a religious activist. On November 19th he was shot and buried in a mass grave near Leningrad.",
+      "He left behind a family that today numbers many chassidim around the world. Hashem yikom damo."
+    ]
+  },
+  {
     id: "shlomo-mansour",
     title: "Shlomo Mansour, Hy”d",
     theme: "Sketches",
