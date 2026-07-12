@@ -17,13 +17,45 @@
 
 const PAINTINGS = [
   {
+    id: "nimrod-cohen",
+    title: "Nimrod Cohen",
+    theme: "Sketches",
+    year: "",
+    medium: "Charcoal on paper",
+    size: "Dimensions on request",
+    image: "images/nimrod-cohen.jpg",
+    featured: false,
+    subtitle: "A charcoal portrait of Nimrod, held hostage in Gaza — now home.",
+    story: [
+      "Hearing the strength of Viki, mother of Nimrod Cohen — one of the hostages taken into Gaza — I sketched a portrait of her son.",
+      "In her message she shared that her son has a special soul: that before he was born he was told what his mission in this world would be, and he accepted it. May that mission be over very soon, so that she may be reunited with Nimrod — together with all the hostages coming home.",
+      "With all the prayers, thank G-d, Nimrod has since been released."
+    ]
+  },
+  {
+    id: "gita-gansburg",
+    title: "Mrs. Gita Gansburg, a”h",
+    theme: "Sketches",
+    year: "",
+    medium: "Charcoal on Bristol paper",
+    size: "11 × 14 in",
+    image: "images/gita-gansburg.jpg",
+    featured: false,
+    subtitle: "Savta — dorm mother of Machon Chana for 38 years.",
+    story: [
+      "It was only after I married my husband that I came to know his grandmother, whom we called Savta.",
+      "In those years I saw what a special woman she was — the bond she shared with her grandchildren and great-grandchildren, and her devotion as the dorm mother of Machon Chana, her spiritual children, for 38 years.",
+      "When the Rebbe visited the dorm on the evening of the Pesach Seder, he thanked her for raising his daughters."
+    ]
+  },
+  {
     id: "rebbetzin-channah",
     title: "Rebbetzin Chana",
     theme: "Rebbe & Rebbetzin",
     year: "",
     medium: "Oil on canvas",
     size: "18 × 24 in",
-    image: "images/rebbetzin-channah.jpg",
+    image: "images/rebbetzin-chana-v2.jpg",
     featured: false,
     subtitle: "Rebbetzin Chana, mother of the Lubavitcher Rebbe.",
     story: [
