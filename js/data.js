@@ -17,6 +17,20 @@
 
 const PAINTINGS = [
   {
+    id: "rebbetzin-channah",
+    title: "Rebbetzin Chana",
+    theme: "Rebbe & Rebbetzin",
+    year: "",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/rebbetzin-channah.jpg",
+    featured: false,
+    subtitle: "A black-and-white portrait of Rebbetzin Chana.",
+    story: [
+      "A portrait of Rebbetzin Chana, painted in black and white."
+    ]
+  },
+  {
     id: "miriam-at-the-sea",
     title: "Miriam at the Sea",
     theme: "Judaic",
