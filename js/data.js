@@ -801,6 +801,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "chanuka-menora",
+    title: "Chanukah Menorah",
+    theme: "Paint Parties",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "Dimensions on request",
+    image: "images/chanuka-menora.jpg",
+    extra: ["images/chanuka-menora-2.jpg"],
+    featured: false,
+    subtitle: "A pre-Chanukah paint party — brightening the night with light.",
+    story: [
+      "Such a beautiful pre-Chanukah paint party with a special group of women in Staten Island. Thank you for inviting me to share my art with your community, and for coordinating such a lovely event!",
+      "Together, may we brighten up the night with the lights of Chanukah!"
+    ]
+  },
+  {
     id: "sunset-party",
     title: "As the Sun Begins to Set",
     theme: "Paint Parties",
