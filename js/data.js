@@ -854,6 +854,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "yerushaliam-studio",
+    title: "Yerushalayim",
+    theme: "Beyond the Canvas",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "Dimensions on request",
+    image: "images/yerushaliam-studio.jpg",
+    extra: ["images/yerushaliam-studio-2.jpg","images/yerushaliam-studio-3.jpg"],
+    featured: false,
+    subtitle: "A free-flow afternoon painting Yerushalayim with Sheina Dorn.",
+    story: [
+      "Sheina Dorn invited me to paint with her at her art studio and gallery — such a fun place; you feel her colorful, creative energy the moment you walk through the door.",
+      "We painted the same scene, each in our own free-flowing, expressive way — it was so therapeutic! Thank you, Sheina, for the fun afternoon. May we meet again very soon in Yerushalayim, in the Beis Hamikdash — and our paintings will come along too."
+    ]
+  },
+  {
     id: "four-cups-3d",
     title: "The Four Cups in 3D",
     theme: "Beyond the Canvas",
