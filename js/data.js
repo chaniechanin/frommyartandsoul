@@ -1363,6 +1363,7 @@ const PAINTINGS = [
     medium: "Charcoal on paper",
     size: "16 × 20 in",
     image: "images/kos-shel-bracha.jpg?v=bw2",
+    sold: true,
     featured: false,
     subtitle: "A special moment with the Rebbe.",
     story: [
