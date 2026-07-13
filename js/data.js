@@ -799,6 +799,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "rus-the-moabite",
+    title: "Rus the Moabite",
+    theme: "Judaic",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/rus-the-moabite.jpg",
+    featured: false,
+    subtitle: "Rus gleaning in the field of Boaz — ancestress of King David.",
+    story: [
+      "Rus the Moabite clung to her mother-in-law Naomi after the death of her husband, insisting on staying with her: \"Wherever you go, I will go; where you lodge, I will lodge; your people shall be my people, and your G-d my G-d.\" When the two of them arrived in Bethlehem, it was the beginning of the barley harvest.",
+      "Rus went out to collect food for herself and Naomi, and happened to come to the field of Boaz — a close relative of her late father-in-law. When Boaz came to the field that day, he noticed Rus — her modesty and her regal manner — and asked who she was; he told her to stay close and not to glean in any other field.",
+      "In his old age, Boaz married Rus, and through their union they had a son — who became the grandfather of King David, from whose descendants Moshiach will come."
+    ]
+  },
+  {
     id: "neshama",
     title: "Neshama",
     theme: "Judaic",
