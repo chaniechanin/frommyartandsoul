@@ -709,6 +709,7 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "Dimensions on request",
     image: "images/saras-music.jpg",
+    sold: true,
     featured: false,
     subtitle: "Sarah at her piano — her music and Tehillim rising to the heavens.",
     story: [
