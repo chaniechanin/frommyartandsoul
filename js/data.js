@@ -922,16 +922,18 @@ const PAINTINGS = [
   {
     id: "western-wall-coffee",
     title: "The Western Wall — Painted in Coffee",
-    theme: "Beyond the Canvas",
+    theme: "Paint Parties",
     year: "2021",
     medium: "Coffee on paper",
     size: "Dimensions on request",
     image: "images/western-wall-coffee.jpg",
+    extra: ["images/coffee-2.jpg"],
     featured: false,
-    subtitle: "Painted in coffee, on a fast day of mourning for the Temple.",
+    subtitle: "Painting the Kotel in coffee — with my students.",
     story: [
-      "Today I prepared coffee — not to drink, since I was fasting and mourning the destruction of the Holy Temples that stood in Yerushalayim — but to paint with. I painted the Western Wall, all that remains of the outer walls of the Beis Hamikdash.",
-      "People of all religions and backgrounds travel from around the world to pray at this holy site. May we merit, very soon, to see the third Beis Hamikdash — with the Geulah and Moshiach — when the whole world will live in peace and harmony."
+      "I prepared coffee — not to drink, since I was fasting and mourning the destruction of the Holy Temples that stood in Yerushalayim — but to paint with. I painted the Western Wall, all that remains of the outer walls of the Beis Hamikdash.",
+      "People of all religions and backgrounds travel from around the world to pray at this holy site. May we merit, very soon, to see the third Beis Hamikdash — with the Geulah and Moshiach — when the whole world will live in peace and harmony.",
+      "I brought this idea to my students, too, and together we painted the Kotel in coffee — here are some of their beautiful pieces."
     ]
   },
   {
