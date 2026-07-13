@@ -836,6 +836,8 @@ const PAINTINGS = [
     medium: "Watercolor on paper",
     size: "Dimensions on request",
     image: "images/a-beautiful-day.jpg",
+    extra: "images/a-beautiful-day-2.jpg",
+    extraCaption: "Painting in the park — Brooklyn Botanic",
     featured: false,
     subtitle: "Cherry blossoms, painted among the real cherry blossoms.",
     story: [
