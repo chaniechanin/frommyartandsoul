@@ -799,6 +799,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "pomegranates",
+    title: "Pomegranates",
+    theme: "Beyond the Canvas",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/pomegranates.jpg",
+    featured: false,
+    subtitle: "Painted pomegranates beside a real one — for Tu BiShvat.",
+    story: [
+      "Tonight and tomorrow we celebrate Tu BiShvat, the 15th of the Hebrew month of Shevat — the New Year for the trees. It marks the season when the earliest-blooming trees in the Land of Israel emerge from their winter sleep and begin a new fruit-bearing cycle.",
+      "Pomegranates are one of the seven species of the Land of Israel. Enjoy your fruit on this special day — and remember to bless G-d for the beautiful fruit."
+    ]
+  },
+  {
     id: "western-wall-coffee",
     title: "The Western Wall — Painted in Coffee",
     theme: "Beyond the Canvas",
