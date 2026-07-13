@@ -799,6 +799,35 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "western-wall-coffee",
+    title: "The Western Wall — Painted in Coffee",
+    theme: "Beyond the Canvas",
+    year: "2021",
+    medium: "Coffee on paper",
+    size: "Dimensions on request",
+    image: "images/western-wall-coffee.jpg",
+    featured: false,
+    subtitle: "Painted in coffee, on a fast day of mourning for the Temple.",
+    story: [
+      "Today I prepared coffee — not to drink, since I was fasting and mourning the destruction of the Holy Temples that stood in Yerushalayim — but to paint with. I painted the Western Wall, all that remains of the outer walls of the Beis Hamikdash.",
+      "People of all religions and backgrounds travel from around the world to pray at this holy site. May we merit, very soon, to see the third Beis Hamikdash — with the Geulah and Moshiach — when the whole world will live in peace and harmony."
+    ]
+  },
+  {
+    id: "a-beautiful-day",
+    title: "A Beautiful Day",
+    theme: "Beyond the Canvas",
+    year: "2021",
+    medium: "Watercolor on paper",
+    size: "Dimensions on request",
+    image: "images/a-beautiful-day.jpg",
+    featured: false,
+    subtitle: "Cherry blossoms, painted among the real cherry blossoms.",
+    story: [
+      "Today was a beautiful day. I called my friend and fellow artist @sarablau_ch to join me — with some watercolor supplies — for a trip to the Brooklyn Botanic Garden. We enjoyed time together in nature, meditating on the beautiful creations of G-d, and painting some art of our own."
+    ]
+  },
+  {
     id: "the-test-of-avraham",
     title: "The Test of Avraham",
     theme: "Judaic",

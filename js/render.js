@@ -78,7 +78,7 @@ function renderGallery(){
   const themes=['All',...Array.from(new Set(PAINTINGS.map(p=>p.theme)))];
   const filters=document.getElementById('gallery-filters');
   /* these themes are hidden from "All" — each lives only under its own filter */
-  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin'];
+  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas'];
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
@@ -110,7 +110,7 @@ function renderDetail(){
   const p=PAINTINGS.find(x=>x.id===id)||PAINTINGS[0];
   document.title=`${p.title} — From My Art & Soul`;
   wrap.innerHTML=`
-    <div class="detail-media"><div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div></div>
+    <div class="detail-media">${p.theme==='Beyond the Canvas'?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`}</div>
     <div class="detail-info">
       <a class="back" href="gallery.html">← Back to the collection</a>
       <span class="eyebrow">${p.theme}</span>
