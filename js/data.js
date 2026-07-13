@@ -799,6 +799,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-test-of-avraham",
+    title: "The Test of Avraham",
+    theme: "Judaic",
+    year: "2024",
+    medium: "Acrylic on canvas",
+    size: "18 × 24 in",
+    image: "images/the-test-of-avraham.jpg",
+    featured: false,
+    subtitle: "The Akeidah — Avraham's tenth and greatest test.",
+    story: [
+      "I began this painting erev Rosh Hashanah, connected to the shofar — which reminds Hashem of the self-sacrifice of Avraham, and of the self-sacrifice our Jewish nation has shown throughout history, until today.",
+      "In this week's Torah portion we read of the tenth and most difficult test Hashem gave our father Avraham: \"Take your son, your only one, the one you love, Yitzchak, and go to the land of Moriah; bring him up there as an offering on one of the mountains I will show you.\"",
+      "As Avraham raised the knife over Yitzchak, an angel called down to him to stop. Avraham lifted his eyes and caught sight of a ram entangled by its horns in a thicket; he took the ram and offered it up in his son's stead.",
+      "Hashem, You see the self-sacrifice of the Jewish nation, the children of Avraham, today. Please bring the final Geulah — when once again we will bring our offerings in the Holy Temple, on Mount Moriah."
+    ]
+  },
+  {
     id: "rus-the-moabite",
     title: "Rus the Moabite",
     theme: "Judaic",
