@@ -817,15 +817,17 @@ const PAINTINGS = [
     id: "pomegranates",
     title: "Pomegranates",
     theme: "Beyond the Canvas",
-    year: "2021",
+    year: "2023",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/pomegranates.jpg",
     featured: false,
+    forSale: true,
     subtitle: "Painted pomegranates beside a real one — for Tu BiShvat.",
     story: [
-      "Tonight and tomorrow we celebrate Tu BiShvat, the 15th of the Hebrew month of Shevat — the New Year for the trees. It marks the season when the earliest-blooming trees in the Land of Israel emerge from their winter sleep and begin a new fruit-bearing cycle.",
-      "Pomegranates are one of the seven species of the Land of Israel. Enjoy your fruit on this special day — and remember to bless G-d for the beautiful fruit."
+      "Tu BiShvat, the 15th of Shevat — happy birthday to the trees, on which Hashem grows such colorful, delicious fruits! Tonight we enjoyed a beautiful fruit party.",
+      "It marks the season when the earliest-blooming trees in the Land of Israel emerge from their winter sleep and begin a new fruit-bearing cycle. Pomegranates are one of the seven species of the Land of Israel — so enjoy your fruit on this special day, and remember to bless G-d for its beauty.",
+      "This painting of pomegranates is available for purchase — 18 × 24 in, oil on canvas. Message me for a special price."
     ]
   },
   {
