@@ -1235,12 +1235,16 @@ const PAINTINGS = [
     medium: "Oil on canvas",
     size: "18 × 24 in",
     image: "images/torah-is-life.jpg",
+    extra: "images/torah-challah.jpg",
+    extraCaption: "A challah shaped like the Torah — Simchas Torah",
     featured: true,
     subtitle: "We dance with the Torah that teaches us the true way of life.",
     story: [
       "Simchas Torah is the holiday when we celebrate completing our annual cycle of reading the entire Torah — and then begin the cycle once again.",
       "We dance with the Torah scrolls that teach us the true way of life.",
-      "May the joy of this holiday bring peace to our nation, the children of Israel."
+      "May the joy of this holiday bring peace to our nation, the children of Israel.",
+      "A year ago, on Simchas Torah 2023, I stayed up through the night, praying my feelings out through this very painting. This year, on the same night, I was up again — praying as I watched the news of the hostages returning, waking to more scenes of families reunited with their loved ones.",
+      "I haven't painted a new painting yet this year; instead, I baked a challah in the shape of the Torah. My heart is with my people in the holy land of Israel, where I hope to be reunited with all of the Jewish nation — to dance this Simchas Torah in Yerushalayim, with the ultimate Redemption, in peace and harmony, with the coming of Moshiach!"
     ]
   },
   {
