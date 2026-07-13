@@ -78,6 +78,7 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 .filters button{font-family:var(--sans);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;padding:10px 22px;border:1px solid var(--line);background:none;color:var(--l-mut);cursor:pointer;transition:.2s;border-radius:40px}
 .filters button:hover{border-color:var(--l-ink);color:var(--l-ink)}
 .filters button.active{background:var(--l-ink);color:var(--l-bg);border-color:var(--l-ink)}
+.filters .filter-div{width:1px;height:22px;background:var(--line);align-self:center;margin:0 6px}
 
 .grid{column-count:3;column-gap:20px}
 /* row-based variant (Sketches): reads left→right across each row, then down */
@@ -207,6 +208,8 @@ footer .copyright{font-size:.66rem;letter-spacing:.04em;opacity:.6;max-width:62c
   .detail-media{position:static}
   .detail{padding-top:120px}
   .grid{column-count:2;column-gap:16px}.card{margin-bottom:16px}
+  .filters{gap:8px}.filters button{padding:9px 15px;font-size:.63rem;letter-spacing:.14em}
+  .filters .filter-div{flex:0 0 100%;width:auto;height:0;background:none;margin:2px 0}
   .grid.rows{grid-template-columns:repeat(2,1fr);gap:16px}
   .room-scene{height:auto;min-height:0;padding-bottom:118vw}
   .room-scene .floor{height:34%}.room-scene .baseboard{bottom:34%}

@@ -75,7 +75,9 @@ function renderSpotlights(){
 /* gallery: masonry + theme filters */
 function renderGallery(){
   const grid=document.getElementById('gallery-grid'); if(!grid)return;
-  const themes=['All',...Array.from(new Set(PAINTINGS.map(p=>p.theme)))];
+  const TAB_ORDER=['Judaic','Holidays','Nature','Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
+  const present=new Set(PAINTINGS.map(p=>p.theme));
+  const themes=['All',...TAB_ORDER.filter(t=>present.has(t)),...Array.from(present).filter(t=>!TAB_ORDER.includes(t))];
   const filters=document.getElementById('gallery-filters');
   /* these themes are hidden from "All" — each lives only under its own filter */
   const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
@@ -98,7 +100,7 @@ function renderGallery(){
   };
   const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
   if(filters){
-    filters.innerHTML=themes.map((t,i)=>`<button class="${i===0?'active':''}" data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
+    filters.innerHTML=themes.map((t,i)=>`${t==='Beyond the Canvas'?'<span class="filter-div" aria-hidden="true"></span>':''}<button class="${i===0?'active':''}" data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
     filters.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filters.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');draw(b.dataset.theme);});
   }
   draw('All');
