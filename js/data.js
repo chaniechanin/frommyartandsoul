@@ -814,21 +814,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "torah-challah",
-    title: "The Torah, in Challah",
-    theme: "Beyond the Canvas",
-    year: "2024",
-    medium: "Challah",
-    size: "Dimensions on request",
-    image: "images/torah-challah.jpg",
-    featured: false,
-    subtitle: "This year, a Torah shaped in challah.",
-    story: [
-      "A year ago, on Simchas Torah 2023, I stayed up through the night, praying my feelings out through my painting \"Dance — Torah Is Life.\" This year, on the same night, I was up again — praying as I watched the news of the hostages returning, and waking to more scenes of families reunited with their loved ones.",
-      "I haven't painted a new painting yet this year; instead, I baked a challah in the shape of the Torah. My heart is with my people in the holy land of Israel, where I hope to be reunited with all of the Jewish nation — to dance this Simchas Torah in Yerushalayim, with the ultimate Redemption, in peace and harmony, with the coming of Moshiach!"
-    ]
-  },
-  {
     id: "pomegranates",
     title: "Pomegranates",
     theme: "Beyond the Canvas",
