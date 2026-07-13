@@ -801,6 +801,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "four-cups-3d",
+    title: "The Four Cups in 3D",
+    theme: "Beyond the Canvas",
+    year: "2025",
+    medium: "3D shadow box",
+    size: "Dimensions on request",
+    image: "images/four-cups-3d.jpg",
+    extra: "images/four-cups.jpg",
+    extraCaption: "The painting it's based on — \"The Four Cups\"",
+    featured: false,
+    subtitle: "A 3D shadow box built from my painting \"The Four Cups.\"",
+    story: [
+      "A hectic couple of weeks — I hope you all had a wonderful first days of Pesach!",
+      "I wanted to share this 3D Pesach project I made together with my art students at school, built from my painting \"The Four Cups\" (which I painted the year before). Enjoy the rest of your Pesach festivities!"
+    ]
+  },
+  {
     id: "shofar-mini",
     title: "The MetroCard Competition",
     theme: "Beyond the Canvas",
