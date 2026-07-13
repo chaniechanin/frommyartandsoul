@@ -986,11 +986,11 @@ const PAINTINGS = [
   },
   {
     id: "kotel-plaza",
-    title: "The Kotel Plaza",
+    title: "The Kotel — Yerushalayim",
     theme: "Judaic",
     year: "2019",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "24 × 36 in",
     image: "images/kotel-plaza.jpg",
     featured: false,
     subtitle: "The Western Wall and its plaza, under a Jerusalem sky.",
