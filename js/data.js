@@ -767,6 +767,22 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "menorah-temple",
+    title: "The Menorah — Where It All Began",
+    theme: "Holidays",
+    year: "2020",
+    medium: "Oil on canvas",
+    size: "24 × 36 in",
+    image: "images/menorah-temple.jpg",
+    featured: false,
+    subtitle: "Where it all began — the golden menorah of the Beis Hamikdash.",
+    story: [
+      "Today is Zos Chanukah, the final day of Chanukah, when all the lights of the menorah are lit. As I put the final touches on this painting — \"Where It All Began\" — I think of the great, beautiful golden menorah that stood in the Beis Hamikdash and lit up the entire world.",
+      "Chanukah is the festival of lights, celebrating the miracle of the small jug of oil — enough to keep the menorah lit for one night, yet it miraculously lasted for eight. For over two thousand years, Jews have kindled their Chanukah menorahs, bringing light into the world.",
+      "May we continue to shine light through this dark exile — and very soon may we all celebrate the greatest festival of all, the Redemption, when the Kohen Gadol will light the shining menorah in the Beis Hamikdash, with Moshiach!"
+    ]
+  },
+  {
     id: "mount-sinai",
     title: "Mount Sinai — United as One",
     theme: "Holidays",
