@@ -801,6 +801,59 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "sunset-party",
+    title: "As the Sun Begins to Set",
+    theme: "Paint Parties",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "Dimensions on request",
+    image: "images/sunset.jpg",
+    extra: ["images/sunset-2.jpg"],
+    featured: false,
+    subtitle: "A sunset paint session for Chof-Beis Shevat — and the song behind it.",
+    story: [
+      "In honor of Chof-Beis Shevat, I decided to paint a sunset with my students at school. How is it connected? Who remembers the song — \"As the sun begins to set, revealing a special secret…\"?",
+      "Walking down the street this afternoon, I noticed the gorgeous artwork of Hashem in the sky. Block after block I drank in the beautiful rays of color — and then I ran into Alexandra Leah Namdar, a friend from London and shlucha to Sweden. I pointed out the sky and told her about the art lesson I'd given my students that week, and asked if she remembered the song; I'd handed out the song sheets and shown the girls the BR production of '93 singing it. Leah told me that she is the one who composed it, together with someone else. Just amazing!",
+      "<em>As the sun begins to set…</em><br>Revealing a special secret,<br>its hidden colors begin to shine;<br>igniting the night, radiating the light,<br>the sky seems like it's aglow.",
+      "The shadow in the water,<br>reflecting its glory;<br>on the sky, a golden ecstasy;<br>the clouds' colors blaze,<br>imbued with the rays —<br>a setting of true majesty.",
+      "From the Rebbetzin a light shone,<br>its source to us unknown;<br>in her lifetime concealed at home,<br>yet after her setting,<br>light shines from her domain —<br>v'hachai yiten el libo remains.",
+      "I see through the darkness<br>the promise of tomorrow;<br>dawn is now breaking the night.<br>Upon the horizon, the sun is now rising —<br>the splendor of the Geulah light.<br>The hope is now burning,<br>the sun is returning:<br>Moshiach, to end this golus night."
+    ]
+  },
+  {
+    id: "davening-mincha",
+    title: "Davening Mincha",
+    theme: "Paint Parties",
+    year: "2023",
+    medium: "Acrylic on canvas",
+    size: "Dimensions on request",
+    image: "images/davening-mincha.jpg",
+    extra: ["images/davening-mincha-2.jpg","images/davening-mincha-3.jpg"],
+    featured: false,
+    subtitle: "A sunset paint night for Rivka's bas mitzvah — and the story of her name.",
+    story: [
+      "Last night I painted with a wonderful class of BR sixth-graders, in honor of Rivka's bas mitzvah.",
+      "I asked Rivka's mother what her daughter would like to paint; when she said a sunset over the ocean, I thought of a way to connect it to Rivka's name. When Rivka was returning with Eliezer, whom did she see in the distance? Yitzchak, her future husband — davening Mincha, the afternoon prayer, which is said any time before sunset.",
+      "And so, together, we painted the sunset."
+    ]
+  },
+  {
+    id: "shabbos-party",
+    title: "Shabbos Candles",
+    theme: "Paint Parties",
+    year: "",
+    medium: "Acrylic on canvas",
+    size: "Dimensions on request",
+    image: "images/shabbos-party.jpg",
+    extra: ["images/shabbos-party-2.jpg","images/shabbos-party-3.jpg"],
+    featured: false,
+    subtitle: "A paint party painting the glow of Shabbos.",
+    story: [
+      "A paint party bringing the light of Shabbos to canvas — three candles in their candlesticks, glowing against the evening sky.",
+      "A joyful evening of painting together."
+    ]
+  },
+  {
     id: "four-cups-3d",
     title: "The Four Cups in 3D",
     theme: "Beyond the Canvas",

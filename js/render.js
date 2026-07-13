@@ -78,7 +78,7 @@ function renderGallery(){
   const themes=['All',...Array.from(new Set(PAINTINGS.map(p=>p.theme)))];
   const filters=document.getElementById('gallery-filters');
   /* these themes are hidden from "All" — each lives only under its own filter */
-  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas'];
+  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
@@ -111,7 +111,8 @@ function renderDetail(){
   document.title=`${p.title} — From My Art & Soul`;
   const extraArr=p.extra?(Array.isArray(p.extra)?p.extra:[p.extra]):[];
   const extraHTML=extraArr.map(src=>`<figure class="bts"><img class="btc-media" src="${src}" alt="${p.title}">${(!Array.isArray(p.extra)&&p.extraCaption)?`<figcaption>${p.extraCaption}</figcaption>`:''}</figure>`).join('');
-  const mainMedia=p.theme==='Beyond the Canvas'?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
+  const photoTheme=p.theme==='Beyond the Canvas'||p.theme==='Paint Parties';
+  const mainMedia=photoTheme?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
   wrap.innerHTML=`
     <div class="detail-media">${mainMedia}${extraHTML}</div>
     <div class="detail-info">
@@ -127,7 +128,7 @@ function renderDetail(){
       </div>
       <div class="detail-story"><h4>The Story Behind It</h4>
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
-        ${(p.theme==='Beyond the Canvas'&&!p.forSale)?`<a class="btn gold" href="gallery.html">Explore the Collection</a>`:`<a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>`}
+        ${p.theme==='Paint Parties'?`<a class="btn gold" href="contact.html?piece=${encodeURIComponent('Paint party — booking inquiry')}">Book a Paint Party</a>`:(p.theme==='Beyond the Canvas'&&!p.forSale)?`<a class="btn gold" href="gallery.html">Explore the Collection</a>`:`<a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>`}
       </div>
     </div>`;
 }
