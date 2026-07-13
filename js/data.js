@@ -767,6 +767,41 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "mount-sinai",
+    title: "Mount Sinai — United as One",
+    theme: "Holidays",
+    year: "2023",
+    medium: "Oil on canvas",
+    size: "30 × 40 in",
+    image: "images/mount-sinai.jpg",
+    featured: false,
+    subtitle: "United as one — the giving of the Torah at Sinai.",
+    story: [
+      "I began this painting the week of Shavuos but didn't finish it in time for the holiday. Last night I finally added the last strokes of paint.",
+      "I share it now for today's Chitas, in which Moshe recalls to the Jewish people the moment they received the Torah — the Ten Commandments — at Mount Sinai, where the nation stood together as one man, with one heart.",
+      "This evening we begin to fast and mourn the destruction of our holy Temples. The second Temple was destroyed because of baseless hatred. May we merit to be united, with love, together as one — in the third Beis Hamikdash. May it be now!"
+    ]
+  },
+  {
+    id: "neshama",
+    title: "Neshama",
+    theme: "Judaic",
+    year: "2021",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/neshama.jpg",
+    featured: false,
+    subtitle: "The soul — a flame, always reaching upward.",
+    story: [
+      "A few weeks ago, after not painting for a while — mostly because I'd been busy with the daily responsibilities of caring for my family and home — I wanted to create but couldn't. I yearned to paint, yet I didn't know where to begin. So I simply let my energy out onto the canvas, forming a flame; and as my soul yearned, I added the Hebrew letters of the word Neshama.",
+      "Each of us is created with a neshama — a breath of life, the G-dly spark within us — and we yearn to reconnect to our Source. The soul is always burning like a flame, reaching up to Heaven, striving to rise higher and remember its true identity. One flame, one soul, can ignite many others, awakening them to their purpose. Each of us is created with G-dliness and a mission to fulfill: to bring light into the world.",
+      "This past Friday, a couple of hours before Shabbos, my husband was asked — by a friend of a friend — whether we could host a young man, a pilot flying into New York for the night, for his very first Friday-night meal in an Orthodox Jewish home.",
+      "I had planned a quiet meal (half my kids were still at camp), but I realized this was a shlichus opportunity. My challah was rising; I told my daughter to peel potatoes for a potato kugel, and I ran out to buy gefilte fish and eggplant for chatzilim — I wanted some real Jewish food beyond the usual salmon, salads, and rice.",
+      "I thought he'd arrive in time for the meal — until my husband got a call that he'd be there in ten minutes, right in the middle of the erev-Shabbos rush. He arrived full of questions as I finished preparing our home. He didn't know about the Rebbe, but he was excited to visit 770 that evening, and at the meal the curiosity kept flowing.",
+      "At the end of the meal, I gave him a short tour through many of my paintings, teaching him as many biblical and Jewish concepts as I could in those few minutes. Before he left, he thanked us and said he'd love to come back for another meal — hopefully for the Jewish holidays. He was off on his next flight out. I hope I ignited his soul, and that he'll be back soon."
+    ]
+  },
+  {
     id: "happy-purim",
     title: "Happy Purim",
     theme: "Holidays",
