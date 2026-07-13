@@ -985,6 +985,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "kotel-plaza",
+    title: "The Kotel Plaza",
+    theme: "Judaic",
+    year: "2019",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/kotel-plaza.jpg",
+    featured: false,
+    subtitle: "The Western Wall and its plaza, under a Jerusalem sky.",
+    story: [
+      "The Kotel — the Western Wall — and its great plaza, where Jews from every corner of the world gather to pour out their hearts. It is all that remains of the outer walls of the Beis Hamikdash; the place where, our Sages teach, the Shechinah has never departed.",
+      "May we merit to see it rebuilt — with the third Beis Hamikdash — very soon."
+    ]
+  },
+  {
     id: "the-test-of-avraham",
     title: "The Test of Avraham",
     theme: "Judaic",
