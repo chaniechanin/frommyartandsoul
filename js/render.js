@@ -109,8 +109,11 @@ function renderDetail(){
   const id=new URLSearchParams(location.search).get('id');
   const p=PAINTINGS.find(x=>x.id===id)||PAINTINGS[0];
   document.title=`${p.title} — From My Art & Soul`;
+  const extraArr=p.extra?(Array.isArray(p.extra)?p.extra:[p.extra]):[];
+  const extraHTML=extraArr.map(src=>`<figure class="bts"><img class="btc-media" src="${src}" alt="${p.title}">${(!Array.isArray(p.extra)&&p.extraCaption)?`<figcaption>${p.extraCaption}</figcaption>`:''}</figure>`).join('');
+  const mainMedia=p.theme==='Beyond the Canvas'?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
   wrap.innerHTML=`
-    <div class="detail-media">${p.theme==='Beyond the Canvas'?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`}${p.extra?`<figure class="bts"><img class="btc-media" src="${p.extra}" alt="${p.title} — behind the scenes"><figcaption>${p.extraCaption||'Behind the scenes'}</figcaption></figure>`:''}</div>
+    <div class="detail-media">${mainMedia}${extraHTML}</div>
     <div class="detail-info">
       <a class="back" href="gallery.html">← Back to the collection</a>
       <span class="eyebrow">${p.theme}</span>

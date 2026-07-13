@@ -125,6 +125,7 @@ const PAINTINGS = [
     medium: "Charcoal on paper",
     size: "Dimensions on request",
     image: "images/yehoshua-gordon.jpg?v=bw2",
+    sold: true,
     featured: false,
     subtitle: "The teacher whose shiurim brought Chitas to life.",
     story: [
@@ -141,6 +142,7 @@ const PAINTINGS = [
     medium: "Charcoal on paper",
     size: "Dimensions on request",
     image: "images/leibel-groner.jpg?v=bw2",
+    sold: true,
     featured: false,
     subtitle: "The man who stood beside the Rebbe.",
     story: [
@@ -800,44 +802,19 @@ const PAINTINGS = [
   },
   {
     id: "shofar-mini",
-    title: "The Shofar",
+    title: "The MetroCard Competition",
     theme: "Beyond the Canvas",
     year: "",
-    medium: "Oil on a MetroCard",
+    medium: "Oil on MetroCards",
     size: "Dimensions on request",
-    image: "images/shofar-mini.jpg",
+    image: "images/shofar-mini.png",
+    extra: ["images/sweet-new-year.png","images/kotel-mini.png"],
     featured: false,
-    subtitle: "Blowing the shofar of Elul — painted on a MetroCard.",
+    subtitle: "Mini Jewish paintings on the backs of MetroCards.",
     story: [
-      "For the @singlefare art show, I painted a little series of miniatures on the backs of MetroCards. As we enter the month of Elul — the month before Rosh Hashanah, the Day of Judgment — we begin to blow the shofar, to awaken us to return. Such a fun project: mini Jewish paintings on MetroCards!"
-    ]
-  },
-  {
-    id: "sweet-new-year",
-    title: "Sweet New Year",
-    theme: "Beyond the Canvas",
-    year: "",
-    medium: "Oil on a MetroCard",
-    size: "Dimensions on request",
-    image: "images/sweet-new-year.jpg",
-    featured: false,
-    subtitle: "An apple for a sweet new year — painted on a MetroCard.",
-    story: [
-      "Part of my series of miniatures for the @singlefare art show, painted on the backs of MetroCards. On Rosh Hashanah we dip the apple in honey and wish one another a good and sweet new year."
-    ]
-  },
-  {
-    id: "kotel-mini",
-    title: "The Kotel",
-    theme: "Beyond the Canvas",
-    year: "",
-    medium: "Oil on a MetroCard",
-    size: "Dimensions on request",
-    image: "images/kotel-mini.jpg",
-    featured: false,
-    subtitle: "The Western Wall — painted on a MetroCard.",
-    story: [
-      "Part of my series of miniatures for the @singlefare art show, painted on the backs of MetroCards. Even in miniature, the heart turns to the Kotel — the Western Wall — in Yerushalayim."
+      "For the @singlefare art show, I painted a little series of miniatures on the backs of used MetroCards.",
+      "As we enter the month of Elul — the month before Rosh Hashanah, the Day of Judgment — we blow the shofar to awaken us to return, and begin to wish one another a good and sweet new year; and on Rosh Hashanah we dip the apple in honey. So I painted three little scenes: the shofar, an apple for a sweet new year, and the Western Wall.",
+      "Such a fun project — mini Jewish paintings on MetroCards!"
     ]
   },
   {
