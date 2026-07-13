@@ -124,7 +124,7 @@ function renderDetail(){
       </div>
       <div class="detail-story"><h4>The Story Behind It</h4>
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
-        <a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>
+        ${p.theme==='Beyond the Canvas'?`<a class="btn gold" href="gallery.html">Explore the Collection</a>`:`<a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>`}
       </div>
     </div>`;
 }
