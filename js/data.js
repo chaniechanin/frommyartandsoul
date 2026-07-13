@@ -1427,21 +1427,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "tu-bshvat",
-    title: "Tu BiShvat",
-    theme: "Holidays",
-    year: "2013",
-    medium: "Oil on canvas",
-    size: "Dimensions on request",
-    image: "images/tu-bshvat.jpg",
-    featured: false,
-    subtitle: "A tree of many fruits, shaped like a person.",
-    story: [
-      "A single tree stands in an open green field, its trunk suggesting a human figure and its branches heavy with every kind of fruit — apples, grapes, figs and more.",
-      "\"For man is a tree of the field\" — the New Year of the Trees."
-    ]
-  },
-  {
     id: "in-the-field",
     title: "In the Field",
     theme: "Judaic",
