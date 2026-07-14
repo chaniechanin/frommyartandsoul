@@ -1164,22 +1164,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "yona-and-the-big-fish",
-    title: "Yonah and the Big Fish",
-    theme: "Judaic",
-    year: "2017",
-    medium: "Oil on canvas",
-    size: "18 × 24 in",
-    image: "images/yona-and-the-big-fish.jpg",
-    featured: false,
-    subtitle: "The stormy sea of Yonah — the story we read on Yom Kippur.",
-    story: [
-      "A ship tossed on a raging sea, and a great fish rising from the depths — the story of Yonah the prophet, who tried to flee from his mission and found that there is nowhere to run from G-d.",
-      "We read the book of Yonah at Minchah on Yom Kippur. It is a story about teshuvah — about second chances, and about a Creator who waits for us to turn back to Him.",
-      "The wind and the waves felt alive to paint, and the little ship so fragile against them — the way we all are, until we remember Who is holding us."
-    ]
-  },
-  {
     id: "the-sun-did-not-set",
     title: "The Sun Did Not Set",
     theme: "Judaic",
@@ -1610,13 +1594,14 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/yona.jpg",
     featured: false,
-    subtitle: "A storm at sea, and the fish waiting below.",
+    subtitle: "The stormy sea of Yonah — the story we read on Yom Kippur.",
     story: [
-      "A ship pitched among white-capped waves under a turbulent sky, with the great fish rising from the deep — the story of Yonah, read every Yom Kippur afternoon.",
-      "A painting about running from a mission, and being turned back toward it."
+      "A ship tossed on a raging sea, and a great fish rising from the depths — the story of Yonah the prophet, who tried to flee from his mission and found that there is nowhere to run from G-d.",
+      "We read the book of Yonah at Minchah on Yom Kippur. It is a story about teshuvah — about second chances, and about a Creator who waits for us to turn back to Him.",
+      "The wind and the waves felt alive to paint, and the little ship so fragile against them — the way we all are, until we remember Who is holding us."
     ]
   },
   {
