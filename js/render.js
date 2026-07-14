@@ -80,7 +80,7 @@ function renderGallery(){
   const filters=document.getElementById('gallery-filters');
   const nextWrap=document.getElementById('gallery-next');
   /* "best first" ordering — these lead the All Works tab; the rest follow in their existing order */
-  const FEATURED_ORDER=['avraham','the-kotel','torah-is-life','mount-sinai','miriam-at-the-sea','kotel-in-color','mother-rochel','the-test-of-avraham','neshama','a-soldiers-prayer','leah','sound-of-the-shofar','menorah-temple','the-leaf','kineret','spring-tulips','under-the-sea','the-beach'];
+  const FEATURED_ORDER=['the-leaf','avraham','the-kotel','torah-is-life','mount-sinai','miriam-at-the-sea','kotel-in-color','mother-rochel','the-test-of-avraham','neshama','a-soldiers-prayer','leah','sound-of-the-shofar','menorah-temple','kineret','spring-tulips','under-the-sea','the-beach'];
   /* these two live in the top nav instead of the gallery tab bar (reachable via ?view= and the "Next" button) */
   const NAV_ONLY=['Beyond the Canvas','Paint Parties'];
   const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
