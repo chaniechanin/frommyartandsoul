@@ -77,16 +77,24 @@ function renderGallery(){
   const grid=document.getElementById('gallery-grid'); if(!grid)return;
   const TAB_ORDER=['Judaic','Holidays','Nature','Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
   const present=new Set(PAINTINGS.map(p=>p.theme));
-  const themes=['All',...TAB_ORDER.filter(t=>present.has(t)),...Array.from(present).filter(t=>!TAB_ORDER.includes(t))];
   const filters=document.getElementById('gallery-filters');
-  /* these themes are hidden from "All" — each lives only under its own filter */
-  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
+  const nextWrap=document.getElementById('gallery-next');
+  /* the default landing tab — a curated cross-section of her strongest work, spanning themes */
+  const FEATURED_ORDER=['torah-is-life','avraham','the-leaf','mother-rochel','kineret','sound-of-the-shofar','miriam-at-the-sea','spring-tulips','the-test-of-avraham','menorah-temple','the-kotel','under-the-sea','neshama','mount-sinai','the-beach','kotel-in-color','leah','a-soldiers-prayer'];
+  /* these two live in the top nav instead of the gallery tab bar (reachable via ?view= and the "Next" button) */
+  const NAV_ONLY=['Beyond the Canvas','Paint Parties'];
+  const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
+  /* the tab bar: Featured + the themes that aren't nav-only */
+  const tabThemes=['Featured',...TAB_ORDER.filter(t=>present.has(t)&&!NAV_ONLY.includes(t)),...Array.from(present).filter(t=>!TAB_ORDER.includes(t))];
+  /* the "Next" journey — Featured leads into Judaic and flows through every section, ending back at Featured */
+  const NEXT_MAP={'Featured':'Judaic','Judaic':'Holidays','Holidays':'Nature','Nature':'Portraits','Portraits':'Rebbe & Rebbetzin','Rebbe & Rebbetzin':'Beyond the Canvas','Beyond the Canvas':'Paint Parties','Paint Parties':'Featured'};
+  const nextTheme=(cur)=>{ let t=NEXT_MAP[cur]||'Featured',g=0; while(t!=='Featured'&&!present.has(t)&&g++<12){ t=NEXT_MAP[t]||'Featured'; } return t; };
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
   const HOLIDAY_ORDER=['shofar','sound-of-the-shofar','lulav','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai'];
   const draw=(theme)=>{
-    let list=theme==='All'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)):PAINTINGS.filter(p=>p.theme===theme);
+    let list=theme==='Featured'?FEATURED_ORDER.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */
     if(theme==='Portraits') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
     /* Rebbe & Rebbetzin follows the fixed REBBE_ORDER */
@@ -98,12 +106,27 @@ function renderGallery(){
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
   };
-  const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
+  const activate=(theme,scroll)=>{
+    if(!present.has(theme)&&theme!=='Featured') theme='Featured';
+    draw(theme);
+    if(filters) filters.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.theme===theme));
+    if(nextWrap){
+      const nt=nextTheme(theme);
+      nextWrap.innerHTML=`<button class="btn dark next-sec" data-theme="${nt}">Next — ${TAB_LABELS[nt]||nt} &rarr;</button>`;
+    }
+    if(scroll){ const y=(filters||grid).getBoundingClientRect().top+scrollY-90; scrollTo({top:y,behavior:'smooth'}); }
+  };
   if(filters){
-    filters.innerHTML=themes.map((t,i)=>`<button class="${i===0?'active':''}" data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
-    filters.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filters.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');draw(b.dataset.theme);});
+    filters.innerHTML=tabThemes.map(t=>`<button data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
+    filters.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;activate(b.dataset.theme,false);});
   }
-  draw('All');
+  if(nextWrap){
+    nextWrap.addEventListener('click',e=>{const b=e.target.closest('.next-sec');if(!b)return;activate(b.dataset.theme,true);});
+  }
+  /* open a section directly from the top-nav links (?view=beyond / ?view=events) */
+  const VIEW_MAP={beyond:'Beyond the Canvas',events:'Paint Parties'};
+  const view=new URLSearchParams(location.search).get('view');
+  activate((view&&VIEW_MAP[view])||'Featured',false);
 }
 
 /* story (detail) page */

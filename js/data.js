@@ -844,6 +844,7 @@ const PAINTINGS = [
     story: [
       "I began this painting the week of Shavuos but didn't finish it in time for the holiday. Last night I finally added the last strokes of paint.",
       "I share it now for today's Chitas, in which Moshe recalls to the Jewish people the moment they received the Torah — the Ten Commandments — at Mount Sinai, where the nation stood together as one man, with one heart.",
+      "I painted the mountain wrapped in fire and cloud, thunder and lightning above — the whole world silent — as the nation gathered below to hear G-d's voice.",
       "This evening we begin to fast and mourn the destruction of our holy Temples. The second Temple was destroyed because of baseless hatred. May we merit to be united, with love, together as one — in the third Beis Hamikdash. May it be now!"
     ]
   },
@@ -1207,6 +1208,7 @@ const PAINTINGS = [
     subtitle: "The women's song and dance at the splitting of the sea.",
     story: [
       "In this week's parsha, B'shalach, we read of one of the greatest miracles in history — the splitting of the sea.",
+      "If you look closely, I painted the sea splitting into twelve separate tunnels — one passageway for each of the twelve tribes.",
       "Moshe sang together with the men, and then Miriam the prophetess took the cymbals in her hand and led the women in dance and song.",
       "In the merit of her prophecy, and in the merit of the Jewish women, we were redeemed from Egypt.",
       "It will be in the merit of us women that we will be redeemed from this long exile. Hashem will once again show us wonders and miracles — the sea will split again, and we will all sing together the new song of Redemption. May it be today!"
