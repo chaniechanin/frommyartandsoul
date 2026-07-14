@@ -67,7 +67,7 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 /* ---------- sections ---------- */
 .sec{padding:120px 0}
 .collection-main{padding-top:150px}
-@media(max-width:600px){.collection-main{padding-top:86px}}
+@media(max-width:600px){.collection-main{padding-top:124px}}
 .sec-light{background:rgba(246,242,234,.89);color:var(--l-ink)}
 .sec-dark{background:rgba(14,14,17,.86);color:var(--d-ink)}
 .head{text-align:center;max-width:660px;margin:0 auto 40px}
