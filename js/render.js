@@ -100,7 +100,7 @@ function renderGallery(){
   };
   const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
   if(filters){
-    filters.innerHTML=themes.map((t,i)=>`${t==='Beyond the Canvas'?'<span class="filter-div" aria-hidden="true"></span>':''}<button class="${i===0?'active':''}" data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
+    filters.innerHTML=themes.map((t,i)=>`<button class="${i===0?'active':''}" data-theme="${t}">${TAB_LABELS[t]||t}</button>`).join('');
     filters.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filters.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');draw(b.dataset.theme);});
   }
   draw('All');
@@ -116,6 +116,11 @@ function renderDetail(){
   const extraHTML=extraArr.map(src=>`<figure class="bts"><img class="btc-media" src="${src}" alt="${p.title}">${(!Array.isArray(p.extra)&&p.extraCaption)?`<figcaption>${p.extraCaption}</figcaption>`:''}</figure>`).join('');
   const photoTheme=p.theme==='Beyond the Canvas'||p.theme==='Paint Parties';
   const mainMedia=photoTheme?`<img class="btc-media" src="${p.image}" alt="${p.title}">`:`<div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div>`;
+  const grp=PAINTINGS.filter(x=>x.theme===p.theme);
+  const gi=grp.findIndex(x=>x.id===p.id);
+  const prev=grp.length>1?grp[(gi-1+grp.length)%grp.length]:null;
+  const next=grp.length>1?grp[(gi+1)%grp.length]:null;
+  const navHTML=(prev||next)?`<div class="detail-nav">${prev?`<a href="painting.html?id=${encodeURIComponent(prev.id)}">← Previous</a>`:'<span></span>'}${next?`<a href="painting.html?id=${encodeURIComponent(next.id)}">Next →</a>`:'<span></span>'}</div>`:'';
   wrap.innerHTML=`
     <div class="detail-media">${mainMedia}${extraHTML}</div>
     <div class="detail-info">
@@ -133,6 +138,7 @@ function renderDetail(){
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
         ${p.theme==='Paint Parties'?`<a class="btn gold" href="contact.html?piece=${encodeURIComponent('Paint party — booking inquiry')}">Book a Paint Party</a>`:(p.theme==='Beyond the Canvas'&&!p.forSale)?`<a class="btn gold" href="gallery.html">Explore the Collection</a>`:`<a class="btn gold" href="contact.html?piece=${encodeURIComponent(p.title)}">${p.sold?'Inquire About a Print':'Inquire About This Piece'}</a>`}
       </div>
+      ${navHTML}
     </div>`;
 }
 

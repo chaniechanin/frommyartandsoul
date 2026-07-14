@@ -643,20 +643,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "summer-day",
-    title: "Summer Day",
-    theme: "Nature",
-    year: "2015",
-    medium: "Oil on canvas",
-    size: "18 × 24 in",
-    image: "images/summer-day.jpg",
-    featured: false,
-    subtitle: "Sea, sand, and sky.",
-    story: [
-      "Who wouldn't want to be here on a hot summer day?"
-    ]
-  },
-  {
     id: "pebble-in-the-water",
     title: "A Pebble in the Water",
     theme: "Nature",
@@ -704,6 +690,51 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "spring-tulips",
+    title: "Spring Tulips",
+    theme: "Nature",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "Dimensions on request",
+    image: "images/flower.jpg",
+    featured: false,
+    subtitle: "A field of tulips in full color.",
+    story: [
+      "A burst of purple, pink, and gold — tulips crowded together the way they are in spring, when the whole world seems to wake up at once.",
+      "I love painting flowers. Each one is its own little brushstroke of the Creator's imagination, and together they remind me how much beauty He folds into the smallest corners of the world."
+    ]
+  },
+  {
+    id: "the-cove",
+    title: "The Cove",
+    theme: "Nature",
+    year: "2011",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/sea.jpg",
+    featured: false,
+    subtitle: "Little boats at rest in a quiet blue bay.",
+    story: [
+      "Seen from above, the water opens into a calm blue cove, with a handful of small boats scattered across it and soft sand curving along the shore.",
+      "There is a stillness to a scene like this — the kind of quiet that makes you stop and breathe. I wanted to hold on to that peaceful feeling on the canvas."
+    ]
+  },
+  {
+    id: "under-the-sea",
+    title: "Under the Sea",
+    theme: "Nature",
+    year: "2015",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/fish.jpg",
+    featured: false,
+    subtitle: "A coral world of color beneath the waves.",
+    story: [
+      "Below the surface is a whole world we rarely see — bright fish of every color drifting between the swaying grasses on the ocean floor.",
+      "I loved painting each little fish in its own shade and shape. It's a reminder of how much wonder G-d tucked away where almost no one is watching."
+    ]
+  },
+  {
     id: "saras-music",
     title: "Sara's Music",
     theme: "Judaic",
@@ -734,6 +765,22 @@ const PAINTINGS = [
     story: [
       "Sukkos is a holiday of joy — and also a holiday of unity. The lulav, esrog, hadassim, and aravos that we hold together symbolize four kinds of Jews, in Torah knowledge and good deeds: one has a fragrance but no taste, another taste but no fragrance, one has both, and one has neither.",
       "This painting symbolizes our nation's unity as we hold together onto the four kinds — praying and shaking in unity."
+    ]
+  },
+  {
+    id: "choosing-the-esrog",
+    title: "Choosing the Esrog",
+    theme: "Holidays",
+    year: "2010",
+    medium: "Oil on canvas",
+    size: "16 × 20 in",
+    image: "images/lulav-reb-getzel.jpg",
+    featured: false,
+    sold: true,
+    subtitle: "An elder examines his esrog and lulav with love and care.",
+    story: [
+      "Wrapped in his tallis, an old chassid holds up his esrog and lulav and studies them closely — checking every detail, the way our people have cherished this mitzvah for generations.",
+      "There is such devotion in his face. He is not rushing. Choosing the esrog is a labor of love, and you can see a lifetime of Sukkos in the way he holds it."
     ]
   },
   {
@@ -1097,6 +1144,38 @@ const PAINTINGS = [
       "Fresh on the easel — just signed tonight. My mind, heart, and soul have been with Rochel Imeinu these past couple of days.",
       "Shabbos was the yahrtzeit of our mother Rochel. Motzei Shabbos I sketched her kever to teach my middle-school art students. Sunday night, watching Ten Yad, part of the evening was dedicated to Rochel, including a medley of \"Kol B'Ramah.\" Today I was featured on the zoom for \"Women United for Geulah,\" in tribute to Rochel. And at the end of the week, G-d willing, I'll be performing \"Jewish Women Through the Ages\" for the \"A TIME\" organization, and painting Kever Rochel.",
       "It's time for Mama Rochel's tears of joy!"
+    ]
+  },
+  {
+    id: "a-soldiers-prayer",
+    title: "A Soldier's Prayer",
+    theme: "Judaic",
+    year: "2018",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/idf.jpg",
+    featured: false,
+    subtitle: "A soldier stops in the field, wrapped in tallis and tefillin, to daven.",
+    story: [
+      "Out in the open field, tanks and jeeps behind him and the flag of Israel flying, a young soldier wraps himself in his tallis and tefillin and pauses to daven.",
+      "Whatever is going on around him, he takes these few minutes to stand before G-d. To me this is the truest strength of our people — a soldier who guards the land with his body, and holds onto his faith with his whole heart.",
+      "May Hashem watch over all the soldiers of Israel, and bring them home safely."
+    ]
+  },
+  {
+    id: "yona-and-the-big-fish",
+    title: "Yonah and the Big Fish",
+    theme: "Judaic",
+    year: "2017",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/yona-and-the-big-fish.jpg",
+    featured: false,
+    subtitle: "The stormy sea of Yonah — the story we read on Yom Kippur.",
+    story: [
+      "A ship tossed on a raging sea, and a great fish rising from the depths — the story of Yonah the prophet, who tried to flee from his mission and found that there is nowhere to run from G-d.",
+      "We read the book of Yonah at Minchah on Yom Kippur. It is a story about teshuvah — about second chances, and about a Creator who waits for us to turn back to Him.",
+      "The wind and the waves felt alive to paint, and the little ship so fragile against them — the way we all are, until we remember Who is holding us."
     ]
   },
   {
