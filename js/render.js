@@ -79,35 +79,41 @@ function renderGallery(){
   const present=new Set(PAINTINGS.map(p=>p.theme));
   const filters=document.getElementById('gallery-filters');
   const nextWrap=document.getElementById('gallery-next');
-  /* the default landing tab — a curated cross-section of her strongest work, spanning themes */
-  const FEATURED_ORDER=['torah-is-life','avraham','the-leaf','mother-rochel','kineret','sound-of-the-shofar','miriam-at-the-sea','spring-tulips','the-test-of-avraham','menorah-temple','the-kotel','under-the-sea','neshama','mount-sinai','the-beach','kotel-in-color','leah','a-soldiers-prayer'];
+  /* "best first" ordering — these lead the All Works tab; the rest follow in their existing order */
+  const FEATURED_ORDER=['avraham','the-kotel','torah-is-life','mount-sinai','miriam-at-the-sea','kotel-in-color','mother-rochel','the-test-of-avraham','neshama','a-soldiers-prayer','leah','sound-of-the-shofar','menorah-temple','the-leaf','kineret','spring-tulips','under-the-sea','the-beach'];
   /* these two live in the top nav instead of the gallery tab bar (reachable via ?view= and the "Next" button) */
   const NAV_ONLY=['Beyond the Canvas','Paint Parties'];
   const TAB_LABELS={'Rebbe & Rebbetzin':'Chabad','Beyond the Canvas':'Beyond','Paint Parties':'Events'};
-  /* the tab bar: Featured + the themes that aren't nav-only */
-  const tabThemes=['Featured',...TAB_ORDER.filter(t=>present.has(t)&&!NAV_ONLY.includes(t)),...Array.from(present).filter(t=>!TAB_ORDER.includes(t))];
-  /* the "Next" journey — Featured leads into Judaic and flows through every section, ending back at Featured */
-  const NEXT_MAP={'Featured':'Judaic','Judaic':'Holidays','Holidays':'Nature','Nature':'Portraits','Portraits':'Rebbe & Rebbetzin','Rebbe & Rebbetzin':'Beyond the Canvas','Beyond the Canvas':'Paint Parties','Paint Parties':'Featured'};
-  const nextTheme=(cur)=>{ let t=NEXT_MAP[cur]||'Featured',g=0; while(t!=='Featured'&&!present.has(t)&&g++<12){ t=NEXT_MAP[t]||'Featured'; } return t; };
+  /* "All Works" gathers every Judaic / Holidays / Nature painting (best first); Portraits & Chabad keep their own tabs */
+  const HIDE_FROM_ALL=['Portraits','Rebbe & Rebbetzin','Beyond the Canvas','Paint Parties'];
+  /* the tab bar: the themes that aren't nav-only, then "All Works" at the end */
+  const tabThemes=[...TAB_ORDER.filter(t=>present.has(t)&&!NAV_ONLY.includes(t)),...Array.from(present).filter(t=>!TAB_ORDER.includes(t)),'All Works'];
+  /* the "Next" journey flows through every section, ends on "All Works", then loops back */
+  const NEXT_MAP={'Judaic':'Holidays','Holidays':'Nature','Nature':'Portraits','Portraits':'Rebbe & Rebbetzin','Rebbe & Rebbetzin':'Beyond the Canvas','Beyond the Canvas':'Paint Parties','Paint Parties':'All Works','All Works':'Judaic'};
+  const nextTheme=(cur)=>{ let t=NEXT_MAP[cur]||'All Works',g=0; while(t!=='All Works'&&!present.has(t)&&g++<12){ t=NEXT_MAP[t]||'All Works'; } return t; };
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
   const HOLIDAY_ORDER=['shofar','sound-of-the-shofar','lulav','choosing-the-esrog','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai'];
+  /* Judaic: lead with her strongest / signature pieces; the rest follow in their existing order */
+  const JUDAIC_ORDER=['avraham','the-kotel','kotel-in-color','miriam-at-the-sea','the-test-of-avraham','mother-rochel','the-holy-temple','neshama','the-sun-did-not-set','shema','mizmor-ledovid','yerushalayim','rus-the-moabite','a-soldiers-prayer','leah'];
   const draw=(theme)=>{
-    let list=theme==='Featured'?FEATURED_ORDER.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean):PAINTINGS.filter(p=>p.theme===theme);
+    let list=theme==='All Works'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)).slice().sort((a,b)=>{const ia=FEATURED_ORDER.indexOf(a.id),ib=FEATURED_ORDER.indexOf(b.id);return (ia<0?999:ia)-(ib<0?999:ib);}):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */
     if(theme==='Portraits') list=list.slice().sort((a,b)=>(parseInt(b.year||'0',10)-parseInt(a.year||'0',10)));
     /* Rebbe & Rebbetzin follows the fixed REBBE_ORDER */
     if(theme==='Rebbe & Rebbetzin') list=list.slice().sort((a,b)=>{const ia=REBBE_ORDER.indexOf(a.id),ib=REBBE_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
     /* Holidays follow the Jewish calendar cycle */
     if(theme==='Holidays') list=list.slice().sort((a,b)=>{const ia=HOLIDAY_ORDER.indexOf(a.id),ib=HOLIDAY_ORDER.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);});
+    /* Judaic: best pieces first, then the rest in their original order (stable sort) */
+    if(theme==='Judaic') list=list.slice().sort((a,b)=>{const ia=JUDAIC_ORDER.indexOf(a.id),ib=JUDAIC_ORDER.indexOf(b.id);return (ia<0?999:ia)-(ib<0?999:ib);});
     grid.classList.toggle('rows',theme==='Portraits'||theme==='Rebbe & Rebbetzin'||theme==='Holidays');
     grid.classList.toggle('rtl',theme==='Rebbe & Rebbetzin');
     grid.innerHTML=list.map(cardHTML).join('');
     initReveal();
   };
   const activate=(theme,scroll)=>{
-    if(!present.has(theme)&&theme!=='Featured') theme='Featured';
+    if(!present.has(theme)&&theme!=='All Works') theme='All Works';
     draw(theme);
     if(filters) filters.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.theme===theme));
     if(nextWrap){
@@ -126,7 +132,7 @@ function renderGallery(){
   /* open a section directly from the top-nav links (?view=beyond / ?view=events) */
   const VIEW_MAP={beyond:'Beyond the Canvas',events:'Paint Parties'};
   const view=new URLSearchParams(location.search).get('view');
-  activate((view&&VIEW_MAP[view])||'Featured',false);
+  activate((view&&VIEW_MAP[view])||tabThemes[0],false);
 }
 
 /* story (detail) page */
