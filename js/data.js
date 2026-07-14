@@ -1606,7 +1606,7 @@ const PAINTINGS = [
   },
   {
     id: "shabbos-eagle",
-    title: "Shabbat 250",
+    title: "Shabbat 250 America",
     theme: "Judaic",
     year: "2026",
     medium: "Acrylic on canvas",
