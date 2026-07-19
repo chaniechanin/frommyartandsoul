@@ -1185,7 +1185,7 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/miriam-at-the-sea.jpg",
     sold: true,
     featured: true,
