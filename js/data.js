@@ -1576,14 +1576,14 @@ const PAINTINGS = [
   },
   {
     id: "agam",
-    title: "Agam",
+    title: "The Three Mitzvos of the Woman",
     theme: "Judaic",
     year: "2025",
     medium: "Oil on canvas",
     size: "24 × 36 in",
     image: "images/agam.jpg",
     featured: false,
-    subtitle: "Agam — a name that means a body of water.",
+    subtitle: "Challah, Niddah, and the Shabbos candles — the three mitzvos entrusted to Jewish women.",
     story: [
       "Shabbos went out, and I had just watched the release of four hostages coming home. I prayed for the release and return of their friend Agam — I had sketched a drawing of her, and felt a strong connection to her.",
       "During those days of waiting it was the 28th of Teves, the birthday of Rebbetzin Chana, the mother of our Rebbe. The letters of her name are an acronym for the three mitzvos special to Jewish women: Challah, Niddah (the laws of family purity), and Hadlokas Haneiros (lighting the Shabbos candles). A few months earlier I had joined a mega challah bake in Crown Heights, where we all took challah and prayed for the hostages to come home safely.",
