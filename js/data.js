@@ -1142,10 +1142,9 @@ const PAINTINGS = [
     featured: false,
     subtitle: "Kever Rochel — the resting place of our mother Rachel.",
     story: [
-      "Fresh on the easel — just signed tonight. My mind, heart, and soul have been with Rochel Imeinu these past couple of days.",
-      "Shabbos was the yahrtzeit of our mother Rochel. Motzei Shabbos I sketched her kever to teach my middle-school art students. Sunday night, watching Ten Yad, part of the evening was dedicated to Rochel, including a medley of \"Kol B'Ramah.\" Today I was featured on the zoom for \"Women United for Geulah,\" in tribute to Rochel. And at the end of the week, G-d willing, I'll be performing \"Jewish Women Through the Ages\" for the \"A TIME\" organization, and painting Kever Rochel.",
-      "Rochel passed away at the side of the road, and there she was buried. To this day Jews come to daven at her kever outside Beis Lechem, and her cries are heard on high as she prays for her children. She is a devoted mother — a true Yiddishe Mama.",
-      "It's time for Mama Rochel's tears of joy!"
+      "On the 11th of Cheshvan, in honor of Mother Rochel's yahrtzeit — the anniversary of her passing — I share this with you.",
+      "Rochel passed away after giving birth to Binyomin, and was laid to rest at the side of the road, where she is buried until today. There she cries for her children while we are in exile.",
+      "Very soon her tears will be dry, as we are reunited with our Mother Rochel with the Geulah and the coming of Moshiach. May it be today!"
     ]
   },
   {
