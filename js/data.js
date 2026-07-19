@@ -1236,7 +1236,7 @@ const PAINTINGS = [
   },
   {
     id: "the-kotel",
-    title: "The Kotel — The Western Wall in Radiant Color",
+    title: "The Kotel in Radiant Color",
     theme: "Judaic",
     year: "",
     medium: "Oil on canvas",
