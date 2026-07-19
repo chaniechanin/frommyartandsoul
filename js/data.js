@@ -1433,7 +1433,7 @@ const PAINTINGS = [
   },
   {
     id: "avraham",
-    title: "Avraham and the Stars",
+    title: "The Promise to Avraham",
     theme: "Judaic",
     year: "2024",
     medium: "Oil on canvas",
@@ -1442,7 +1442,7 @@ const PAINTINGS = [
     featured: true,
     subtitle: "\"Look toward the heavens and count the stars.\"",
     story: [
-      "This week's parsha is all about our father Avraham. Hashem blesses him: \"I will make your offspring as numerous as the dust of the earth — if a man can count the particles of dust in the world, then your offspring, too, could be counted.\"",
+      "The Torah tells us about our father Avraham. Hashem blesses him: \"I will make your offspring as numerous as the dust of the earth — if a man can count the particles of dust in the world, then your offspring, too, could be counted.\"",
       "G-d took Avraham outside his tent and said, \"Look toward the heavens and count the stars — if you are able to count them.\" And He said to him, \"So shall your descendants be.\"",
       "The Jewish nation is spread all around the world, spreading Torah and mitzvos, shining bright like the stars in the darkness, filling the world with G-dliness."
     ]
