@@ -628,7 +628,7 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2022",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "30 × 40 in",
     image: "images/the-holy-temple.jpg",
     featured: false,
     subtitle: "The third Beis Hamikdash, in all its glory.",
