@@ -1191,11 +1191,8 @@ const PAINTINGS = [
     featured: true,
     subtitle: "The women's song and dance at the splitting of the sea.",
     story: [
-      "In this week's parsha, B'shalach, we read of one of the greatest miracles in history — the splitting of the sea.",
-      "If you look closely, I painted the sea splitting into twelve separate tunnels — one passageway for each of the twelve tribes.",
-      "Moshe sang together with the men, and then Miriam the prophetess took the cymbals in her hand and led the women in dance and song.",
-      "In the merit of her prophecy, and in the merit of the Jewish women, we were redeemed from Egypt.",
-      "It will be in the merit of us women that we will be redeemed from this long exile. Hashem will once again show us wonders and miracles — the sea will split again, and we will all sing together the new song of Redemption. May it be today!"
+      "After the Jewish nation was redeemed from Egypt, they experienced the miracle of the splitting of the sea. Miriam the prophetess took her tambourine and led the women in dance, in praise to Hashem.",
+      "It is known that in the merit of the righteous women our fathers were redeemed from Egypt — and it will be in the merit of the Jewish women and girls that we will be redeemed from this exile. May it be today!"
     ]
   },
   {
