@@ -1419,13 +1419,16 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2016",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "30 × 40 in",
     image: "images/yerushalayim.jpg",
     featured: true,
     subtitle: "The Beis Hamikdash hovering over everyday life.",
     story: [
-      "A single canvas that holds a whole worldview: the Beis Hamikdash rests among the clouds while, in the green valley below, ordinary Jewish life carries on — a craftsman at his work, a chassid playing his violin, a figure wrapped in a tallis pouring out his heart on the hillside.",
-      "Everything down below leans, quietly, toward the golden house above."
+      "This painting was born from a song — \"Yerusholayim Our Home,\" sung by Mordechai Ben David, with lyrics written by Dina Storch.",
+      "The song moves through three quiet lives: a carpenter alone at his bench, a fiddler in a crumbling little house holding an instrument handed down through generations, and Moshiach himself, waiting on a mountain and pleading with Hashem to bring us home. Not one of them is famous — and every one of them is waiting for the very same day.",
+      "What stayed with me is how the song says it will be built: not all at once, but mitzvah by mitzvah, one precious stone at a time.",
+      "So that is what I painted. The Beis Hamikdash resting among the clouds, and below it ordinary Jewish life carrying on — a craftsman at his work, a chassid playing his violin, a figure wrapped in a tallis pouring out his heart on the hillside. Everything down below leaning, quietly, toward the golden house above.",
+      "Our dream, our palace — Yerushalayim, our home. Ani maamin."
     ]
   },
   {
