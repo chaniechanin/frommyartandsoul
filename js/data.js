@@ -1197,7 +1197,7 @@ const PAINTINGS = [
   },
   {
     id: "the-womens-dance",
-    title: "The Women's Dance",
+    title: "In the Merit of the Women",
     theme: "Judaic",
     year: "2024",
     medium: "Oil on canvas",
