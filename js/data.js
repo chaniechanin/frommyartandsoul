@@ -1207,9 +1207,10 @@ const PAINTINGS = [
     featured: false,
     subtitle: "When the heart is too full for words, it dances.",
     story: [
-      "The sea is behind them and the fear is over. The women lift their tambourines and dance — because when the heart is that full, words are simply not enough.",
-      "Look at the little one among them, reaching up with her own tambourine. That is how it passes from mother to daughter — the song, the faith, the knowing that Hashem carried us through.",
-      "I painted this scene once before, years ago, and it never left me. So I painted it again — softer this time, the way I hear it in my heart."
+      "The Torah tells us in the parsha of B'shalach about one of the greatest miracles in history — the splitting of the sea.",
+      "Moshe sang with the men, and then Miriam the prophetess took the cymbals in her hand and danced with the women.",
+      "In the merit of her prophecy, and in the merit of the Jewish women, we were redeemed from Egypt.",
+      "It will be in the merit of us women that we will be redeemed from this long exile. Hashem will once again show us wonders and miracles with the splitting of the sea, and we will all sing together the new song of Redemption. May it be today!"
     ]
   },
   {
