@@ -1573,21 +1573,6 @@ const PAINTINGS = [
     ]
   },
   {
-    id: "mother-rachel",
-    title: "Kever Rochel",
-    theme: "Judaic",
-    year: "2018",
-    medium: "Oil on canvas",
-    size: "Dimensions on request",
-    image: "images/mother-rachel.jpg",
-    featured: false,
-    subtitle: "Mother Rachel's tomb on the road to Bethlehem.",
-    story: [
-      "The domed tomb of Rachel Imeinu beside the road, framed by a single tree and a field scattered with stones under a soft Judean sky.",
-      "Mother Rachel, who weeps for her children and prays for their return."
-    ]
-  },
-  {
     id: "choni",
     title: "Choni HaMe'agel",
     theme: "Judaic",
