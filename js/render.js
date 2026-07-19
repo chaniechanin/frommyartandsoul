@@ -97,7 +97,7 @@ function renderGallery(){
   const HOLIDAY_ORDER=['shofar','sound-of-the-shofar','lulav','choosing-the-esrog','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai'];
   /* Judaic: lead with her strongest / signature pieces; the rest follow in their existing order */
   /* the two Kotel paintings and the two Miriam paintings are kept well apart so they never read as duplicates */
-  const JUDAIC_ORDER=['avraham','the-kotel','miriam-at-the-sea','the-test-of-avraham','mother-rochel','the-holy-temple','neshama','kotel-in-color','the-womens-dance','the-sun-did-not-set','shema','mizmor-ledovid','yerushalayim','rus-the-moabite','a-soldiers-prayer','leah'];
+  const JUDAIC_ORDER=['avraham','the-kotel','miriam-at-the-sea','the-test-of-avraham','mother-rochel','the-holy-temple','holy-shabbos','neshama','kotel-in-color','the-womens-dance','the-sun-did-not-set','shema','mizmor-ledovid','yerushalayim','rus-the-moabite','a-soldiers-prayer','leah'];
   const draw=(theme)=>{
     let list=theme==='All Works'?PAINTINGS.filter(p=>!HIDE_FROM_ALL.includes(p.theme)).slice().sort((a,b)=>{const ia=FEATURED_ORDER.indexOf(a.id),ib=FEATURED_ORDER.indexOf(b.id);return (ia<0?999:ia)-(ib<0?999:ib);}):PAINTINGS.filter(p=>p.theme===theme);
     /* Portraits are shown newest → oldest by year, in row order (left→right, then down) */

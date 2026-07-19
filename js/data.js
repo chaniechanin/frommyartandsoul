@@ -643,6 +643,23 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "holy-shabbos",
+    title: "Holy Shabbos",
+    theme: "Judaic",
+    year: "",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/holy-shabbos.jpg",
+    featured: false,
+    subtitle: "The table set, the candles lit — my favorite day of the week.",
+    story: [
+      "My favorite day of the week is Shabbos! The day of rest — a day of peace, a day we take a break from all the tasks of the week.",
+      "It is the day G-d rested after creating this magnificent world in six days. We connect to the holiness of the day through special prayers, through food, and through time together as a family.",
+      "We reflect on the week that has passed, and on how we can make the week ahead a more successful and more meaningful one.",
+      "Light your Shabbos candles — bring more light into the world."
+    ]
+  },
+  {
     id: "pebble-in-the-water",
     title: "A Pebble in the Water",
     theme: "Nature",
