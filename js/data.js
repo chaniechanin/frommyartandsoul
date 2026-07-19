@@ -1204,10 +1204,11 @@ const PAINTINGS = [
     size: "18 × 24 in",
     image: "images/miriam-at-the-sea-2.jpg",
     featured: false,
-    subtitle: "Tambourines at the shore — the women's praise after the sea split.",
+    subtitle: "When the heart is too full for words, it dances.",
     story: [
-      "I painted this scene once before, years ago, and it never left me — so I painted it again. The women of Israel with their tambourines, dancing at the water's edge in praise to Hashem.",
-      "It is known that in the merit of the righteous women our fathers were redeemed from Egypt — and it will be in the merit of the Jewish women and girls that we will be redeemed from this exile. May it be today!"
+      "The sea is behind them and the fear is over. The women lift their tambourines and dance — because when the heart is that full, words are simply not enough.",
+      "Look at the little one among them, reaching up with her own tambourine. That is how it passes from mother to daughter — the song, the faith, the knowing that Hashem carried us through.",
+      "I painted this scene once before, years ago, and it never left me. So I painted it again — softer this time, the way I hear it in my heart."
     ]
   },
   {
