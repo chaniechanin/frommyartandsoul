@@ -1236,14 +1236,14 @@ const PAINTINGS = [
   },
   {
     id: "the-kotel",
-    title: "The Kotel — The Western Wall",
+    title: "The Kotel — The Western Wall in Radiant Color",
     theme: "Judaic",
     year: "",
     medium: "Oil on canvas",
     size: "24 × 36 in",
     image: "images/the-kotel.jpg",
     featured: true,
-    subtitle: "The Western Wall, in radiant color.",
+    subtitle: "Two thousand years standing — and still it draws every heart.",
     story: [
       "For close to 2,000 years this wall has remained standing, after the destruction of our holy Temple.",
       "The wall draws and welcomes people of all kinds to come pray for their needs and their wellbeing.",
