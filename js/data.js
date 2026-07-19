@@ -1196,6 +1196,21 @@ const PAINTINGS = [
     ]
   },
   {
+    id: "the-womens-dance",
+    title: "The Women's Dance",
+    theme: "Judaic",
+    year: "2024",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/miriam-at-the-sea-2.jpg",
+    featured: false,
+    subtitle: "Tambourines at the shore — the women's praise after the sea split.",
+    story: [
+      "I painted this scene once before, years ago, and it never left me — so I painted it again. The women of Israel with their tambourines, dancing at the water's edge in praise to Hashem.",
+      "It is known that in the merit of the righteous women our fathers were redeemed from Egypt — and it will be in the merit of the Jewish women and girls that we will be redeemed from this exile. May it be today!"
+    ]
+  },
+  {
     id: "kotel-in-color",
     title: "The Kotel in Color",
     theme: "Judaic",
