@@ -819,7 +819,7 @@ const PAINTINGS = [
   },
   {
     id: "leah",
-    title: "Leah",
+    title: "Leah's Tears",
     theme: "Judaic",
     year: "2018",
     medium: "Oil on canvas",
