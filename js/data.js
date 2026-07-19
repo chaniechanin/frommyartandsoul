@@ -1231,11 +1231,11 @@ const PAINTINGS = [
   },
   {
     id: "shema",
-    title: "Shema — Echad",
+    title: "Hashem Echad",
     theme: "Judaic",
     year: "2025",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "30 × 40 in",
     image: "images/shema.jpg",
     featured: true,
     subtitle: "The pasuk we say from our first words to our last.",
