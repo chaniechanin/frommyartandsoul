@@ -1204,7 +1204,7 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2018",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "24 × 36 in",
     image: "images/kotel-in-color.jpg",
     sold: true,
     featured: true,
