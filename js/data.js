@@ -1070,7 +1070,7 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2018",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/rus-the-moabite.jpg",
     featured: false,
     subtitle: "Rus gleaning in the field of Boaz — ancestress of King David.",
