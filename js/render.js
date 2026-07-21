@@ -52,24 +52,33 @@ function renderHomeGrid(){
 }
 
 /* home: featured-work spotlights */
-function spotlightHTML(p,reverse){
+function spotlightHTML(p,reverse,opts){
+  opts=opts||{};
+  const eyebrow=opts.eyebrow||'Featured Work';
+  const href=opts.href||`painting.html?id=${encodeURIComponent(p.id)}`;
+  const label=opts.label||'Read the Story';
   const copy=`<div class="copy reveal">
-      <span class="eyebrow">Featured Work</span>
+      <span class="eyebrow">${eyebrow}</span>
       <h2>${p.title}</h2>
       <p>${p.subtitle||''}</p>
       ${(p.story&&p.story[0])?`<p style="color:#9c968b">${p.story[0]}</p>`:''}
       <div class="meta">${p.medium}${(p.size&&p.size!=='Dimensions on request')?' · '+p.size:''}</div>
-      <a class="btn light" href="painting.html?id=${encodeURIComponent(p.id)}">Read the Story</a>
+      <a class="btn light" href="${href}">${label}</a>
     </div>`;
   const art=`<div class="art-glow reveal"><div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div></div>`;
   return `<section class="sec sec-dark spot${reverse?' reverse':''}"><div class="wrap inner">${reverse?copy+art:art+copy}</div></section>`;
 }
+/* the two spotlights open the only sections with no other way in:
+   Portraits and Chabad are both hidden from "All Works" and absent from the top nav */
+const SPOTLIGHTS=[
+  {id:'rebbe-rayatz',eyebrow:'Chabad',href:'gallery.html?view=chabad',label:'See the Chabad Collection'},
+  {id:'moshe-kotlarsky',eyebrow:'Portraits',href:'gallery.html?view=portraits',label:'See the Portraits'}
+];
 function renderSpotlights(){
   const el=document.getElementById('spotlights'); if(!el)return;
-  const prefer=['avraham','kotel-in-color'];
-  let picks=prefer.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean);
-  if(picks.length<2){ featuredList().forEach(p=>{ if(picks.length<2 && !picks.includes(p)) picks.push(p); }); }
-  el.innerHTML=picks.map((p,i)=>spotlightHTML(p,i%2===1)).join('');
+  const picks=SPOTLIGHTS.map(s=>({p:PAINTINGS.find(x=>x.id===s.id),o:s})).filter(x=>x.p);
+  if(!picks.length){ featuredList().slice(0,2).forEach(p=>picks.push({p,o:{}})); }
+  el.innerHTML=picks.map((x,i)=>spotlightHTML(x.p,i%2===1,x.o)).join('');
 }
 
 /* gallery: masonry + theme filters */
@@ -131,7 +140,7 @@ function renderGallery(){
     nextWrap.addEventListener('click',e=>{const b=e.target.closest('.next-sec');if(!b)return;activate(b.dataset.theme,true);});
   }
   /* open a section directly from the top-nav links (?view=beyond / ?view=events) */
-  const VIEW_MAP={beyond:'Beyond the Canvas',events:'Paint Parties'};
+  const VIEW_MAP={beyond:'Beyond the Canvas',events:'Paint Parties',portraits:'Portraits',chabad:'Rebbe & Rebbetzin'};
   const view=new URLSearchParams(location.search).get('view');
   activate((view&&VIEW_MAP[view])||tabThemes[0],false);
 }
