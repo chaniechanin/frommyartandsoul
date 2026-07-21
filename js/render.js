@@ -160,7 +160,7 @@ function renderDetail(){
       <div class="sub">${p.subtitle||''}</div>
       <div class="detail-specs">
         <div><span>Medium</span><b>${p.medium}</b></div>
-        <div><span>Size</span><b>${p.size}</b></div>
+        ${(p.size && !(p.theme==='Portraits' && p.size==='Dimensions on request'))?`<div><span>Size</span><b>${p.size}</b></div>`:''}
         ${p.year?`<div><span>Year</span><b>${p.year}</b></div>`:''}
         ${p.sold?`<div><span>Availability</span><b>Original not available · prints on request</b></div>`:''}
       </div>
