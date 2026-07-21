@@ -65,7 +65,8 @@ function spotlightHTML(p,reverse,opts){
       <div class="meta">${p.medium}${(p.size&&p.size!=='Dimensions on request')?' · '+p.size:''}</div>
       <a class="btn light" href="${href}">${label}</a>
     </div>`;
-  const art=`<div class="art-glow reveal"><div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div></div>`;
+  /* the art links to its own painting page; the button below goes to the whole section */
+  const art=`<a class="art-glow reveal" href="painting.html?id=${encodeURIComponent(p.id)}"><div class="artframe"><div class="mat"><img src="${p.image}" alt="${p.title}"></div></div></a>`;
   return `<section class="sec sec-dark spot${reverse?' reverse':''}"><div class="wrap inner">${reverse?copy+art:art+copy}</div></section>`;
 }
 /* the two spotlights open the only sections with no other way in:
