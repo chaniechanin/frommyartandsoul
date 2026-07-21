@@ -73,7 +73,7 @@ function spotlightHTML(p,reverse,opts){
    Portraits and Chabad are both hidden from "All Works" and absent from the top nav */
 const SPOTLIGHTS=[
   {id:'rebbe-rayatz',eyebrow:'Chabad',href:'gallery.html?view=chabad',label:'See the Chabad Collection'},
-  {id:'moshe-kotlarsky',eyebrow:'Portraits',href:'gallery.html?view=portraits',label:'See the Portraits'}
+  {id:'moshe-kotlarsky',eyebrow:'Portraits',href:'gallery.html?view=portraits',label:'See the Portraits Collection'}
 ];
 function renderSpotlights(){
   const el=document.getElementById('spotlights'); if(!el)return;
