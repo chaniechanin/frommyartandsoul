@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Add a Painting · From My Art & Soul</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+  :root{ --serif:'Fraunces',Georgia,serif; --sans:'Jost',sans-serif; --bg:#f4efe6; --ink:#2b2620; --mut:#7a7264; --gold:#a9852f; --line:#d9cfbd; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{ font-family:var(--sans); font-weight:300; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap{ max-width:620px; margin:0 auto; padding:40px 22px 90px; }
+  header{ text-align:center; margin-bottom:32px; }
+  header .eyebrow{ font-size:.66rem; letter-spacing:.4em; text-transform:uppercase; color:var(--gold); }
+  header h1{ font-family:var(--serif); font-weight:400; font-size:2rem; margin-top:8px; }
+  header p{ color:var(--mut); font-size:.95rem; margin-top:6px; }
+
+  .card{ background:#fbf8f1; border:1px solid var(--line); border-radius:10px; padding:26px 24px; box-shadow:0 10px 30px rgba(0,0,0,.06); }
+
+  label{ display:block; font-size:.8rem; letter-spacing:.02em; color:var(--ink); font-weight:400; margin:18px 0 6px; }
+  label .req{ color:var(--gold); }
+  label small{ display:block; color:var(--mut); font-weight:300; letter-spacing:0; font-size:.78rem; margin-top:2px; }
+  input[type=text], input[type=password], select, textarea{
+    width:100%; font-family:var(--sans); font-size:1rem; padding:12px 14px;
+    border:1px solid var(--line); border-radius:7px; background:#fff; color:var(--ink);
+  }
+  textarea{ min-height:150px; resize:vertical; line-height:1.7; }
+  input:focus, select:focus, textarea:focus{ outline:none; border-color:var(--gold); }
+  .row{ display:flex; gap:14px; } .row > div{ flex:1; }
+  .check{ display:flex; align-items:flex-start; gap:10px; margin-top:16px; }
+  .check input{ width:20px; height:20px; margin-top:2px; flex:0 0 auto; }
+  .check label{ margin:0; }
+
+  .filebox{ border:2px dashed var(--line); border-radius:9px; padding:22px; text-align:center; cursor:pointer; background:#fff; transition:.2s; }
+  .filebox:hover{ border-color:var(--gold); }
+  .filebox input{ display:none; }
+  .filebox .hint{ color:var(--mut); font-size:.9rem; }
+  #preview{ max-width:100%; max-height:230px; margin:14px auto 0; display:none; border-radius:6px; box-shadow:0 6px 16px rgba(0,0,0,.15); }
+
+  .btn{ display:inline-block; width:100%; margin-top:26px; font-family:var(--sans); font-size:.9rem; letter-spacing:.14em; text-transform:uppercase; padding:15px; border:0; border-radius:7px; background:var(--ink); color:var(--bg); cursor:pointer; transition:.2s; }
+  .btn:hover{ background:#000; } .btn:disabled{ opacity:.5; cursor:default; }
+  .btn.ghost{ background:none; color:var(--mut); border:1px solid var(--line); }
+
+  .msg{ margin-top:18px; padding:14px 16px; border-radius:7px; font-size:.92rem; display:none; }
+  .msg.err{ display:block; background:#fbe9e6; color:#8a2b17; border:1px solid #edc7bf; }
+  .msg.ok{ display:block; background:#e9f3ea; color:#1f6b34; border:1px solid #c3e0c9; }
+  .msg.work{ display:block; background:#f3eeda; color:#7a5f16; border:1px solid #e6dab0; }
+
+  .setuplink{ text-align:center; margin-top:22px; }
+  .setuplink a{ color:var(--mut); font-size:.8rem; text-decoration:none; border-bottom:1px dotted var(--mut); cursor:pointer; }
+  .hide{ display:none !important; }
+  .note{ font-size:.82rem; color:var(--mut); margin-top:10px; line-height:1.6; }
+  code{ background:#efe9dc; padding:1px 6px; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">From My Art &amp; Soul</span>
+    <h1>Add a Painting</h1>
+    <p>Fill in everything below and press publish. Your painting will appear on the website in about 10 minutes.</p>
+  </header>
+
+  <!-- LOGIN -->
+  <div class="card" id="loginCard">
+    <label>Password <span class="req">*</span></label>
+    <input type="password" id="pw" placeholder="Enter your password" autocomplete="off">
+    <button class="btn" id="loginBtn">Enter</button>
+    <div class="msg err" id="loginErr">That password isn't right.</div>
+  </div>
+
+  <!-- SETUP (token) -->
+  <div class="card hide" id="setupCard">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:1.3rem;margin-bottom:6px">One-time setup</h2>
+    <p class="note">Paste the GitHub access token here. This is done once, on this device. It is saved only in this browser and is never shown on the website.</p>
+    <label>GitHub token</label>
+    <input type="password" id="tokenIn" placeholder="github_pat_..." autocomplete="off">
+    <button class="btn" id="saveToken">Save token</button>
+    <button class="btn ghost" id="setupBack">Back</button>
+    <div class="msg" id="setupMsg"></div>
+  </div>
+
+  <!-- FORM -->
+  <div class="card hide" id="formCard">
+    <form id="artForm">
+      <label>Painting photo <span class="req">*</span>
+        <small>Tap to choose the photo of the painting.</small>
+      </label>
+      <div class="filebox" id="filebox">
+        <div class="hint" id="fileHint">📷 Tap here to choose a photo</div>
+        <input type="file" id="file" accept="image/*">
+      </div>
+      <img id="preview" alt="preview">
+
+      <label>Title <span class="req">*</span></label>
+      <input type="text" id="title" placeholder="e.g. The Kotel at Sunset">
+
+      <label>Which gallery? <span class="req">*</span></label>
+      <select id="theme">
+        <option value="">— choose a section —</option>
+        <option value="Judaic">Judaic</option>
+        <option value="Holidays">Holidays</option>
+        <option value="Nature">Nature</option>
+        <option value="Portraits">Portraits</option>
+        <option value="Rebbe & Rebbetzin">Chabad (Rebbe &amp; Rebbetzin)</option>
+        <option value="Beyond the Canvas">Beyond the Canvas</option>
+        <option value="Paint Parties">Paint Parties / Events</option>
+      </select>
+
+      <div class="row">
+        <div>
+          <label>Size <span class="req">*</span><small>e.g. 18 x 24 in</small></label>
+          <input type="text" id="size" placeholder="18 x 24 in">
+        </div>
+        <div>
+          <label>Year<small>optional</small></label>
+          <input type="text" id="year" placeholder="2025">
+        </div>
+      </div>
+
+      <label>Medium<small>what it's painted with</small></label>
+      <input type="text" id="medium" value="Oil on canvas">
+
+      <div class="check">
+        <input type="checkbox" id="sold">
+        <label for="sold">This original is already sold / not available (prints only)</label>
+      </div>
+
+      <label>Short caption<small>one line shown under the title (optional)</small></label>
+      <input type="text" id="subtitle" placeholder="A quiet lane in Yerushalayim of gold.">
+
+      <label>The story <span class="req">*</span>
+        <small>Write it the way you'd say it. Leave a blank line between paragraphs.</small>
+      </label>
+      <textarea id="story" placeholder="Tell the story behind this painting…"></textarea>
+
+      <button class="btn" id="submitBtn" type="submit">Publish to the website</button>
+      <div class="msg" id="formMsg"></div>
+    </form>
+    <div class="setuplink"><a id="openSetup">⚙ Setup (token)</a> &nbsp;·&nbsp; <a id="logout">Log out</a></div>
+  </div>
+
+  <div class="setuplink" id="bottomSetup"><a id="openSetup2">⚙ First-time setup</a></div>
+</div>
+
+<!-- load current paintings so we can make a unique id and avoid clashes -->
+<script src="js/data.js"></script>
+<script>
+const REPO='chaniechanin/frommyartandsoul';
+const BRANCH='main';
+const PASSWORD='artandsoul';               /* change this to whatever you like */
+const TKEY='fmas_gh_token';
+const addedIds=[];                          /* ids added this session */
+
+const $=id=>document.getElementById(id);
+const show=(el,on)=>el.classList.toggle('hide',!on);
+
+/* ---------- utf-8 base64 ---------- */
+function utf8ToB64(str){ const b=new TextEncoder().encode(str); let s=''; b.forEach(x=>s+=String.fromCharCode(x)); return btoa(s); }
+function b64ToUtf8(b64){ const bin=atob(b64.replace(/\n/g,'')); const b=Uint8Array.from(bin,c=>c.charCodeAt(0)); return new TextDecoder().decode(b); }
+
+/* ---------- helpers ---------- */
+function slug(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,50); }
+function uniqueId(base){
+  const existing=new Set([...(window.PAINTINGS||[]).map(p=>p.id), ...addedIds]);
+  let id=base||'painting', n=2;
+  while(existing.has(id)){ id=`${base}-${n++}`; }
+  return id;
+}
+function normSize(s){
+  s=s.trim();
+  s=s.replace(/(\d)\s*[xX×]\s*(\d)/,'$1 × $2');
+  if(/×/.test(s) && !/(in|cm|"|inch)/i.test(s)) s+=' in';
+  return s;
+}
+function entryText(o){
+  const j=JSON.stringify;
+  const storyLines=o.story.map(s=>'      '+j(s)).join(',\n');
+  return `{
+    id: ${j(o.id)},
+    title: ${j(o.title)},
+    theme: ${j(o.theme)},
+    year: ${j(o.year||'')},
+    medium: ${j(o.medium)},
+    size: ${j(o.size)},
+    image: ${j(o.image)},
+    featured: false,${o.sold?'\n    sold: true,':''}
+    subtitle: ${j(o.subtitle||'')},
+    story: [
+${storyLines}
+    ]
+  }`;
+}
+
+/* ---------- github ---------- */
+function token(){ return localStorage.getItem(TKEY)||''; }
+async function ghGet(path){
+  const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${path}?ref=${BRANCH}`,{headers:{Authorization:`Bearer ${token()}`,Accept:'application/vnd.github+json'}});
+  if(!r.ok) throw new Error(`Could not read ${path} (${r.status}). ${(await r.json().catch(()=>({}))).message||''}`);
+  return r.json();
+}
+async function ghPut(path, contentB64, message, sha){
+  const body={message, content:contentB64, branch:BRANCH}; if(sha) body.sha=sha;
+  const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token()}`,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error(`Upload failed for ${path} (${r.status}). ${e.message||''}`); }
+  return r.json();
+}
+
+/* ---------- ui flow ---------- */
+$('loginBtn').onclick=()=>{
+  if($('pw').value===PASSWORD){
+    show($('loginCard'),false); show($('bottomSetup'),false);
+    if(token()){ show($('formCard'),true); } else { show($('setupCard'),true); }
+  } else { $('loginErr').style.display='block'; }
+};
+$('pw').addEventListener('keydown',e=>{ if(e.key==='Enter') $('loginBtn').click(); });
+
+$('openSetup').onclick=$('openSetup2').onclick=()=>{ show($('formCard'),false); show($('loginCard'),false); show($('bottomSetup'),false); show($('setupCard'),true); $('tokenIn').value=token(); };
+$('setupBack').onclick=()=>{ show($('setupCard'),false); show($('formCard'),true); };
+$('saveToken').onclick=()=>{
+  const t=$('tokenIn').value.trim();
+  if(!t){ $('setupMsg').className='msg err'; $('setupMsg').textContent='Please paste the token.'; return; }
+  localStorage.setItem(TKEY,t);
+  $('setupMsg').className='msg ok'; $('setupMsg').textContent='Saved. You can add paintings now.';
+  setTimeout(()=>{ show($('setupCard'),false); show($('formCard'),true); },800);
+};
+$('logout').onclick=()=>location.reload();
+
+/* file preview */
+$('filebox').onclick=()=>$('file').click();
+let fileData=null, fileExt='jpg';
+$('file').onchange=e=>{
+  const f=e.target.files[0]; if(!f) return;
+  fileExt=(f.name.split('.').pop()||'jpg').toLowerCase().replace('jpeg','jpg');
+  const rd=new FileReader();
+  rd.onload=()=>{ fileData=rd.result; $('preview').src=rd.result; $('preview').style.display='block'; $('fileHint').textContent='✓ '+f.name; };
+  rd.readAsDataURL(f);
+};
+
+/* submit */
+$('artForm').onsubmit=async e=>{
+  e.preventDefault();
+  const m=$('formMsg');
+  const title=$('title').value.trim(), theme=$('theme').value, size=$('size').value.trim(), storyRaw=$('story').value.trim();
+  if(!fileData){ m.className='msg err'; m.textContent='Please choose a photo of the painting.'; return; }
+  if(!title||!theme||!size||!storyRaw){ m.className='msg err'; m.textContent='Please fill in the title, gallery, size, and story.'; return; }
+  if(!token()){ m.className='msg err'; m.textContent='Setup needed — tap “Setup (token)” below.'; return; }
+
+  const story=storyRaw.split(/\n\s*\n/).map(s=>s.replace(/\s*\n\s*/g,' ').trim()).filter(Boolean);
+  const id=uniqueId(slug(title));
+  const image=`images/${id}.${fileExt}`;
+  const entry={ id, title, theme, year:$('year').value.trim(), medium:$('medium').value.trim()||'Oil on canvas', size:normSize(size), image, sold:$('sold').checked, subtitle:$('subtitle').value.trim(), story };
+
+  $('submitBtn').disabled=true;
+  try{
+    m.className='msg work'; m.textContent='1 of 2 — uploading the photo…';
+    const imgB64=fileData.split(',')[1];
+    await ghPut(image, imgB64, `Add painting image: ${title}`);
+
+    m.textContent='2 of 2 — adding it to the gallery…';
+    const dj=await ghGet('js/data.js');
+    let text=b64ToUtf8(dj.content);
+    const close=text.lastIndexOf(']');
+    let before=text.slice(0,close).replace(/\s*$/,'');
+    if(!before.endsWith(',')) before+=',';
+    const newText=before+'\n  '+entryText(entry)+'\n'+text.slice(close);
+    await ghPut('js/data.js', utf8ToB64(newText), `Add painting: ${title}`, dj.sha);
+
+    addedIds.push(id);
+    m.className='msg ok';
+    m.innerHTML=`✓ Published! <b>${title}</b> was added to the <b>${$('theme').selectedOptions[0].text}</b> gallery.<br>It will appear on the website in about 10 minutes.`;
+    $('artForm').reset(); fileData=null; $('preview').style.display='none'; $('fileHint').textContent='📷 Tap here to choose a photo'; $('medium').value='Oil on canvas';
+  }catch(err){
+    m.className='msg err'; m.textContent='Something went wrong: '+err.message;
+  }finally{ $('submitBtn').disabled=false; }
+};
+
+/* if already set up + remembered, still require the password each visit */
+</script>
+</body>
+</html>
