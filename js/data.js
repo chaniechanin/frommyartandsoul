@@ -1778,7 +1778,7 @@ const PAINTINGS = [
   },
   {
     id: "the-lion-roars",
-    title: "The lion roars",
+    title: "The Lion Roars",
     theme: "Judaic",
     year: "2026",
     medium: "Oil on canvas",
