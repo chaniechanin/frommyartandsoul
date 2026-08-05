@@ -41,7 +41,7 @@ function renderHeroArt(){
 
 /* home: selected works preview — curated order chosen for the front page */
 /* avraham + torah-is-life are intentionally omitted here — they appear in the bottom spotlights */
-const HOME_ORDER=['agam','sound-of-the-shofar','the-leaf','water-and-tree','mizmor-ledovid','enough-tears','the-little-bird','simcha'];
+const HOME_ORDER=['agam','sound-of-the-shofar','the-leaf','kotel-in-color','mizmor-ledovid','enough-tears','the-little-bird','simcha'];
 function homeList(){
   const picks=HOME_ORDER.map(id=>PAINTINGS.find(p=>p.id===id)).filter(Boolean);
   return picks.length?picks:featuredList().slice(0,12);

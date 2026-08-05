@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>From My Art & Soul — The Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Jost','Century Gothic',sans-serif;
+    --ink:#2b2620; --mut:#7a7264;
+    --gold:#a9852f; --gold-lt:#c8a24e;
+    --line:#d5cab6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  /* 12 x 12 in — large square coffee-table art book */
+  @page{ size:305mm 305mm; margin:0; }
+  html,body{ background:#8a8a8a; }
+  body{ font-family:var(--sans); color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* leaf texture showing faintly through, exactly like the website */
+  .page{
+    position:relative; width:305mm; height:305mm; overflow:hidden;
+    page-break-after:always; display:flex; flex-direction:column;
+    background-image:linear-gradient(rgba(246,242,234,.966),rgba(246,242,234,.966)), url('images/the-leaf.jpg');
+    background-size:cover; background-position:center;
+  }
+  .page:last-child{ page-break-after:auto; }
+  .dark{ background-image:linear-gradient(rgba(18,16,12,.955),rgba(18,16,12,.955)), url('images/the-leaf.jpg'); color:#efe7d6; }
+  .veil{ background-image:linear-gradient(rgba(246,242,234,.945),rgba(246,242,234,.945)), url('images/the-leaf.jpg'); }
+
+  .eyebrow{ font-size:8.5pt; letter-spacing:.42em; text-transform:uppercase; color:var(--gold); }
+  .pagenum{ position:absolute; bottom:11mm; left:0; right:0; text-align:center; font-size:8pt; letter-spacing:.3em; color:var(--mut); }
+  .dark .pagenum{ color:#8a8069; }
+
+  .artframe{ background:linear-gradient(145deg,#b98f3d,#e6c778 42%,#9c7a2f); padding:4mm; border-radius:1.2mm; box-shadow:0 6mm 14mm rgba(0,0,0,.20); display:inline-block; max-width:100%; }
+  .artframe.thin{ padding:2.6mm; }
+  .mat{ background:#fbf8f1; padding:5mm; }
+  .mat.slim{ padding:3mm; }
+  .mat img{ display:block; max-width:100%; width:auto; height:auto; }
+  .center{ display:flex; justify-content:center; }
+
+  h3.title{ font-family:var(--serif); font-weight:400; line-height:1.1; }
+  .meta{ font-size:8pt; letter-spacing:.22em; text-transform:uppercase; color:var(--mut); }
+  .sold{ color:var(--gold); }
+  .subtitle{ font-family:var(--serif); font-style:italic; color:#5c5648; }
+  .story p{ color:#4a443b; margin-bottom:3mm; }
+
+  /* ---- COVER ---- */
+  .cover{ align-items:center; justify-content:center; text-align:center; padding:32mm; }
+  .cover h1{ font-family:var(--serif); font-weight:400; font-size:48pt; line-height:1.04; margin-top:14mm; }
+  .cover h1 em{ font-style:italic; color:var(--gold); }
+  .cover .crule{ width:62mm; height:1px; background:var(--line); margin:9mm auto; }
+  .cover .sub{ font-family:var(--serif); font-style:italic; font-size:17pt; color:var(--mut); }
+  .cover .who{ margin-top:6mm; font-size:12pt; letter-spacing:.34em; text-transform:uppercase; color:var(--mut); }
+
+  /* ---- INTRO ---- */
+  .intro{ justify-content:center; padding:55mm 50mm; text-align:center; }
+  .intro h2{ font-family:var(--serif); font-weight:400; font-size:33pt; margin:10mm 0 13mm; }
+  .intro p{ font-size:14pt; line-height:1.95; color:#4a443b; margin-bottom:7mm; }
+  .intro .sig{ font-family:var(--serif); font-style:italic; font-size:16pt; color:var(--gold); margin-top:11mm; }
+
+  /* ---- CONTENTS ---- */
+  .toc{ padding:30mm 38mm; }
+  .toc h2{ font-family:var(--serif); font-weight:400; font-size:35pt; margin:6mm 0 10mm; }
+  .toc-sec{ display:flex; align-items:baseline; gap:5mm; margin:7mm 0 2.5mm; }
+  .toc-sec .t{ font-size:11.5pt; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+  .toc-sec .dots{ flex:1; border-bottom:1px solid var(--line); transform:translateY(-1.4mm); }
+  .toc-sec .pg{ font-size:11.5pt; color:var(--gold); }
+  .toc-row{ display:flex; align-items:baseline; gap:4mm; margin:2.2mm 0 2.2mm 11mm; }
+  .toc-row .t{ font-family:var(--serif); font-size:15pt; white-space:nowrap; }
+  .toc-row .dots{ flex:1; border-bottom:1px dotted #c6bba5; transform:translateY(-1.4mm); }
+  .toc-row .pg{ font-size:12.5pt; color:var(--mut); }
+
+  /* ---- DIVIDER ---- */
+  .divider{ align-items:center; justify-content:center; text-align:center; }
+  .divider h2{ font-family:var(--serif); font-weight:400; font-size:44pt; margin:7mm 0; }
+  .divider .drule{ width:42mm; height:1px; background:var(--gold-lt); }
+  .divider .count{ font-size:11pt; letter-spacing:.3em; text-transform:uppercase; color:var(--mut); margin-top:7mm; }
+  .divider .dthumb{ margin-top:20mm; }
+  .divider .dthumb .mat img{ max-height:96mm; }
+
+  /* ---- 1. FULL: giant plate alone (dark) ---- */
+  .full{ align-items:center; justify-content:center; padding:24mm; }
+  .full .mat img{ max-height:236mm; }
+  .full .plateno{ position:absolute; top:18mm; left:0; right:0; text-align:center; font-size:10pt; letter-spacing:.4em; text-transform:uppercase; color:#8a8069; }
+  .full .cap{ position:absolute; bottom:17mm; left:0; right:0; text-align:center; font-family:var(--serif); font-style:italic; font-size:15pt; color:#d8cdb6; }
+
+  /* facing story page */
+  .textpage{ justify-content:center; padding:48mm 46mm; }
+  .textpage .plateno{ font-size:10pt; letter-spacing:.4em; text-transform:uppercase; color:var(--gold); margin-bottom:7mm; }
+  .textpage h3.title{ font-size:36pt; }
+  .textpage .meta{ margin-top:7mm; font-size:9.5pt; }
+  .textpage .subtitle{ font-size:17pt; margin:10mm 0; }
+  .textpage .trule{ width:38mm; height:1px; background:var(--gold-lt); margin:10mm 0; }
+  .textpage .story p{ font-size:13pt; line-height:1.9; margin-bottom:4.5mm; }
+
+  /* ---- 2. CLASSIC: medium centered ---- */
+  .classic{ padding:24mm 34mm; }
+  .classic .topline{ display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--line); padding-bottom:4mm; margin-bottom:10mm; }
+  .classic .topline .sec{ font-size:10pt; letter-spacing:.34em; text-transform:uppercase; color:var(--gold); }
+  .classic .topline .brand{ font-family:var(--serif); font-style:italic; font-size:12pt; color:var(--mut); }
+  .classic .mat img{ max-height:120mm; }
+  .classic .cap{ margin-top:9mm; text-align:center; }
+  .classic h3.title{ font-size:24pt; }
+  .classic .meta{ margin-top:4mm; font-size:9.5pt; }
+  .classic .subtitle{ font-size:14pt; margin-top:6mm; }
+  .classic .story{ margin-top:8mm; max-width:205mm; margin-left:auto; margin-right:auto; }
+  .classic .story p{ font-size:11pt; line-height:1.7; text-align:justify; }
+
+  /* ---- 3. OFFSET: asymmetric image + side column ---- */
+  .offset{ display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:15mm; padding:34mm 30mm; }
+  .offset.r{ grid-template-columns:.75fr 1.25fr; }
+  .offset .mat img{ max-height:210mm; }
+  .offset h3.title{ font-size:27pt; }
+  .offset .meta{ margin-top:5mm; font-size:9pt; }
+  .offset .subtitle{ font-size:15pt; margin:7mm 0; }
+  .offset .orule{ width:28mm; height:1px; background:var(--gold-lt); margin:7mm 0; }
+  .offset .story p{ font-size:10.5pt; line-height:1.68; margin-bottom:3.5mm; }
+  .offset .sec{ font-size:10pt; letter-spacing:.34em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:6mm; }
+
+  /* ---- 4. SMALL: intimate, lots of air ---- */
+  .small{ align-items:center; justify-content:center; text-align:center; padding:40mm 52mm; }
+  .small .mat img{ max-height:106mm; }
+  .small h3.title{ font-size:23pt; margin-top:11mm; }
+  .small .meta{ margin-top:4mm; font-size:9.5pt; }
+  .small .subtitle{ font-size:15pt; margin-top:7mm; }
+  .small .srule{ width:26mm; height:1px; background:var(--gold-lt); margin:8mm auto; }
+  .small .story p{ font-size:12pt; line-height:1.85; }
+
+  /* ---- 5. WIDE: landscape spanning, 2-column story ---- */
+  .wide{ padding:26mm 30mm; justify-content:center; }
+  .wide .mat img{ max-height:118mm; max-width:100%; }
+  .wide .cap{ margin-top:9mm; display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--line); padding-bottom:4mm; }
+  .wide h3.title{ font-size:27pt; }
+  .wide .cap .meta{ font-size:9.5pt; }
+  .wide .story{ margin-top:8mm; column-count:2; column-gap:14mm; }
+  .wide .story p{ font-size:10.5pt; line-height:1.68; text-align:justify; }
+
+  /* ---- 6. DUO: two paintings on one page ---- */
+  .duo{ padding:36mm 28mm; justify-content:center; }
+  .duo .sec{ text-align:center; margin-bottom:14mm; }
+  .duo .row{ display:grid; grid-template-columns:1fr 1fr; gap:18mm; align-items:end; }
+  .duo .mat img{ max-height:130mm; }
+  .duo .c{ text-align:center; }
+  .duo h3.title{ font-size:20pt; margin-top:9mm; }
+  .duo .meta{ margin-top:4mm; font-size:9pt; }
+  .duo .subtitle{ font-size:13pt; margin-top:6mm; }
+
+  /* ---- 7. QUOTE: pull quote page ---- */
+  .quote{ align-items:center; justify-content:center; text-align:center; padding:52mm 52mm; }
+  .quote .mark{ font-family:var(--serif); font-size:72pt; color:var(--gold-lt); line-height:.6; margin-bottom:11mm; }
+  .quote blockquote{ font-family:var(--serif); font-style:italic; font-size:24pt; line-height:1.48; color:#3a352c; }
+  .quote .attrib{ margin-top:12mm; font-size:10.5pt; letter-spacing:.3em; text-transform:uppercase; color:var(--mut); }
+  .quote .thumb{ margin-top:16mm; }
+  .quote .mat img{ max-height:82mm; }
+
+  /* ---- ABOUT THE ARTIST ---- */
+  .artist{ display:grid; grid-template-columns:.85fr 1.15fr; align-items:center; gap:20mm; padding:52mm 42mm; }
+  .artist .photo img{ display:block; width:100%; max-width:84mm; box-shadow:0 6mm 15mm rgba(0,0,0,.22); }
+  .artist h3.title{ font-size:32pt; }
+  .artist .role{ font-size:10pt; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); margin-bottom:6mm; display:block; }
+  .artist .arule{ width:30mm; height:1px; background:var(--gold-lt); margin:9mm 0; }
+  .artist .story p{ font-size:12.5pt; line-height:1.9; margin-bottom:5mm; }
+  .artist .q{ font-family:var(--serif); font-style:italic; font-size:15pt; color:var(--gold); margin-top:9mm; }
+
+  /* contact-sheet preview mode (?sheet=1) */
+  body.sheet #book{ display:flex; flex-wrap:wrap; gap:14px; padding:16px; }
+  body.sheet .page{ zoom:.30; box-shadow:0 10px 30px rgba(0,0,0,.45); }
+
+  /* ---- 8. DETAIL SPREAD: full-bleed close-up + facing full painting ---- */
+  .detailimg{ padding:0; background-repeat:no-repeat; }
+  .detailimg .scrim{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.26),rgba(0,0,0,0) 32%,rgba(0,0,0,0) 60%,rgba(0,0,0,.52)); }
+  .detailimg .lab{ position:absolute; top:16mm; left:16mm; font-size:9pt; letter-spacing:.42em; text-transform:uppercase; color:rgba(255,255,255,.82); }
+  .detailimg .ttl{ position:absolute; bottom:15mm; left:16mm; right:16mm; font-family:var(--serif); font-style:italic; font-size:16pt; color:#fff; text-shadow:0 2mm 7mm rgba(0,0,0,.55); }
+  .detailfull{ align-items:center; justify-content:center; padding:30mm 32mm; }
+  .detailfull .mat img{ max-height:142mm; }
+  .detailfull .cap{ margin-top:11mm; text-align:center; }
+  .detailfull h3.title{ font-size:25pt; }
+  .detailfull .meta{ margin-top:5mm; font-size:9.5pt; }
+  .detailfull .subtitle{ font-size:14pt; margin-top:6mm; }
+  .detailfull .story{ margin-top:8mm; max-width:200mm; margin-left:auto; margin-right:auto; }
+  .detailfull .story p{ font-size:11pt; line-height:1.7; text-align:justify; }
+
+  /* ---- BACK ---- */
+  .back{ align-items:center; justify-content:center; text-align:center; padding:52mm; }
+  .back .fb{ font-family:var(--serif); font-size:32pt; margin-bottom:8mm; }
+  .back p{ font-size:13pt; color:#cabfa9; line-height:1.95; }
+</style>
+</head>
+<body>
+<div id="book"></div>
+
+<script src="js/data.js"></script>
+<script>
+/* FULL BOOK — every painting, auto-laid-out with rotating templates (no two adjacent pages alike). */
+const SECTION_ORDER=[
+  {theme:'Judaic',            label:'Judaic'},
+  {theme:'Holidays',          label:'Holidays'},
+  {theme:'Nature',            label:'Nature'},
+  {theme:'Rebbe & Rebbetzin', label:'Chabad'},
+  {theme:'Portraits',         label:'Portraits'}
+];
+const COVER_ID='the-leaf';   /* Autumn Leaves is on the cover, so skip it inside its section */
+let plan=[], toc=[], plateNo=0, offOdd=false;
+
+const byId = id => PAINTINGS.find(p => p.id === id);
+const roman = n => ['','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'][n] || n;
+const pad = n => String(n).padStart(2,'0');
+
+function metaLine(p){
+  const b=[p.medium];
+  if(p.size && p.size!=='Dimensions on request') b.push(p.size);
+  if(p.year) b.push(p.year);
+  let s=b.join('  ·  ');
+  if(p.sold) s+='  ·  <span class="sold">Original not available</span>';
+  return s;
+}
+const frame=(p,cls='',style='')=>`<div class="center"><div class="artframe ${cls}"><div class="mat ${cls?'slim':''}"><img src="${p.image}" alt="" style="${style}"></div></div></div>`;
+const story=(p,n)=>(p.story||[]).slice(0,n||99).map(s=>`<p>${s.replace(/<br>/g,' ')}</p>`).join('');
+/* pick the shortest punchy line for a pull quote */
+function pullQuote(p){
+  const cands=(p.story||[]).map(s=>s.replace(/<br>/g,' ')).filter(s=>s.length<145);
+  return cands.sort((a,b)=>a.length-b.length)[0] || p.subtitle || '';
+}
+
+/* preload every painting to learn its orientation (landscape vs portrait) */
+function preloadRatios(){
+  return Promise.all(PAINTINGS.map(p=>new Promise(res=>{
+    const im=new Image();
+    im.onload=()=>res([p.id, im.naturalWidth/im.naturalHeight]);
+    im.onerror=()=>res([p.id, 1.2]);
+    im.src=p.image;
+  }))).then(a=>Object.fromEntries(a));
+}
+const baseMode=m=>(m==='offsetL'||m==='offsetR')?'offset':m;
+/* choose a layout per painting: section opener = dramatic full plate, then rotate by shape with no repeats */
+function sectionModes(list, ratios){
+  let prev=''; const out=[];
+  list.forEach((p,i)=>{
+    const r=ratios[p.id]||1.2;
+    const pool = r>=1.12 ? ['wide','classic'] : r<=0.92 ? ['small','offset'] : ['classic','small'];
+    let mode;
+    if(i===0) mode='full';
+    else {
+      mode = (baseMode(prev)===pool[0]) ? pool[1] : pool[0];
+      if(i%6===4 && (p.story||[]).some(s=>s.replace(/<br>/g,' ').length<150)) mode='quote';
+    }
+    if(mode==='offset'){ offOdd=!offOdd; mode=offOdd?'offsetL':'offsetR'; }
+    prev=mode; out.push({p,mode});
+  });
+  return out;
+}
+/* ---- PASS 1: assign pages + section-level contents ---- */
+function buildPlan(ratios){
+  let page=3;                         // cover(1) intro(2) contents(3)
+  SECTION_ORDER.forEach(S=>{
+    const list=PAINTINGS.filter(p=>p.theme===S.theme && p.id!==COVER_ID);
+    if(!list.length) return;
+    const dpage=++page;
+    const thumb=list[Math.min(2,list.length-1)];   // a mid-section piece, so it isn't the opener
+    plan.push({t:'divider',name:S.label,theme:S.theme,page:dpage,thumb,count:list.length});
+    toc.push({title:S.label,page:dpage,count:list.length});
+    sectionModes(list,ratios).forEach(({p,mode})=>{
+      plateNo++; const start=++page;
+      if(mode==='full') page++;        // full uses a facing story page
+      plan.push({t:'painting',p,mode,sec:S.label,plateNo,page:start});
+    });
+  });
+}
+
+/* ---- RENDER ---- */
+function render(){
+  const hero=byId('the-leaf');
+  let h='';
+
+  h+=`<section class="page cover veil">
+    ${frame(hero,'','max-height:150mm')}
+    <h1>From My Art <em>&amp;</em> Soul</h1>
+    <div class="crule"></div>
+    <div class="sub">The Collection of Chanie Chanin</div>
+    <div class="who">Crown Heights · New York</div>
+  </section>`;
+
+  h+=`<section class="page intro">
+    <span class="eyebrow">The Artist</span>
+    <h2>Every painting has a story</h2>
+    <p>I paint from a place of deep emotion and faith — the words we pray, the places we long for, and the light we reach toward. Between raising my family, teaching art, and sharing my work through story and song, I have filled canvas after canvas with the things I believe most deeply.</p>
+    <p>A painting can be beautiful and still say nothing. I never wanted that. That is why every piece in this collection comes with its story — the painting is the beginning of the conversation, and the story is the rest of it.</p>
+    <div class="sig">— Chanie Chanin</div>
+  </section>`;
+
+  h+=`<section class="page toc"><span class="eyebrow">The Collection</span><h2>Contents</h2>
+    ${toc.map(t=>`<div class="toc-sec"><span class="t">${t.title}</span><span class="dots"></span><span class="pg">${pad(t.page)}</span></div>`).join('')}
+    <div class="pagenum">03</div></section>`;
+
+  plan.forEach(it=>{
+    if(it.t==='divider'){
+      h+=`<section class="page divider veil"><span class="eyebrow">The Collection</span>
+        <div class="drule" style="margin-top:7mm"></div><h2>${it.name}</h2><div class="drule"></div>
+        <div class="count">${it.count} works</div>
+        ${it.thumb?`<div class="dthumb">${frame(it.thumb,'thin')}</div>`:''}
+        <div class="pagenum">${pad(it.page)}</div></section>`; return;
+    }
+    if(it.t==='duo'){
+      const [a,b]=it.ps;
+      h+=`<section class="page duo">
+        <div class="sec"><span class="eyebrow">${it.sec}</span></div>
+        <div class="row">
+          <div class="c">${frame(a,'thin')}<h3 class="title">${a.title}</h3><div class="meta">${metaLine(a)}</div><div class="subtitle">${a.subtitle||''}</div></div>
+          <div class="c">${frame(b,'thin')}<h3 class="title">${b.title}</h3><div class="meta">${metaLine(b)}</div><div class="subtitle">${b.subtitle||''}</div></div>
+        </div>
+        <div class="pagenum">${pad(it.page)}</div></section>`; return;
+    }
+
+    const {p,mode,sec,plateNo,page,pos}=it;
+
+    if(mode==='detail'){
+      h+=`<section class="page detailimg" style="background-image:url('${p.image}');background-size:${it.zoom||'135%'};background-position:${pos||'50% 72%'}">
+        <div class="scrim"></div>
+        <div class="lab">Detail</div>
+        <div class="ttl">${p.title}</div>
+      </section>
+      <section class="page detailfull veil">
+        ${frame(p)}
+        <div class="cap"><h3 class="title">${p.title}</h3><div class="meta">${metaLine(p)}</div>${p.subtitle?`<div class="subtitle">${p.subtitle}</div>`:''}</div>
+        <div class="story">${story(p,2)}</div>
+        <div class="pagenum">${pad(page+1)}</div>
+      </section>`;
+    }
+
+    if(mode==='full'){
+      h+=`<section class="page full dark">
+        <div class="plateno">Plate ${roman(plateNo)}</div>
+        ${frame(p)}
+        <div class="cap">${p.title}</div>
+      </section>
+      <section class="page textpage">
+        <div class="plateno">Plate ${roman(plateNo)}</div>
+        <h3 class="title">${p.title}</h3>
+        <div class="meta">${metaLine(p)}</div>
+        ${p.subtitle?`<div class="subtitle">${p.subtitle}</div>`:''}
+        <div class="trule"></div>
+        <div class="story">${story(p)}</div>
+        <div class="pagenum">${pad(page+1)}</div>
+      </section>`;
+    }
+
+    if(mode==='classic'){
+      h+=`<section class="page classic">
+        <div class="topline"><span class="sec">${sec}</span><span class="brand">From My Art &amp; Soul</span></div>
+        ${frame(p)}
+        <div class="cap"><h3 class="title">${p.title}</h3><div class="meta">${metaLine(p)}</div>${p.subtitle?`<div class="subtitle">${p.subtitle}</div>`:''}</div>
+        <div class="story">${story(p,2)}</div>
+        <div class="pagenum">${pad(page)}</div>
+      </section>`;
+    }
+
+    if(mode==='offsetL' || mode==='offsetR'){
+      const art=`<div>${frame(p)}</div>`;
+      const txt=`<div><span class="sec">${sec}</span>
+        <h3 class="title">${p.title}</h3>
+        <div class="meta">${metaLine(p)}</div>
+        ${p.subtitle?`<div class="subtitle">${p.subtitle}</div>`:''}
+        <div class="orule"></div>
+        <div class="story">${story(p,2)}</div></div>`;
+      h+=`<section class="page offset ${mode==='offsetR'?'r':''}">
+        ${mode==='offsetR'? txt+art : art+txt}
+        <div class="pagenum">${pad(page)}</div></section>`;
+    }
+
+    if(mode==='small'){
+      h+=`<section class="page small veil">
+        <span class="eyebrow">${sec}</span>
+        <div style="margin-top:10mm">${frame(p,'thin')}</div>
+        <h3 class="title">${p.title}</h3>
+        <div class="meta">${metaLine(p)}</div>
+        ${p.subtitle?`<div class="subtitle">${p.subtitle}</div>`:''}
+        <div class="srule"></div>
+        <div class="story">${story(p,1)}</div>
+        <div class="pagenum">${pad(page)}</div>
+      </section>`;
+    }
+
+    if(mode==='wide'){
+      h+=`<section class="page wide">
+        ${frame(p)}
+        <div class="cap"><h3 class="title">${p.title}</h3><span class="meta">${metaLine(p)}</span></div>
+        <div class="story">${story(p)}</div>
+        <div class="pagenum">${pad(page)}</div>
+      </section>`;
+    }
+
+    if(mode==='quote'){
+      h+=`<section class="page quote veil">
+        <div class="mark">&ldquo;</div>
+        <blockquote>${pullQuote(p)}</blockquote>
+        <div class="attrib">${p.title}</div>
+        <div class="thumb">${frame(p,'thin')}</div>
+        <div class="pagenum">${pad(page)}</div>
+      </section>`;
+    }
+  });
+
+  h+=`<section class="page artist veil">
+    <div class="photo"><img src="images/portrait.jpg" alt="Chanie Chanin"></div>
+    <div>
+      <span class="role">About the Artist</span>
+      <h3 class="title">Chanie Chanin</h3>
+      <div class="arule"></div>
+      <div class="story">
+        <p>I grew up in London, England, and made my home in Crown Heights after I married. Today my house is full — children, canvases, and the music that seems to find its way into everything I make.</p>
+        <p>I have been an artist as long as I can remember. I paint from a place of deep emotion and faith, drawing on Judaic and biblical themes. When I am not at the easel, I teach art to young students and share my work with women through story and song.</p>
+      </div>
+      <div class="q">&ldquo;Every canvas is a story I couldn't say any other way.&rdquo;</div>
+    </div>
+  </section>`;
+
+  h+=`<section class="page back dark"><div class="fb">From My Art &amp; Soul</div>
+    <p>Original paintings by Chanie Chanin<br>
+    Every canvas is available as an original or a fine-art print.<br><br>
+    frommyartandsoul.com<br><br>
+    <span style="font-size:8.5pt;letter-spacing:.3em;color:#8a8069">With gratitude — Chanie Chanin</span></p></section>`;
+
+  document.getElementById('book').innerHTML=h;
+
+  /* preview modes: ?sheet=1 shows every page as a contact sheet; ?page=N isolates one page */
+  const q=new URLSearchParams(location.search);
+  if(q.has('sheet')) document.body.classList.add('sheet');
+  if(q.has('page')){
+    const n=+q.get('page');
+    [...document.querySelectorAll('.page')].forEach((p,i)=>{ if(i!==n-1) p.remove(); });
+  }
+}
+(async()=>{ const ratios=await preloadRatios(); buildPlan(ratios); render(); })();
+</script>
+</body>
+</html>
