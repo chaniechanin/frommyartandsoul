@@ -1775,5 +1775,20 @@ const PAINTINGS = [
     story: [
       "Across a wide green field, a woman in a simple brown dress holds a bundle of gathered greens, while above, among the clouds, an elder sits writing with a quill."
     ]
+  },
+  {
+    id: "the-lion-roars",
+    title: "The lion roars",
+    theme: "Judaic",
+    year: "2026",
+    medium: "Oil on canvas",
+    size: "30 × 40 in",
+    image: "images/the-lion-roars.jpg",
+    featured: false,
+    subtitle: "The voice of Yehuda",
+    story: [
+      "Through every generation, the Jewish people have stood strong. Nations have risen against us, yet our faith remains unbroken. Like the lion of Yehuda, we stand with courage and hope, carrying within us a deep yearning for the coming of Moshiach.",
+      "And very soon, a new dawn will rise. The promise will be fulfilled, and we will rejoice together with the rebuilding of the Third Beis Hamikdash — in a world filled with peace, holiness, and G-dliness."
+    ]
   }
 ];
