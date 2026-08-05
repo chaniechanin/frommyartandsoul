@@ -75,11 +75,12 @@
   <!-- SETUP (token) -->
   <div class="card hide" id="setupCard">
     <h2 style="font-family:var(--serif);font-weight:400;font-size:1.3rem;margin-bottom:6px">One-time setup</h2>
-    <p class="note">Paste the GitHub access token here. This is done once, on this device. It is saved only in this browser and is never shown on the website.</p>
+    <p class="note">Paste the GitHub access token here. This is done once <b>on each device</b> that will add paintings. It is saved only in this browser and is never shown on the website.</p>
+    <div class="msg" id="setupStatus" style="display:block"></div>
     <label>GitHub token</label>
     <input type="password" id="tokenIn" placeholder="github_pat_..." autocomplete="off">
     <button class="btn" id="saveToken">Save token</button>
-    <button class="btn ghost" id="setupBack">Back</button>
+    <button class="btn ghost hide" id="setupBack">Continue to the form &rarr;</button>
     <div class="msg" id="setupMsg"></div>
   </div>
 
@@ -210,22 +211,33 @@ async function ghPut(path, contentB64, message, sha){
 }
 
 /* ---------- ui flow ---------- */
+function goSetup(){
+  show($('formCard'),false); show($('loginCard'),false); show($('bottomSetup'),false); show($('setupCard'),true);
+  const has=!!token();
+  $('setupStatus').className='msg '+(has?'ok':'work');
+  $('setupStatus').textContent = has
+    ? '✓ A token is already saved on this device — you can continue.'
+    : 'No token is saved on this device yet. Paste one below (just once).';
+  show($('setupBack'),has);   /* can only continue to the form once a token exists */
+  $('tokenIn').value='';
+}
 $('loginBtn').onclick=()=>{
   if($('pw').value===PASSWORD){
     show($('loginCard'),false); show($('bottomSetup'),false);
-    if(token()){ show($('formCard'),true); } else { show($('setupCard'),true); }
+    if(token()){ show($('formCard'),true); } else { goSetup(); }
   } else { $('loginErr').style.display='block'; }
 };
 $('pw').addEventListener('keydown',e=>{ if(e.key==='Enter') $('loginBtn').click(); });
 
-$('openSetup').onclick=$('openSetup2').onclick=()=>{ show($('formCard'),false); show($('loginCard'),false); show($('bottomSetup'),false); show($('setupCard'),true); $('tokenIn').value=token(); };
-$('setupBack').onclick=()=>{ show($('setupCard'),false); show($('formCard'),true); };
+$('openSetup').onclick=$('openSetup2').onclick=goSetup;
+$('setupBack').onclick=()=>{ if(token()){ show($('setupCard'),false); show($('formCard'),true); } };
 $('saveToken').onclick=()=>{
   const t=$('tokenIn').value.trim();
   if(!t){ $('setupMsg').className='msg err'; $('setupMsg').textContent='Please paste the token.'; return; }
+  if(!/^github_pat_|^ghp_/.test(t)){ $('setupMsg').className='msg err'; $('setupMsg').textContent='That doesn’t look like a GitHub token (it should start with github_pat_). Please re-copy it.'; return; }
   localStorage.setItem(TKEY,t);
-  $('setupMsg').className='msg ok'; $('setupMsg').textContent='Saved. You can add paintings now.';
-  setTimeout(()=>{ show($('setupCard'),false); show($('formCard'),true); },800);
+  $('setupMsg').className='msg ok'; $('setupMsg').textContent='Saved on this device. Taking you to the form…';
+  setTimeout(()=>{ show($('setupCard'),false); show($('formCard'),true); },900);
 };
 $('logout').onclick=()=>location.reload();
 
