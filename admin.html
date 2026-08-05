@@ -82,6 +82,7 @@
     <button class="btn" id="saveToken">Save token</button>
     <button class="btn ghost hide" id="setupBack">Continue to the form &rarr;</button>
     <div class="msg" id="setupMsg"></div>
+    <div class="note" style="margin-top:14px">Moving to another device? <a id="showSaved" style="color:var(--gold);cursor:pointer;text-decoration:underline">Show the token saved on this device</a> so you can copy it over.</div>
   </div>
 
   <!-- FORM -->
@@ -240,6 +241,12 @@ $('saveToken').onclick=()=>{
   setTimeout(()=>{ show($('setupCard'),false); show($('formCard'),true); },900);
 };
 $('logout').onclick=()=>location.reload();
+$('showSaved').onclick=()=>{
+  const t=token();
+  if(!t){ $('setupMsg').className='msg err'; $('setupMsg').textContent='No token is saved on this device to show.'; return; }
+  $('tokenIn').type='text'; $('tokenIn').value=t; $('tokenIn').focus(); $('tokenIn').select();
+  $('setupMsg').className='msg ok'; $('setupMsg').textContent='This is the token saved on this device — copy it and paste it into Setup on the other device.';
+};
 
 /* file preview */
 $('filebox').onclick=()=>$('file').click();
