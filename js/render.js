@@ -25,7 +25,7 @@ function featuredList(){ const f=PAINTINGS.filter(p=>p.featured); return f.lengt
 /* one masonry card → links to its story page */
 function cardHTML(p){
   const meta=p.year?`${p.theme} · ${p.year}`:p.theme;
-  const tag=p.sold?'<span class="art-tag">Original Not Available</span>':'';
+  const tag=p.sold?'<span class="art-tag">Original Sold</span>':'';
   return `<a class="card reveal" href="painting.html?id=${encodeURIComponent(p.id)}">
     <div class="pic">${tag}<span class="fr"><img src="${p.image}" alt="${p.title}" loading="lazy"></span></div>
     <h3>${p.title}</h3><div class="meta">${meta}</div></a>`;
@@ -172,7 +172,7 @@ function renderDetail(){
         <div><span>Medium</span><b>${p.medium}</b></div>
         ${(p.size && !(p.theme==='Portraits' && p.size==='Dimensions on request'))?`<div><span>Size</span><b>${p.size}</b></div>`:''}
         ${p.year?`<div><span>Year</span><b>${p.year}</b></div>`:''}
-        ${p.sold?`<div><span>Availability</span><b>Original not available · prints on request</b></div>`:''}
+        ${p.sold?`<div><span>Availability</span><b>Original sold · prints on request</b></div>`:''}
       </div>
       <div class="detail-story"><h4>The Story Behind It</h4>
         ${p.story.map(s=>`<p>${s}</p>`).join('')}
