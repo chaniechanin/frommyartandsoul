@@ -488,32 +488,40 @@ document.getElementById("cp").addEventListener("click", async () => {
 document.getElementById("mail").addEventListener("click", async () => {
   const note = document.getElementById("sendnote");
   if (!S.who || !S.who.trim()) {
-    note.textContent = "Please put your name at the top of the page first.";
-    note.style.color = "#b4534f"; return;
+    note.textContent = "Please put your name in first.";
+    note.style.color = "#b4534f";
+    document.getElementById("dlgwho").focus();
+    return;
   }
   const to = ["mendychanin", "@", "gmail.com"].join("");
-  const fd = new FormData();
-  fd.append("name", S.who);
   const secTxt = (S.gsec !== undefined && S.gsec !== "" && CH[S.gsec])
     ? " (" + CH[S.gsec].title + ")" : "";
-  fd.append("_subject", "Zaida Itchke notes - " + S.who + secTxt);
-  fd.append("message", report());
+  const subj = "Zaida Itchke notes - " + S.who + secTxt;
+  const body = report();
   note.style.color = "var(--gold)";
-  note.textContent = "Sending\u2026";
+
+  // Short enough to travel inside a mail link? Send it whole.
+  const link = "mailto:" + to + "?subject=" + encodeURIComponent(subj) +
+               "&body=" + encodeURIComponent(body);
+  if (link.length < 1900) {
+    note.textContent = "Opening your email… press send in there and you are done.";
+    window.location.href = link;
+    return;
+  }
+  // Too long for a mail link: put it on the clipboard and open an empty message.
   try {
-    const r = await fetch("https://formsubmit.co/ajax/" + to,
-      { method: "POST", headers: { Accept: "application/json" }, body: fd });
-    const d = await r.json();
-    if (d && (d.success === true || d.success === "true")) {
-      note.textContent = "Sent. Thank you \u2014 your notes are on their way to Mendy.";
-      S.sent = true; save();
-    } else {
-      note.style.color = "#b4534f";
-      note.textContent = "That did not go through. Use Copy to clipboard and email it instead.";
-    }
+    await navigator.clipboard.writeText(body);
+    note.textContent = "Your notes are copied. Your email is opening — press paste, then send.";
+    window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subj) +
+      "&body=" + encodeURIComponent("Paste here (Ctrl+V, or Cmd+V on a Mac) and press send.
+
+");
   } catch (e) {
+    const box = document.getElementById("out");
+    document.querySelector(".dlg details").open = true;
+    box.focus(); box.select();
     note.style.color = "#b4534f";
-    note.textContent = "No connection. Use Copy to clipboard and email it instead.";
+    note.textContent = "Press Ctrl+C to copy the text below, then email it to " + to;
   }
 });
 document.getElementById("dl").addEventListener("click", async () => {
