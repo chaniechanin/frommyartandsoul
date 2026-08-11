@@ -231,15 +231,26 @@
       <label>Your name
         <input type="text" id="dlgwho" placeholder="who is writing" autocomplete="name">
       </label>
-      <label>Which part is this about
-        <select id="dlgsec"></select>
+      <label>Your age
+        <select id="dlgage">
+          <option value="">rather not say</option>
+          <option value="under 20">under 20</option>
+          <option value="20 to 30">20 to 30</option>
+          <option value="30 to 40">30 to 40</option>
+          <option value="40 to 50">40 to 50</option>
+          <option value="50 or older">50 or older</option>
+        </select>
       </label>
     </div>
+    <label>Which part is this about
+      <select id="dlgsec"></select>
+    </label>
     <label>Anything you want to say
       <textarea id="dlgnote" placeholder="What you thought of it. What you remember differently. A name or a date we have wrong. Anything at all."></textarea>
     </label>
   </div>
   <p id="dlgmsg">Everything you marked while reading is included too.</p>
+  <p class="why">The age is only so we can see whether the younger readers and the older readers want different things from the book. Leave it blank if you would rather not.</p>
   <details><summary>See exactly what will be sent</summary>
     <textarea id="out" readonly></textarea>
   </details>
@@ -412,6 +423,7 @@ function report() {
   const L = [];
   L.push("ZAIDA ITCHKE — READER NOTES");
   L.push("From: " + (S.who || "(name not given)"));
+  L.push("Age: " + (S.age || "(not given)"));
   L.push("=".repeat(58), "");
   if (S.gnote && S.gnote.trim()) {
     const sec = S.gsec !== undefined && S.gsec !== ""
@@ -461,6 +473,8 @@ const dnot = document.getElementById("dlgnote");
     + " — " + c.title.replace(/^(Chapter [^:]+|Prologue):\s*/, "")));
 })();
 
+const dage = document.getElementById("dlgage");
+dage.addEventListener("change", () => { S.age = dage.value; save(); refreshOut(); });
 dwho.addEventListener("input", () => { S.who = dwho.value; who.value = dwho.value; save(); });
 who.addEventListener("input",  () => { dwho.value = who.value; });
 dsec.addEventListener("change", () => { S.gsec = dsec.value; save(); });
@@ -470,6 +484,7 @@ function refreshOut() { document.getElementById("out").value = report(); }
 
 document.getElementById("send").addEventListener("click", () => {
   dwho.value = S.who || "";
+  dage.value = S.age || "";
   dsec.value = S.gsec || "";
   dnot.value = S.gnote || "";
   refreshOut();
@@ -513,9 +528,7 @@ document.getElementById("mail").addEventListener("click", async () => {
     await navigator.clipboard.writeText(body);
     note.textContent = "Your notes are copied. Your email is opening — press paste, then send.";
     window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subj) +
-      "&body=" + encodeURIComponent("Paste here (Ctrl+V, or Cmd+V on a Mac) and press send.
-
-");
+      "&body=" + encodeURIComponent("Paste your notes here, then press send.");
   } catch (e) {
     const box = document.getElementById("out");
     document.querySelector(".dlg details").open = true;
