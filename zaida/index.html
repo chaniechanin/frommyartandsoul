@@ -171,6 +171,20 @@
   .dlg textarea{width:100%;min-height:220px;font-family:var(--util);font-size:12px;
         line-height:1.5;border:1px solid var(--rule);border-radius:3px;padding:10px;
         background:var(--paper);color:var(--ink);resize:vertical}
+  .fields{display:grid;gap:12px;margin:0 0 16px;padding:0 0 16px;
+          border-bottom:1px solid var(--rule)}
+  .fields .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:560px){.fields .two{grid-template-columns:1fr}}
+  .fields label{display:grid;gap:5px;font-family:var(--util);font-size:10.5px;
+                letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .fields input,.fields select{font-family:var(--body);font-size:16px;padding:9px 10px;
+        border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink)}
+  .fields textarea{font-family:var(--body);font-size:16px;line-height:1.5;padding:10px 12px;
+        border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink);
+        min-height:96px;resize:vertical;width:100%}
+  .dlg details{margin:0 0 14px}
+  .dlg summary{font-family:var(--util);font-size:11px;letter-spacing:.08em;
+               text-transform:uppercase;color:var(--muted);cursor:pointer}
   .sendnote{font-family:var(--util);font-size:12px;margin:12px 0 0;min-height:1.2em;color:var(--muted)}
   .dlg .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:14px;flex-wrap:wrap}
 </style>
@@ -211,9 +225,24 @@
 <div class="toast" id="toast"></div>
 
 <dialog id="dlg"><div class="dlg">
-  <h2>Your notes</h2>
-  <p id="dlgmsg">Copy this and email it back, or download it as a file.</p>
-  <textarea id="out" readonly></textarea>
+  <h2>Send your notes</h2>
+  <div class="fields">
+    <div class="two">
+      <label>Your name
+        <input type="text" id="dlgwho" placeholder="who is writing" autocomplete="name">
+      </label>
+      <label>Which part is this about
+        <select id="dlgsec"></select>
+      </label>
+    </div>
+    <label>Anything you want to say
+      <textarea id="dlgnote" placeholder="What you thought of it. What you remember differently. A name or a date we have wrong. Anything at all."></textarea>
+    </label>
+  </div>
+  <p id="dlgmsg">Everything you marked while reading is included too.</p>
+  <details><summary>See exactly what will be sent</summary>
+    <textarea id="out" readonly></textarea>
+  </details>
   <div class="acts">
     <button class="btn ghost" id="dl">Download file</button>
     <button class="btn ghost" id="cp">Copy to clipboard</button>
@@ -384,6 +413,11 @@ function report() {
   L.push("ZAIDA ITCHKE — READER NOTES");
   L.push("From: " + (S.who || "(name not given)"));
   L.push("=".repeat(58), "");
+  if (S.gnote && S.gnote.trim()) {
+    const sec = S.gsec !== undefined && S.gsec !== ""
+      ? (CH[S.gsec] ? CH[S.gsec].title : "the book") : "THE BOOK AS A WHOLE";
+    L.push("ABOUT: " + sec, "", S.gnote.trim(), "", "=".repeat(58), "");
+  }
   L.push("RATINGS — how gripping, 1 to 5");
   CH.forEach((c, ci) => {
     const r = S.rate[ci] || {};
@@ -412,15 +446,37 @@ function report() {
   return L.join("\n");
 }
 
-const dlg = document.getElementById("dlg");
+const dlg  = document.getElementById("dlg");
+const dwho = document.getElementById("dlgwho");
+const dsec = document.getElementById("dlgsec");
+const dnot = document.getElementById("dlgnote");
+
+/* the section picker: the whole book, then every chapter by name */
+(function () {
+  const mk = (v, txt) => { const o = document.createElement("option");
+                           o.value = v; o.textContent = txt; dsec.appendChild(o); };
+  mk("", "The book as a whole");
+  CH.forEach((c, ci) => mk(String(ci),
+    (c.num === "Part Four" ? "Part Four" : c.num === "00" ? "Prologue" : "Chapter " + parseInt(c.num, 10))
+    + " — " + c.title.replace(/^(Chapter [^:]+|Prologue):\s*/, "")));
+})();
+
+dwho.addEventListener("input", () => { S.who = dwho.value; who.value = dwho.value; save(); });
+who.addEventListener("input",  () => { dwho.value = who.value; });
+dsec.addEventListener("change", () => { S.gsec = dsec.value; save(); });
+dnot.addEventListener("input",  () => { S.gnote = dnot.value; save(); refreshOut(); });
+
+function refreshOut() { document.getElementById("out").value = report(); }
+
 document.getElementById("send").addEventListener("click", () => {
-  if (!Object.keys(S.notes).length && !Object.keys(S.rate).length) {
-    toast("Nothing to send yet — leave a note or a rating first."); return;
-  }
-  document.getElementById("out").value = report();
-  document.getElementById("dlgmsg").textContent = S.who
-    ? "Press Email it to Mendy to send this straight to him \u2014 or copy it, or download it."
-    : "Add your name at the top of the page first, then send it.";
+  dwho.value = S.who || "";
+  dsec.value = S.gsec || "";
+  dnot.value = S.gnote || "";
+  refreshOut();
+  document.getElementById("dlgmsg").textContent =
+    Object.keys(S.notes).length || Object.keys(S.rate).length
+      ? "Everything you marked while reading is included too."
+      : "You have not marked anything while reading — that is fine, just write below.";
   dlg.showModal();
 });
 document.getElementById("close").addEventListener("click", () => dlg.close());
@@ -438,7 +494,9 @@ document.getElementById("mail").addEventListener("click", async () => {
   const to = ["mendychanin", "@", "gmail.com"].join("");
   const fd = new FormData();
   fd.append("name", S.who);
-  fd.append("_subject", "Zaida Itchke notes - " + S.who);
+  const secTxt = (S.gsec !== undefined && S.gsec !== "" && CH[S.gsec])
+    ? " (" + CH[S.gsec].title + ")" : "";
+  fd.append("_subject", "Zaida Itchke notes - " + S.who + secTxt);
   fd.append("message", report());
   note.style.color = "var(--gold)";
   note.textContent = "Sending\u2026";
