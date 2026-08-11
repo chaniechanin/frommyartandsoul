@@ -207,7 +207,9 @@
          something rings false, where you know the story differently, where a name or a date is
          wrong. At the end of each chapter, rate how gripping it was.</p>
       <p>The photographs are the real ones out of the archive — including the letters themselves. Where you see a dashed box, that is a picture we still have to find or commission; if you know where one is, say so in a note.</p>
-      <p>When you are done, press <strong>Send my notes</strong> at the bottom and then <strong>Email it to Mendy</strong> — it goes straight to him, you do not need to open your mail program. Until you press it nothing leaves this page: your notes sit in this browser, so you can read over several sittings. There is also Copy and Download if you would rather send them yourself.</p>
+      <p>Nothing is sent anywhere automatically. When you are done, press
+         <strong>Send my notes</strong> at the bottom and you will get a file to email back.
+         Your notes stay in this browser until then, so you can read over several sittings.</p>
       <div class="namebox">
         <label for="who">Your name</label>
         <input type="text" id="who" placeholder="so we know whose notes these are" autocomplete="name">
@@ -250,14 +252,16 @@
     </label>
   </div>
   <p id="dlgmsg">Everything you marked while reading is included too.</p>
+  <p class="why2">Easiest is <strong>Send with Gmail</strong> — it opens Gmail in a new tab with your notes already written out, and you just press Send. If you do not use Gmail, <strong>Use my email app</strong>, or <strong>Copy</strong> and paste them into any email.</p>
   <p class="why">The age is only so we can see whether the younger readers and the older readers want different things from the book. Leave it blank if you would rather not.</p>
   <details><summary>See exactly what will be sent</summary>
     <textarea id="out" readonly></textarea>
   </details>
   <div class="acts">
-    <button class="btn ghost" id="dl">Download file</button>
-    <button class="btn ghost" id="cp">Copy to clipboard</button>
-    <button class="btn" id="mail">Email it to Mendy</button>
+    <button class="btn ghost" id="dl">Save a file</button>
+    <button class="btn ghost" id="cp">Copy</button>
+    <button class="btn ghost" id="mail">Use my email app</button>
+    <button class="btn" id="gmail">Send with Gmail</button>
     <button class="btn ghost" id="close">Close</button>
   </div>
   <p id="sendnote" class="sendnote"></p>
@@ -495,63 +499,6 @@ document.getElementById("send").addEventListener("click", () => {
   dlg.showModal();
 });
 document.getElementById("close").addEventListener("click", () => dlg.close());
-document.getElementById("cp").addEventListener("click", async () => {
-  const t = document.getElementById("out");
-  try { await navigator.clipboard.writeText(t.value); toast("Copied. Now paste it into an email."); }
-  catch (e) { t.select(); toast("Press Ctrl+C (or Cmd+C) to copy."); }
-});
-document.getElementById("mail").addEventListener("click", async () => {
-  const note = document.getElementById("sendnote");
-  if (!S.who || !S.who.trim()) {
-    note.textContent = "Please put your name in first.";
-    note.style.color = "#b4534f";
-    document.getElementById("dlgwho").focus();
-    return;
-  }
-  const to = ["mendychanin", "@", "gmail.com"].join("");
-  const secTxt = (S.gsec !== undefined && S.gsec !== "" && CH[S.gsec])
-    ? " (" + CH[S.gsec].title + ")" : "";
-  const subj = "Zaida Itchke notes - " + S.who + secTxt;
-  const body = report();
-  note.style.color = "var(--gold)";
-
-  // Short enough to travel inside a mail link? Send it whole.
-  const link = "mailto:" + to + "?subject=" + encodeURIComponent(subj) +
-               "&body=" + encodeURIComponent(body);
-  if (link.length < 1900) {
-    note.textContent = "Opening your email… press send in there and you are done.";
-    window.location.href = link;
-    return;
-  }
-  // Too long for a mail link: put it on the clipboard and open an empty message.
-  try {
-    await navigator.clipboard.writeText(body);
-    note.textContent = "Your notes are copied. Your email is opening — press paste, then send.";
-    window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subj) +
-      "&body=" + encodeURIComponent("Paste your notes here, then press send.");
-  } catch (e) {
-    const box = document.getElementById("out");
-    document.querySelector(".dlg details").open = true;
-    box.focus(); box.select();
-    note.style.color = "#b4534f";
-    note.textContent = "Press Ctrl+C to copy the text below, then email it to " + to;
-  }
-});
-document.getElementById("dl").addEventListener("click", async () => {
-  const name = "Zaida Itchke notes — " + (S.who || "reader") + ".txt";
-  if (window.claude && window.claude.downloads) {
-    try { await window.claude.downloads.save({ filename: name, data: report() });
-          toast("Saved."); }
-    catch (e) { toast("Download declined — use Copy to clipboard instead."); }
-  } else {
-    try {
-      const b = new Blob([report()], { type: "text/plain" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(b); a.download = name; a.click();
-      URL.revokeObjectURL(a.href); toast("Saved.");
-    } catch (e) { toast("Could not save — use Copy to clipboard instead."); }
-  }
-});
 document.getElementById("clear").addEventListener("click", () => {
   if (!confirm("Delete all your notes and ratings on this device? This cannot be undone.")) return;
   S = { notes: {}, rate: {}, who: S.who }; save(); location.reload();
@@ -568,6 +515,108 @@ const obs = new IntersectionObserver(es => {
   });
 }, { rootMargin: "-15% 0px -70% 0px" });
 document.querySelectorAll(".chapter").forEach(s => obs.observe(s));
+/* How the notes get back. No third-party service, no server.
+   Gmail first, because most of the family is on it and it takes the whole
+   report without a paste step. A mail app second. Clipboard always. */
+(function () {
+  var TO = ["mendychanin", "@", "gmail.com"].join("");
+
+  function subject() {
+    var sec = (S.gsec !== undefined && S.gsec !== "" && CH[S.gsec])
+      ? " (" + CH[S.gsec].title + ")" : "";
+    return "Zaida Itchke notes - " + (S.who || "reader") + sec;
+  }
+
+  function named(note) {
+    if (S.who && S.who.trim()) return true;
+    note.style.color = "#b4534f";
+    note.textContent = "Please put your name in first.";
+    var w = document.getElementById("dlgwho");
+    if (w) w.focus();
+    return false;
+  }
+
+  async function copy(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (e) {
+      var box = document.getElementById("out");
+      var det = document.querySelector(".dlg details");
+      if (det) det.open = true;
+      if (box) { box.focus(); box.select(); }
+      return false;
+    }
+  }
+
+  /* Gmail in the browser: no mail app needed, carries the whole thing. */
+  var g = document.getElementById("gmail");
+  if (g) g.addEventListener("click", function () {
+    var note = document.getElementById("sendnote");
+    if (!named(note)) return;
+    var url = "https://mail.google.com/mail/?view=cm&fs=1"
+            + "&to=" + encodeURIComponent(TO)
+            + "&su=" + encodeURIComponent(subject())
+            + "&body=" + encodeURIComponent(report());
+    note.style.color = "var(--gold)";
+    note.textContent = "Gmail is opening in a new tab with everything filled in. Press Send there.";
+    window.open(url, "_blank", "noopener");
+  });
+
+  /* Whatever mail program the machine has. */
+  var m = document.getElementById("mail");
+  if (m) m.addEventListener("click", async function () {
+    var note = document.getElementById("sendnote");
+    if (!named(note)) return;
+    var body = report();
+    var link = "mailto:" + TO + "?subject=" + encodeURIComponent(subject())
+             + "&body=" + encodeURIComponent(body);
+    note.style.color = "var(--gold)";
+    if (link.length < 1900) {
+      note.textContent = "Your email is opening with everything in it. Press send there.";
+      window.location.href = link;
+      return;
+    }
+    var ok = await copy(body);
+    note.textContent = ok
+      ? "Too long to fit in a mail link, so your notes are on the clipboard. Your email is opening — paste, then send."
+      : "Too long to fit in a mail link. Press Ctrl+C to copy the text below, then email it to " + TO;
+    if (ok) window.location.href = "mailto:" + TO + "?subject=" + encodeURIComponent(subject());
+  });
+
+  /* Always works. */
+  var c = document.getElementById("cp");
+  if (c) c.addEventListener("click", async function () {
+    var note = document.getElementById("sendnote");
+    var ok = await copy(report());
+    note.style.color = ok ? "var(--gold)" : "#b4534f";
+    note.textContent = ok
+      ? "Copied. Paste it into an email to " + TO
+      : "Press Ctrl+C to copy the text below, then email it to " + TO;
+  });
+
+  var d = document.getElementById("dl");
+  if (d) d.addEventListener("click", async function () {
+    var note = document.getElementById("sendnote");
+    var name = "Zaida Itchke notes - " + (S.who || "reader") + ".txt";
+    try {
+      var b = new Blob([report()], { type: "text/plain;charset=utf-8" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(b);
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(a.href);
+      note.style.color = "var(--gold)";
+      note.textContent = "Saved to your downloads. Email that file to " + TO;
+    } catch (e) {
+      note.style.color = "#b4534f";
+      note.textContent = "Could not save the file. Use Copy instead.";
+    }
+  });
+})();
+
 </script>
 
 </body>
