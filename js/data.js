@@ -1779,8 +1779,8 @@ const PAINTINGS = [
     subtitle: "Rebbetzin Chana, gathering in the field so her husband's Torah could live.",
     story: [
       "High above, among the clouds, a sage bends over his writing; below, a woman moves through the field, gathering what she can find. This is Rabbi Levi Yitzchak Schneerson — the Rebbe's father — and his devoted wife, Rebbetzin Chana.",
-      "Exiled by the Soviets to a lonely corner of Kazakhstan, Reb Levik had no ink and no paper, yet he would not stop writing his Torah. So Rebbetzin Chana went out into the fields and gathered berries and grasses, and from them she made ink — every color drawn from the earth — so that her husband's holy words would not be lost.",
-      "Because of her quiet devotion, his Torah survived the exile and is studied to this day. A whole world of Torah, carried on the strength of one woman gathering in a field."
+      "Exiled by the Soviets to the remote town of Ch'ili in Kazakhstan, Reb Levik had almost nothing — yet he would not stop writing his Torah thoughts in the margins of the few holy books he still had. There was no ink to be found, so Rebbetzin Chana went out and gathered grasses and herbs from the fields, and ground and mixed them into ink, so that her husband's holy words would not be lost.",
+      "Those very notes were later saved, and their son — the Lubavitcher Rebbe — published them as the sefer Likkutei Levi Yitzchak, studied to this day. A whole world of Torah, carried on the quiet devotion of one woman gathering in a field."
     ]
   },
   {
