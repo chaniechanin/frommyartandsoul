@@ -1537,12 +1537,13 @@ const PAINTINGS = [
     size: "Dimensions on request",
     image: "images/river-crossing.jpg",
     sold: true,
-    sold: true,
     featured: false,
-    subtitle: "A small rowboat under a full moon.",
+    subtitle: "The Alter Rebbe, blessing the moon on the river.",
     story: [
-      "Under a luminous full moon, a small wooden boat carries an elder and two young men across still, dark water toward the lights of a distant town.",
-      "A night scene built almost entirely from blues and silver."
+      "This painting tells the story of the Alter Rebbe — Rabbi Shneur Zalman of Liadi, the author of the Tanya — during his imprisonment by the Czar's authorities. Each day he was taken by ferry across the Neva River to be interrogated.",
+      "One night, he asked the officer beside him to stop the boat so he could recite Kiddush Levana, the blessing over the new moon. The officer refused. \"If I want to,\" the Rebbe said, \"I can stop the boat myself\" — and the boat came to a halt in the middle of the river.",
+      "Yet he would not say the blessing that way. A mitzvah, he taught, is meant to be fulfilled within the natural order, not through a miracle — so only once the officer agreed did he recite it, and in return he gave the man a blessing, written in his own hand.",
+      "His release from prison is celebrated every year on Yud-Tes Kislev, the New Year of Chassidus."
     ]
   },
   {
