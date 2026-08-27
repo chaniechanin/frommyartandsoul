@@ -834,7 +834,7 @@ const PAINTINGS = [
   },
   {
     id: "menorah-temple",
-    title: "The Menorah — Where It All Began",
+    title: "The Menorah",
     theme: "Holidays",
     year: "2020",
     medium: "Oil on canvas",
