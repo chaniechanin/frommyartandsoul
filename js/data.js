@@ -661,11 +661,11 @@ const PAINTINGS = [
   },
   {
     id: "pebble-in-the-water",
-    title: "A Pebble in the Water",
+    title: "Drop a Pebble in the Water",
     theme: "Nature",
     year: "2016",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/pebble-in-the-water.jpg",
     featured: false,
     subtitle: "A single good deed — like ripples, spreading farther than we can know.",
