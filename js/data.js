@@ -1683,13 +1683,13 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/tzfat-walkway.jpg",
     featured: false,
     subtitle: "A narrow stone lane in the mystical city.",
     story: [
-      "A cobbled alley winds between old stone walls in Tzfat, past blue shutters and a spill of flowering vines, toward a sunlit archway at its end.",
-      "The blues of Tzfat, the city of Kabbalah, everywhere you look."
+      "Tzfas — one of the four holy cities of Israel — is a place close to my heart. Some of my children have spent their years of Torah study here, and I have visited on a few short trips of my own.",
+      "I painted this a few years ago, and I hope to go again very soon: to walk the old city, to feel the texture of the stones, to see the blue-painted doors and the art, to climb the hills and take in all the beauty and holiness around."
     ]
   },
   {
@@ -1773,12 +1773,14 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2015",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/in-the-field.jpg",
     featured: false,
-    subtitle: "A sage writing above, a woman gathering below.",
+    subtitle: "Rebbetzin Chana, gathering in the field so her husband's Torah could live.",
     story: [
-      "Across a wide green field, a woman in a simple brown dress holds a bundle of gathered greens, while above, among the clouds, an elder sits writing with a quill."
+      "High above, among the clouds, a sage bends over his writing; below, a woman moves through the field, gathering what she can find. This is Rabbi Levi Yitzchak Schneerson — the Rebbe's father — and his devoted wife, Rebbetzin Chana.",
+      "Exiled by the Soviets to a lonely corner of Kazakhstan, Reb Levik had no ink and no paper, yet he would not stop writing his Torah. So Rebbetzin Chana went out into the fields and gathered berries and grasses, and from them she made ink — every color drawn from the earth — so that her husband's holy words would not be lost.",
+      "Because of her quiet devotion, his Torah survived the exile and is studied to this day. A whole world of Torah, carried on the strength of one woman gathering in a field."
     ]
   },
   {
