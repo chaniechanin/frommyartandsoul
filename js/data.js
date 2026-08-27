@@ -787,7 +787,7 @@ const PAINTINGS = [
   },
   {
     id: "choosing-the-esrog",
-    title: "Choosing the Esrog",
+    title: "Love for the Mitzva",
     theme: "Holidays",
     year: "2010",
     medium: "Oil on canvas",
