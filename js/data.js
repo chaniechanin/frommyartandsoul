@@ -1320,11 +1320,11 @@ const PAINTINGS = [
   },
   {
     id: "sound-of-the-shofar",
-    title: "The Sound of the Shofar",
+    title: "Shira Chadosha",
     theme: "Holidays",
     year: "2023",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/sound-of-the-shofar.jpg",
     featured: true,
     subtitle: "The shofar that will announce Moshiach.",
