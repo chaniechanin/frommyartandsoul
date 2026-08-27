@@ -1457,13 +1457,13 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/cave-of-machpelah.jpg",
     featured: true,
     subtitle: "The resting place of the Patriarchs and Matriarchs, in Chevron.",
     story: [
-      "The great Herodian walls of the Cave of Machpelah in Chevron, rising over the worn stone steps where soldiers and pilgrims come and go in the strong Judean light.",
-      "Painted on-site, in warm limestone tones."
+      "We read in the Torah portion that when Mother Sara passed away, Avrohom bought \"the Cave of Machpelah\" for burial, in the holy city of Chevron.",
+      "It's called the cave of doubles, as Adam and Eve were buried there, and later Avrohom would be laid to rest near his wife Sara — then also Isaac and Rebecca, and Jacob and Leah."
     ]
   },
   {
