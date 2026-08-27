@@ -1566,14 +1566,15 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2015",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/rambam.jpg",
     sold: true,
     featured: false,
     subtitle: "Physician, philosopher, and codifier of Torah law.",
     story: [
-      "The Rambam — Maimonides — in a deep blue robe and white turban, an open volume before him and his books and medicines behind, against a warm desert-toned wall.",
-      "A tribute to the sweep of his life as both doctor and Torah giant."
+      "Rabbi Moshe ben Maimon — known as Maimonides, and by the acronym Rambam — was born in Córdoba, Spain, in the year 1135.",
+      "He grew to become one of the greatest and most influential Torah scholars of the medieval world: a Sephardic sage and philosopher whose writings are studied everywhere to this day. He was also a renowned physician.",
+      "He passed away on December 13, 1204."
     ]
   },
   {
