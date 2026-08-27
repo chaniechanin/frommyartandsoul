@@ -104,7 +104,7 @@ function renderGallery(){
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
-  const HOLIDAY_ORDER=['sound-of-the-shofar','lulav','choosing-the-esrog','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai','shofar'];
+  const HOLIDAY_ORDER=['sound-of-the-shofar','choosing-the-esrog','lulav','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai','shofar'];
   /* Judaic: lead with her strongest / signature pieces; the rest follow in their existing order */
   /* the two Kotel paintings and the two Miriam paintings are kept well apart so they never read as duplicates */
   const JUDAIC_ORDER=['the-lion-roars','avraham','the-kotel','miriam-at-the-sea','the-test-of-avraham','mother-rochel','the-holy-temple','holy-shabbos','neshama','kotel-in-color','the-womens-dance','the-sun-did-not-set','shema','mizmor-ledovid','yerushalayim','rus-the-moabite','a-soldiers-prayer','leah'];
