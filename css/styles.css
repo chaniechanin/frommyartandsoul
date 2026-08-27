@@ -5,7 +5,7 @@
 :root{
   --d-bg:#0e0e11; --d-ink:#f2efe8; --d-mut:#9c968b;
   --l-bg:#f6f2ea; --l-ink:#211d18; --l-mut:#6f6a60;
-  --gold:#bd934e; --gold-lt:#e0c489; --line:#e4dccd;
+  --gold:#9e5738; --gold-lt:#c8845c; --line:#e4dccd;
   --sans:"Jost",system-ui,-apple-system,sans-serif; --serif:"Fraunces",Georgia,serif;
   --maxw:1240px;
 }
@@ -22,7 +22,7 @@ em{font-family:var(--serif);font-style:italic;color:var(--gold-lt)}
 .btn{display:inline-block;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;padding:16px 40px;border:1px solid currentColor;transition:.3s;cursor:pointer;background:none;font-family:var(--sans)}
 .btn.dark{color:var(--l-ink)} .btn.dark:hover{background:var(--l-ink);color:#fff}
 .btn.light{color:#fff;border-color:rgba(255,255,255,.5)} .btn.light:hover{background:#fff;color:#111;border-color:#fff}
-.btn.gold{color:#111;background:var(--gold);border-color:var(--gold)} .btn.gold:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+.btn.gold{color:#fff;background:var(--gold);border-color:var(--gold)} .btn.gold:hover{background:var(--gold-lt);border-color:var(--gold-lt);color:#fff}
 
 /* gold frame */
 .artframe{background:linear-gradient(150deg,#e0c489,#c9a45f 45%,#8d6c31);padding:9px;box-shadow:0 40px 80px -34px rgba(0,0,0,.6)}
