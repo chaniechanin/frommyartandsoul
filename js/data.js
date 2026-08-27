@@ -1601,13 +1601,14 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2016",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/choni.jpg",
     featured: false,
     subtitle: "The circle-maker who prayed for rain.",
     story: [
-      "A lone robed figure stands in a dry desert landscape, having drawn a circle in the earth — Choni HaMe'agel, who declared he would not move until rain fell.",
-      "A story of faith bold enough to argue with the heavens."
+      "Choni HaMe'agel — \"the circle-maker\" — lived in a time of drought, when the rains would not come and the people were desperate.",
+      "He drew a circle in the earth, stood inside it, and declared before Hashem that he would not step out until the rain fell. And the rain came.",
+      "His prayer shows the closeness a person can have with Hashem — like a child turning to a loving parent, certain of being heard."
     ]
   },
   {
