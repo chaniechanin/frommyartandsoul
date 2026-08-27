@@ -1667,13 +1667,14 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2025",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/bibas-family.jpg",
     featured: false,
     subtitle: "Held in a heart.",
     story: [
-      "A mother and her two little red-haired boys, cradled together inside the shape of a heart.",
-      "Painted in memory of the Bibas family, and of a whole nation that held them in its prayers."
+      "A mother and her two little red-haired boys, held together inside the shape of a heart — Shiri Bibas and her sons, little Ariel and baby Kfir.",
+      "They were torn from their home on that bitter morning of Simchas Torah, the seventh of October. Their sweet faces and bright red hair became known across the whole world, and an entire nation held them close and prayed, day after day, for their safe return home.",
+      "They did not come back to us in this world. Hashem yikom damam — may Hashem avenge their blood, and may their pure neshamos be bound up in the bond of eternal life. Very soon, with the coming of Moshiach, may every tear be wiped away, and may we all be together again."
     ]
   },
   {
