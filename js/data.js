@@ -1753,17 +1753,18 @@ const PAINTINGS = [
   },
   {
     id: "lag-baomer",
-    title: "Lag BaOmer Bonfire",
+    title: "Lag BaOmer",
     theme: "Holidays",
     year: "2014",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/lag-baomer.jpg",
     featured: false,
     subtitle: "Dancing circles around the fire.",
     story: [
-      "A great bonfire leaps into the night while men and children join hands and circle it, dancing — the joy of Lag BaOmer.",
-      "Firelight, movement, and the warmth of a whole community together."
+      "The 33rd day of counting the Omer. It's a day of joy and celebration: the plague that killed thousands of Rabbi Akiva's students ceased, and it's also the day Rabbi Shimon Bar Yochai passed away.",
+      "It's customary to light bonfires to symbolize the light of Torah and the teachings of Kabbalah that Rabbi Shimon Bar Yochai brought into the world. Every Jew has a fire within — a soul, a spark that yearns to be ignited and burn with the light of Torah.",
+      "We can share the light of our torch by teaching another Jew and setting his fire burning. May we merit the coming of Moshiach!"
     ]
   },
   {
