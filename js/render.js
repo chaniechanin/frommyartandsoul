@@ -104,7 +104,7 @@ function renderGallery(){
   /* Rebbe & Rebbetzin: fixed order, shown right→left (chronological by the Rebbeim, then the Rebbetzins) */
   const REBBE_ORDER=['alter-rebbe','tzemach-tzedek','rebbe-rashab','rebbe-rayatz','rebbe-rayatz-snow','rebbe-rayatz-gani','rebbe-blue-eyes','rebbe-i-miss-you','rebbe-picture-wall','royal-tea','reb-levik','rebbetzin-channah','rebbetzin-chana-2023','rebbetzin-chana-dinner','rebbetzin-chaya-mushka'];
   /* Holidays follow the Jewish calendar cycle (Tishrei → Iyar) */
-  const HOLIDAY_ORDER=['shofar','sound-of-the-shofar','lulav','choosing-the-esrog','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai'];
+  const HOLIDAY_ORDER=['sound-of-the-shofar','lulav','choosing-the-esrog','torah-is-life','menorah-public','menorah-temple','the-dreidel','seven-species','happy-purim','four-cups','lag-baomer','mount-sinai','shofar'];
   /* Judaic: lead with her strongest / signature pieces; the rest follow in their existing order */
   /* the two Kotel paintings and the two Miriam paintings are kept well apart so they never read as duplicates */
   const JUDAIC_ORDER=['the-lion-roars','avraham','the-kotel','miriam-at-the-sea','the-test-of-avraham','mother-rochel','the-holy-temple','holy-shabbos','neshama','kotel-in-color','the-womens-dance','the-sun-did-not-set','shema','mizmor-ledovid','yerushalayim','rus-the-moabite','a-soldiers-prayer','leah'];
@@ -125,6 +125,7 @@ function renderGallery(){
   };
   const activate=(theme,scroll)=>{
     if(!present.has(theme)&&theme!=='All Works') theme='All Works';
+    try{sessionStorage.setItem('fmas_tab',theme);}catch(e){}
     draw(theme);
     if(filters) filters.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.theme===theme));
     if(nextWrap){
@@ -142,8 +143,10 @@ function renderGallery(){
   }
   /* open a section directly from the top-nav links (?view=beyond / ?view=events) */
   const VIEW_MAP={beyond:'Beyond the Canvas',events:'Paint Parties',portraits:'Portraits',chabad:'Rebbe & Rebbetzin'};
-  const view=new URLSearchParams(location.search).get('view');
-  activate((view&&VIEW_MAP[view])||tabThemes[0],false);
+  const params=new URLSearchParams(location.search);
+  const view=params.get('view');
+  const tab=params.get('tab');
+  activate(tab||(view&&VIEW_MAP[view])||tabThemes[0],false);
 }
 
 /* story (detail) page */
@@ -152,6 +155,8 @@ function renderDetail(){
   const id=new URLSearchParams(location.search).get('id');
   const p=PAINTINGS.find(x=>x.id===id)||PAINTINGS[0];
   document.title=`${p.title} — From My Art & Soul`;
+  let backTab=''; try{ backTab=sessionStorage.getItem('fmas_tab')||''; }catch(e){}
+  const backHref='gallery.html?tab='+encodeURIComponent(backTab||p.theme);
   const extraArr=p.extra?(Array.isArray(p.extra)?p.extra:[p.extra]):[];
   const extraHTML=extraArr.map(src=>`<figure class="bts"><img class="btc-media" src="${src}" alt="${p.title}">${(!Array.isArray(p.extra)&&p.extraCaption)?`<figcaption>${p.extraCaption}</figcaption>`:''}</figure>`).join('');
   const photoTheme=p.theme==='Beyond the Canvas'||p.theme==='Paint Parties';
@@ -164,7 +169,7 @@ function renderDetail(){
   wrap.innerHTML=`
     <div class="detail-media">${mainMedia}${extraHTML}</div>
     <div class="detail-info">
-      <a class="back" href="gallery.html">← Back to the collection</a>
+      <a class="back" href="${backHref}">← Back to the collection</a>
       <span class="eyebrow">${p.theme}</span>
       <h1>${p.title}</h1>
       <div class="sub">${p.subtitle||''}</div>
