@@ -1579,7 +1579,7 @@ const PAINTINGS = [
   },
   {
     id: "agam",
-    title: "The Three Mitzvos of the Woman",
+    title: "Three Mitzvos for the Jewish Women",
     theme: "Judaic",
     year: "2025",
     medium: "Oil on canvas",
