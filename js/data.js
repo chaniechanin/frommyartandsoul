@@ -1515,17 +1515,18 @@ const PAINTINGS = [
   },
   {
     id: "menorah-public",
-    title: "The Public Menorah",
+    title: "Spread the Light",
     theme: "Holidays",
     year: "2016",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/menorah-public.jpg",
     featured: true,
     subtitle: "A giant menorah kindled against the city night.",
     story: [
-      "A towering public menorah blazes against a dark city skyline while a bundled-up crowd gathers below to watch the lights kindled.",
-      "Chanukah taken out of the house and into the street — light where everyone can see it."
+      "The Rebbe encouraged putting up public menorahs all over, to bring out the miracle of Chanukah — a little light can expel and brighten up the darkness.",
+      "May you find your light and overcome any darkness you may have within you!",
+      "And may we merit to once again see the lights of the Menorah shining from the courtyard of the Third Beis Hamikdosh, spreading its light throughout the whole world, with the coming of Moshiach."
     ]
   },
   {
