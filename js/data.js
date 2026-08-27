@@ -1134,19 +1134,18 @@ const PAINTINGS = [
   },
   {
     id: "the-dreidel",
-    title: "The Dreidel",
+    title: "The Dreidel!",
     theme: "Holidays",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/the-dreidel.jpg",
     featured: false,
     subtitle: "A Chanukah lesson from the spin of the dreidel.",
     story: [
-      "The dreidel is a game we play on Chanukah — and there's a lesson in it too. When we spin it, we can land on Nun (nothing), Gimmel (take all), Hey (half), or Shin (give in).",
-      "Not every day is a Gimmel or a Hey — great or good. But we can learn from the Maccabees: though their situation looked bad, they focused on the good and made themselves a vessel for G-d to send a miracle that was Gimmel — great — and they defeated their enemy. So when we find ourselves in a hard place, we focus on the good, and Hashem sends His miracles.",
-      "The letters even hint at it: Nun (50), Gimmel (3), Hey (5), and Shin (300) add up to 358 — the same as the word Moshiach (Mem 40, Shin 300, Yud 10, Ches 8 = 358).",
-      "Wishing you a happy eighth day of Chanukah. May we carry the brightness and lessons of this holiday into our lives, and may we merit to celebrate next Chanukah in the holy Temple."
+      "A spinning top with four Hebrew letters — נ ג ה ש — standing for Nes Gadol Hayah Sham, \"a great miracle happened there.\"",
+      "The dreidel dates back to the time of the Greek-Syrian rule over the Holy Land — which set off the Maccabean revolt that culminated in the Chanukah miracle. Learning Torah was forbidden by the enemy, a \"crime\" punishable by death, so the Jewish children hid in caves in order to study. If a Greek patrol would approach, the children would pull out their spinning tops and pretend to be playing a game.",
+      "It is customary to play this game on Chanukah. The children love it especially when the dreidel spins and then falls on the letter ג — Gimmel, \"Great\" — and they win!"
     ]
   },
   {
