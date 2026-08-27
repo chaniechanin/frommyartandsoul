@@ -1123,7 +1123,7 @@ const PAINTINGS = [
     theme: "Holidays",
     year: "2018",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/happy-purim.jpg",
     featured: false,
     subtitle: "Two little masqueraders — a day of joy and celebration.",
