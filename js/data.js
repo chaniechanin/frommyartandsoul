@@ -797,8 +797,7 @@ const PAINTINGS = [
     sold: true,
     subtitle: "An elder examines his esrog and lulav with love and care.",
     story: [
-      "Wrapped in his tallis, an old chassid holds up his esrog and lulav and studies them closely — checking every detail, the way our people have cherished this mitzvah for generations.",
-      "There is such devotion in his face. He is not rushing. Choosing the esrog is a labor of love, and you can see a lifetime of Sukkos in the way he holds it."
+      "We take the lulav — a palm branch — two willows (aravos), and a minimum of three myrtles (hadassim), make a blessing, add on the esrog (one citron), and shake all four kinds together."
     ]
   },
   {
