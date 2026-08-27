@@ -1744,13 +1744,12 @@ const PAINTINGS = [
     theme: "Holidays",
     year: "2014",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "18 × 24 in",
     image: "images/shofar.jpg",
     featured: false,
     subtitle: "A cry that tears open the heavens.",
     story: [
-      "An elder wrapped in a tallis lifts the shofar, and from its mouth a band of fire and color streams up into a grey, wind-swept sky.",
-      "The wordless cry of Rosh Hashanah, made visible."
+      "We blow the shofar every weekday of the month of Elul — except for the day before Rosh Hashanah — to awaken us to return and come close to G-d, as the High Holy Days are soon approaching."
     ]
   },
   {
