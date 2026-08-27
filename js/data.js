@@ -1728,9 +1728,10 @@ const PAINTINGS = [
     theme: "Nature",
     year: "2016",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/the-leaf.jpg",
     featured: false,
+    sold: true,
     subtitle: "A close study of fallen color.",
     story: [
       "A close-up carpet of fallen leaves — crimson, amber, gold and green — layered and overlapping so the whole canvas glows.",
@@ -1812,6 +1813,21 @@ const PAINTINGS = [
       "Once, the Roman government forbade the Jews to study Torah. Pappus saw Rabbi Akiva gathering Jews to learn, and asked him why he was not afraid of the decree. Rabbi Akiva answered him with a parable.",
       "A fox once walked by the river and saw the fish darting nervously back and forth. He asked why they were so afraid, and they answered that the fishermen had come to catch them. So the fox invited them to come out onto the dry land, where he would keep them safe. The fish replied, \"Silly fox — if we come out onto dry land we will surely die; but here in the water, our place of life, we still have a chance to live.\"",
       "\"The same is true for us,\" said Rabbi Akiva. \"If now, while we sit and study the Torah — of which it says, 'For it is your life and the length of your days' (Devarim 30:20) — this is our situation, how much more so if we were to neglect it.\""
+    ]
+  },
+  {
+    id: "dead-sea-view",
+    title: "Overlooking the Dead Sea",
+    theme: "Nature",
+    year: "2010",
+    medium: "Oil on canvas",
+    size: "18 × 24 in",
+    image: "images/dead-sea-view.jpg",
+    featured: false,
+    subtitle: "Date palms on the ridge above the Dead Sea.",
+    story: [
+      "Tall date palms stand along a sandy ridge, looking out over the still blue waters of the Dead Sea, the mountains of the Jordan Valley soft in the distance.",
+      "The lowest place on earth — quiet, warm, and full of light."
     ]
   }
 ];
