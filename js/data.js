@@ -1285,14 +1285,14 @@ const PAINTINGS = [
   },
   {
     id: "little-bird-of-silver",
-    title: "The Little Bird of Silver",
+    title: "Acheinu",
     theme: "Judaic",
     year: "2023",
     medium: "Oil on canvas",
     size: "18 × 24 in",
     image: "images/little-bird-of-silver.jpg",
     featured: true,
-    subtitle: "A silver bird, still singing amongst the vultures.",
+    subtitle: "The little bird of silver — the Jewish nation sings, united.",
     story: [
       "For weeks after October 7th, I couldn't express my feelings and emotions in my art. Then, suddenly, an idea came and I began to paint — and it sat on my easel, unfinished, for a few weeks. Last night I returned to it, and today I finished it.",
       "\"The little bird of silver — so delicate and rare, still chirps amongst the vultures, outshining all that's there. How long, how long it suffers; how long will it be — when will the eagle come, and set the little bird free!\"",
