@@ -1769,14 +1769,14 @@ const PAINTINGS = [
   },
   {
     id: "in-the-field",
-    title: "In the Field",
+    title: "Devotion",
     theme: "Judaic",
     year: "2015",
     medium: "Oil on canvas",
     size: "18 × 24 in",
     image: "images/in-the-field.jpg",
     featured: false,
-    subtitle: "Rebbetzin Chana, gathering in the field so her husband's Torah could live.",
+    subtitle: "Rebbetzin Chana, making ink from the grasses of the field.",
     story: [
       "High above, among the clouds, a sage bends over his writing; below, a woman moves through the field, gathering what she can find. This is Rabbi Levi Yitzchak Schneerson — the Rebbe's father — and his devoted wife, Rebbetzin Chana.",
       "Exiled by the Soviets to the remote town of Ch'ili in Kazakhstan, Reb Levik had almost nothing — yet he would not stop writing his Torah thoughts in the margins of the few holy books he still had. There was no ink to be found, so Rebbetzin Chana went out and gathered grasses and herbs from the fields, and ground and mixed them into ink, so that her husband's holy words would not be lost.",
