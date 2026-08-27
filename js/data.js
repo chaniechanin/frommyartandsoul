@@ -1534,7 +1534,7 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2014",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/river-crossing.jpg",
     sold: true,
     featured: false,
