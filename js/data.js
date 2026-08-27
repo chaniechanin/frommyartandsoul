@@ -1437,7 +1437,7 @@ const PAINTINGS = [
     theme: "Holidays",
     year: "2022",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "30 × 40 in",
     image: "images/four-cups.jpg",
     featured: true,
     subtitle: "The four cups, the four exiles, and the cup of Eliyahu.",
