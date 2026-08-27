@@ -860,10 +860,10 @@ const PAINTINGS = [
     sold: true,
     subtitle: "United as one — the giving of the Torah at Sinai.",
     story: [
-      "I began this painting the week of Shavuos but didn't finish it in time for the holiday. Last night I finally added the last strokes of paint.",
-      "I share it now for today's Chitas, in which Moshe recalls to the Jewish people the moment they received the Torah — the Ten Commandments — at Mount Sinai, where the nation stood together as one man, with one heart.",
-      "I painted the mountain wrapped in fire and cloud, thunder and lightning above — the whole world silent — as the nation gathered below to hear G-d's voice.",
-      "This evening we begin to fast and mourn the destruction of our holy Temples. The second Temple was destroyed because of baseless hatred. May we merit to be united, with love, together as one — in the third Beis Hamikdash. May it be now!"
+      "As the Jewish people arrived at Mount Sinai, the Torah says: \"And Israel encamped opposite the mountain\" — vayichan, written in the singular. Rashi explains that they camped there as one man, with one heart.",
+      "Even before the Torah was given, the very anticipation of receiving it awakened the deepest part of who we are — a faith in G-d that rises above all reason — and drew the whole nation together as one. Millions of people, every difference set aside, standing together with a single heart. That unity was the vessel that made us ready to receive the Torah.",
+      "I painted the mountain wrapped in fire and cloud, the tablets shining above and the nation gathered below — one people, one heart, before the giving of the Torah.",
+      "May we merit that same unity again — one nation, like one person — and with it the coming of Moshiach, together as one."
     ]
   },
   {
