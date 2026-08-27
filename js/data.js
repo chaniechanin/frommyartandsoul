@@ -855,9 +855,10 @@ const PAINTINGS = [
     theme: "Holidays",
     year: "2023",
     medium: "Oil on canvas",
-    size: "30 × 40 in",
-    image: "images/mount-sinai.jpg",
+    size: "18 × 24 in",
+    image: "images/mount-sinai.jpg?v=2",
     featured: false,
+    sold: true,
     subtitle: "United as one — the giving of the Torah at Sinai.",
     story: [
       "I began this painting the week of Shavuos but didn't finish it in time for the holiday. Last night I finally added the last strokes of paint.",
@@ -1796,6 +1797,22 @@ const PAINTINGS = [
     story: [
       "Through every generation, the Jewish people have stood strong. Nations have risen against us, yet our faith remains unbroken. Like the lion of Yehuda, we stand with courage and hope, carrying within us a deep yearning for the coming of Moshiach.",
       "And very soon, a new dawn will rise. The promise will be fulfilled, and we will rejoice together with the rebuilding of the Third Beis Hamikdash — in a world filled with peace, holiness, and G-dliness."
+    ]
+  },
+  {
+    id: "fox-and-fish",
+    title: "The Fox and the Fish",
+    theme: "Judaic",
+    year: "2010",
+    medium: "Oil on canvas",
+    size: "24 × 26 in",
+    image: "images/fox-and-fish.jpg",
+    featured: false,
+    subtitle: "Rabbi Akiva's parable — Torah is our water and our life.",
+    story: [
+      "Once, the Roman government forbade the Jews to study Torah. Pappus saw Rabbi Akiva gathering Jews to learn, and asked him why he was not afraid of the decree. Rabbi Akiva answered him with a parable.",
+      "A fox once walked by the river and saw the fish darting nervously back and forth. He asked why they were so afraid, and they answered that the fishermen had come to catch them. So the fox invited them to come out onto the dry land, where he would keep them safe. The fish replied, \"Silly fox — if we come out onto dry land we will surely die; but here in the water, our place of life, we still have a chance to live.\"",
+      "\"The same is true for us,\" said Rabbi Akiva. \"If now, while we sit and study the Torah — of which it says, 'For it is your life and the length of your days' (Devarim 30:20) — this is our situation, how much more so if we were to neglect it.\""
     ]
   }
 ];
