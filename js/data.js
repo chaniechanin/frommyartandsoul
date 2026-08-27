@@ -1504,13 +1504,13 @@ const PAINTINGS = [
     theme: "Judaic",
     year: "2017",
     medium: "Oil on canvas",
-    size: "Dimensions on request",
+    size: "16 × 20 in",
     image: "images/walls-of-jerusalem.jpg",
     featured: true,
     subtitle: "Old City ramparts and date palms under a moving sky.",
     story: [
-      "The honey-colored ramparts of the Old City, a line of date palms along the path, and two small figures walking in their shade.",
-      "The kind of quiet corner of Jerusalem you could walk past a hundred times and never tire of."
+      "This scene is fresh in my mind — last week, after many years, I visited the holy land of Israel.",
+      "This is part of the walls that the Turks built between 1535 and 1542, which surround the old city of Jerusalem."
     ]
   },
   {
